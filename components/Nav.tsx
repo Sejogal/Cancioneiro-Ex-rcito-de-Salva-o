@@ -9,12 +9,12 @@ const Nav = (props) => {
     const scheme = useColorScheme(); // "light" ou "dark"
     const isDarkMode = scheme === 'dark';
     return (
-        <View style={[styles.nav, { backgroundColor: isDarkMode ? '#001' : '#eee' }]} >
+        <View style={[styles.nav, { backgroundColor: isDarkMode ? '#001' : '#fff' }]} >
             <StatusBar hidden />
             <TouchableOpacity onPress={() => props.estado('inicio')} >
-                <Ionicons name="arrow-back" size={30 * escala} color={isDarkMode ? '#fff' : '#001'} />
+                <Ionicons name="arrow-back" size={30 * escala} color={isDarkMode ? '#fff' : '#000'} />
             </TouchableOpacity>
-            <View style={{ marginLeft: '3%' }} ><Text style={[style.title, { color: isDarkMode ? '#fff' : '#001' }]} >{props.title}</Text></View>
+            <View style={{ marginLeft: '3%' }} ><Text style={[style.title, { color: isDarkMode ? '#fff' : '#000' }]} >{props.title}</Text></View>
         </View>
     )
 }

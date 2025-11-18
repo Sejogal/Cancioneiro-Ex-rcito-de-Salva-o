@@ -19,8 +19,8 @@ const body = () => {
             tb: 544,
             selecionado: true,
             estrofe1: 'Senhor, meu Deus, quando eu maravilhado \nParo a pensar no Teu grandioso ser,\nContemplo o céu, de estrelas pontilhado,\nA declarar ao mundo Teu poder...',
-            estrofe2: 'Quando lampeja e ruge a tempestade E faz tremer a terra e o mar,\n A nuvem solta a chuva refrescante\n E o arco-íris vem-me alegrar...',
-            estrofe3: ' Ao percorrer as matas e florestas,\n Eu vejo as aves e ouço seu cantar,\n Montes e rios eis também em festa,\n Por tudo isso quero a Deus louvar...',
+            estrofe2: 'Quando lampeja e ruge a tempestade\nE faz tremer a terra e o mar,\nA nuvem solta a chuva refrescante\nE o arco-íris vem-me alegrar...',
+            estrofe3: 'Ao percorrer as matas e florestas,\nEu vejo as aves e ouço seu cantar,\nMontes e rios eis também em festa,\nPor tudo isso quero a Deus louvar...',
             estrofe4: 'Quando percebo que na cruz maldita, Por Teu amor, Jesus morreu por mim,\nE me livrou do jugo do pecado\nAli vertendo o sangue carmesim...',
             estrofe5: 'E quando, enfim, for tudo esclarecido,\nO que a minha fé antecipou,\nE ao ouvir celestes harmonias\nEu louvarei melhor Quem me salvou.',
             som: '',
@@ -124,14 +124,14 @@ const body = () => {
             som: ""
         },
         {
-            id: 11,
-            tb: 45,
-            selecionado: true,
-            estrofe1: "Vós, criaturas de Deus Pai,\nTodos, erguei a voz, cantai:\nAleluia! Aleluia!\nTu, sol dourado a refulgir,\nTu, lua em prata a reluzir,\nOh! louvai-O! Oh! louvai-O!\nAleluia! Aleluia! Aleluia!",
-            estrofe2: "Tu, brisa amena a bafejar,\nVós, nuvens que pairais no ar,\nOh! louvai-O! Aleluia!\nTu, linda aurora em teu alvor,\nTu, suave ocaso multicor,\nOh! louvai-O! Oh! louvai-O!\nAleluia! Aleluia! Aleluia!",
-            estrofe3: "Vós, homens sábios e de bem,\nA todos proclamai também:\nAleluia! Aleluia!\nAo Filho glória, glória ao Pai,\nE a Deus Espírito honra dai.\nOh! louvai-O! Oh! louvai-O!\nAleluia! Aleluia! Aleluia!",
-            estrofe4: "",
-            som: ""
+            "id": 11,
+            "tb": 45,
+            "selecionado": true,
+            "estrofe1": "Vós, criaturas de Deus Pai,\nTodos, erguei a voz, cantai:\nAleluia! Aleluia!\nTu, sol dourado a refulgir,\nTu, lua em prata a reluzir,\nOh! louvai-O! Oh! louvai-O!\nAleluia! Aleluia! Aleluia!",
+            "estrofe2": "Tu, brisa amena a bafejar,\nVós, nuvens que pairais no ar,\nOh! louvai-O! Aleluia!\nTu, linda aurora em teu alvor,\nTu, suave ocaso multicor,\nOh! louvai-O! Oh! louvai-O!\nAleluia! Aleluia! Aleluia!",
+            "estrofe3": "Vós, homens sábios e de bem,\nA todos proclamai também:\nAleluia! Aleluia!\nAo Filho glória, glória ao Pai,\nE a Deus Espírito honra dai.\nOh! louvai-O! Oh! louvai-O!\nAleluia! Aleluia! Aleluia!",
+            "estrofe4": "",
+            "som": ""
         },
         {
             id: 12,
@@ -2432,6 +2432,599 @@ const body = () => {
             coro: ''
         },
         {
+            "id": 201,
+            "tb": 154,
+            "selecionado": true,
+            "estrofe1": "Eu venho à tua porta, amigo,\nEm nome do Senhor Jesus.\nSe queres hoje a salvação,\nRecorda o Seu amor na cruz!",
+            "estrofe2": "Por que andar assim tão triste,\nSofrendo tanto dissabor?\nJesus quer hoje te valer,\nConfia a Ele tua dor.",
+            "estrofe3": "Confessa a Cristo os teus pecados,\nEntrega a Ele o coração\nE hoje mesmo gozarás\nA paz de Deus e a salvação.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 202,
+            "tb": 868,
+            "selecionado": true,
+            "estrofe1": "Do teu pecado te queres livrar?\nSeu sangue tem poder, sim, tem poder.\nAlmejas tu do maligno escapar?\nSeu sangue tem todo o poder.",
+            "estrofe2": "Com a vaidade desejas findar?\nSeu sangue tem poder, sim, tem poder.\nVícios, paixões, queres tu dominar?\nSeu sangue tem todo o poder.",
+            "estrofe3": "Teu coração queres purificar?\nSeu sangue tem poder, sim, tem poder.\nTodas as manchas te pode tirar;\nSeu sangue tem todo o poder.",
+            "estrofe4": "Queres entrar no serviço real?\nSeu sangue tem poder, sim, tem poder.\nQueres também ser um servo leal?\nTerás no Seu sangue o poder.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Há poder, sim, força sem igual\nSó no sangue de Jesus;\nHá poder, sim, prova-o, pecador.\nOh! aceita o dom de Jesus!"
+        },
+        {
+            "id": 203,
+            "tb": 829,
+            "selecionado": true,
+            "estrofe1": "Eis a mensagem tão pura e simples,\nÉ a mensagem para nós,\nDe um Salvador tão poderoso,\nUm Salvador pra todos nós!",
+            "estrofe2": "Se o teu desejo é ser perdoado,\nO Seu perdão tu obterás,\nPois o que busca irá encontrá-lo,\nJamais Jesus o ignorará.",
+            "estrofe3": "Se tens falhado e O desprezado,\nAinda assim Ele ama a ti!\nA prova é Cristo, crucificado,\nPois, por Jesus, Deus ama a ti.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Olha pra Cristo, só para Cristo,\nContempla a Cristo, ó pecador!\nOlha pra Cristo, só para Cristo,\nÉ a resposta: o Salvador!"
+        },
+        {
+            "id": 204,
+            "tb": 593,
+            "selecionado": true,
+            "estrofe1": "Estamos marchando à terra dos santos,\nMansão dos remidos, já livres do mal.\nTu andas errante e de Deus muito longe?\nOh! dize, queres ir para o Éden celestial?",
+            "estrofe2": "Naquele país não há pranto ou gemido,\nNão reina a tristeza nem dor terreal.\nTu vives aflito e receias a morte?\nOh! dize, queres ir para o Éden celestial?",
+            "estrofe3": "Ali não há pobres, pois todos são ricos,\nHerdeiros da vida e da glória eternal;\nTeus dias no erro e no mal tu consomes?\nOh! dize, queres ir para o Éden celestial?",
+            "estrofe4": "Oh! larga os prazeres tão falsos do mundo!\nEm Cristo há prazer verdadeiro, eternal;\nNão sejas descrente, oh! aceita o evangelho\nE dize: Sim! Irei para o Éden celestial!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Queres tu entrar no céu,\nPara o gozo do Senhor?\nOh! dize, queres ir\nPara o Éden celestial?"
+        },
+        {
+            "id": 205,
+            "tb": 101,
+            "selecionado": true,
+            "estrofe1": "O evangelho do Senhor\nOferta salvação,\nPerdão e paz ao pecador,\nDivina redenção.",
+            "estrofe2": "Que boas novas de amor:\nCaminho, vida e luz,\nÉ para todo o pecador\nO Salvador Jesus.",
+            "estrofe3": "Se vós com contrição e fé\nPedirdes: ―Salvador,\nConcede-nos a Tua mercê‖,\nEle ouve o clamor.",
+            "estrofe4": "Encher-vos-á o coração\nCom zelo e fervor,\nCom sacrossanta ambição,\nPerfeita paz e amor.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Cristo padeceu, (bis)\nMorreu por nossa redenção\nE eterna salvação."
+        },
+        {
+            "id": 206,
+            "tb": 11,
+            "selecionado": true,
+            "estrofe1": "Um rico, de noite, chegou a Jesus\nA fim de saber o caminho da luz;\nO Mestre, bem claro, lhe fez entender:\n―Importa renascer!‖",
+            "estrofe2": "Vós, filhos do mundo, escutai ao Senhor,\nQue sempre vos chama com mui terno amor.\nOuvi que o Senhor nunca cessa em dizer:\n―Importa renascer!‖",
+            "estrofe3": "Se amados no céu desejais encontrar,\nDeveis vossas culpas a Deus confessar\nE a ordem de Cristo com fé acolher:\n―Importa renascer!‖",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Importa renascer! (bis)\nCom voz inefável o disse Jesus:\n―Importa renascer!‖"
+        },
+        {
+            "id": 207,
+            "tb": 788,
+            "selecionado": true,
+            "estrofe1": "Vês, ó pecador,\nO teu Salvador\nNo Calvário ali morrer?\nMas da horrenda cruz\nVem clara luz\nAos que estão a perecer.",
+            "estrofe2": "Que castigo e dor\nSofre o teu Senhor\nAjoelhado no jardim!\nNessa hora cruel\nBebeu o fel\nAo lutar por ti, por mim.",
+            "estrofe3": "Plena redenção\nE libertação\nVêm aos homens pela cruz;\nGraça excelsa e paz,\nPerdão terás\nSe chegares a Jesus.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! vem já! (bis)\nSó na cruz refúgio há.\nCom bondade e amor\nTe convida o Senhor\nE agora perdão te dará."
+        },
+        {
+            "id": 208,
+            "tb": 575,
+            "selecionado": true,
+            "estrofe1": "Minha alma jazia\nSem paz e alegria,\nSentindo o pecado meu ser esmagar;\nPerdido, angustiado,\nVi Cristo ao meu lado\nDizendo: ―Meu sangue te pode lavar!‖",
+            "estrofe2": "Vem, lança a tristeza,\nBuscando pureza\nNa fonte bendita que emana da cruz.\nA graça estendida,\nPerdão, nova vida\nVem já aceitar do bondoso Jesus.",
+            "estrofe3": "Deus cura a ferida\nDa fútil corrida\nAtrás do prazer deste mundo falaz.\nVem, crê e adora,\nE nasce a aurora\nDe um dia feliz e de gozo e paz.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "O coração de Cristo\nAberto, agora, está por ti.\nOh! vem, refúgio eterno\nAcharás ali!"
+        },
+        {
+            "id": 209,
+            "tb": 150,
+            "selecionado": true,
+            "estrofe1": "Ao findar o labor desta vida,\nQuando a morte ao teu lado chegar,\nQue destino há de ter a tua alma?\nVida ou morte, qual vais aceitar?",
+            "estrofe2": "Tu procuras a paz, neste mundo,\nEm prazeres que passam em vão,\nMas no termo final desta vida\nTais prazeres valor não terão.",
+            "estrofe3": "Por acaso tu riste, ó amigo,\nQuando ouviste falar em Jesus?\nMas só Cristo Jesus pode dar-te\nSalvação pela morte na cruz!",
+            "estrofe4": "Com a alma em pecado não podes\nJamais ver o semblante de Deus.\nMas aquele que for resgatado\nGozará das venturas dos céus.",
+            "estrofe5": "Se quiseres deixar teus pecados\nE entregar-te ao bondoso Jesus,\nHás de ter, no momento da morte,\nUm caminho de vida e de luz.",
+            "som": "",
+            "coro": "Meu amigo, hoje tens a escolha:\nVida ou morte, qual vais aceitar?\nAmanhã pode ser muito tarde.\nHoje Cristo te quer libertar."
+        },
+        {
+            "id": 210,
+            "tb": 474,
+            "selecionado": true,
+            "estrofe1": "Tal qual estou eis-me, Senhor,\nPois o Teu sangue remidor\nVerteste pelo pecador;\nÓ Salvador, eu venho a Ti!",
+            "estrofe2": "Tal qual estou e sem poder\nA Tua lei satisfazer\nE sem cumprir o que é mister,\nÓ Salvador, eu venho a Ti!",
+            "estrofe3": "Tal qual estou, vou confiar,\nSó Tu me podes transformar\nE pela graça me salvar;\nÓ Salvador, eu venho a Ti!",
+            "estrofe4": "Tal qual estou, perdão me dás\nE minha alma limparás.\nMeu coração tem plena paz;\nÓ Salvador, eu venho a Ti!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 211,
+            "tb": 133,
+            "selecionado": true,
+            "estrofe1": "Ao chegares a Jesus,\nDeus perdoa as culpas mil\nE os teus pés em paz conduz\nPara o celestial redil.",
+            "estrofe2": "Ao chegares a Jesus,\nDeus transforma o teu ser:\nOnde há trevas surge a luz,\nNova vida e poder.",
+            "estrofe3": "Ao chegares a Jesus,\nSentirás profundo amor\nPelo Mestre, que na cruz\nQuis sofrer angústia e dor.",
+            "estrofe4": "Ao chegares a Jesus,\nTeu prazer será em Deus,\nGloriar-te-ás na cruz,\nNos tesouros lá dos céus!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "A Jesus com fé chegando,\nAcho plena salvação,\nE Seu sangue me lavando\nTorna puro o coração."
+        },
+        {
+            "id": 212,
+            "tb": 581,
+            "selecionado": true,
+            "estrofe1": "Ó Senhor, aos Teus pés contristado me vês,\nAnelando a paz e o perdão;\nNada tenho em mim, mas confio em Ti,\nCrendo que Tu me dás salvação.",
+            "estrofe2": "Afastado de Deus, sem ouvir Sua voz,\nEm pecado, sem fé, eu vivi;\nMas agora, Senhor, como vil pecador,\nEu me entrego, humilde, a Ti.",
+            "estrofe3": "Para o mundo falaz, já não mais viverei,\nPois morri com Jesus, meu Senhor;\nSua bênção me deu, nova vida e poder,\nAlegria, pureza e amor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Eu venho a Ti, eu venho contrito a Ti,\nA pedir-Te perdão e obter salvação;\nSenhor, venho agora a Ti."
+        },
+        {
+            "id": 213,
+            "tb": 64,
+            "selecionado": true,
+            "estrofe1": "Escuta a voz do bom Jesus:\n―Vem, segue-Me. (bis)\nGuiar-te-ei à eterna luz;\nVem, segue-Me. (bis)\nPor ti Eu toda a lei cumpri;\nPor ti o amargo fel bebi;\nAté a morte Eu sofri;\nVem, segue-Me. (bis)",
+            "estrofe2": "―Liberto dos pecados teus,\nVem, segue-Me. (bis)\nGuiar-te-ei aos altos céus;\nVem, segue-Me. (bis)\nOh! quantas vezes te chamei,\nE tu quebraste a Minha lei;\nTeu fiador Eu me tornei;\nVem, segue-Me. (bis)",
+            "estrofe3": "―Em Mim tu podes descansar;\nVem, segue-Me. (bis)\nVem teus cuidados Me entregar;\nVem, segue-Me. (bis)\nEu sou teu Deus, teu Salvador;\nEu te amo muito, ó pecador;\nOh! deixa todo o teu temor;\nVem, segue-Me.‖ (bis)",
+            "estrofe4": "Sim, meu Jesus, seguir-Te-ei,\nEu seguirei, sim, seguirei;\nAtento sempre à Tua lei,\nEu seguirei, sim, seguirei.\nMui débil sou e sem valor;\nSem Ti não posso andar, Senhor;\nMas enche-me do Teu vigor!\nEu seguirei, sim, seguirei!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 214,
+            "tb": 169,
+            "selecionado": true,
+            "estrofe1": "Eu ouço a terna voz\nDe Cristo, o Redentor,\nQuerendo dar-me a salvação,\nO dom do Seu amor.",
+            "estrofe2": "Em trevas eu vivi,\nSurgiu de Cristo a luz,\nE Seu espírito de amor\nÀ glória me conduz.",
+            "estrofe3": "Fui débil pecador,\nIndigno, a perecer;\nPureza e vida nEle achei\nE, em Seu favor, poder.",
+            "estrofe4": "Eu louvo Seu poder\nE Sua redenção,\nPois, tendo Cristo, o Salvador,\nEu tenho a salvação.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Venho, meu Senhor!\nVenho como estou!\nNão mereço bem nenhum,\nRecorro ao Teu favor."
+        },
+        {
+            "id": 215,
+            "tb": 102,
+            "selecionado": true,
+            "estrofe1": "Um grande amigo temos,\nJesus, o eterno Deus,\nQue a Seus fiéis destina\nUm lar nos lindos céus.\nNa pátria sempiterna,\nNa divinal mansão,\nNenhum enfado ou medo\nAflige o coração.",
+            "estrofe2": "Jamais o mau desejo\nTerá lugar ali,\nNem entra um só pecado\nQue nos assalta aqui.\nRepousam os cansados,\nOs tristes gozam paz,\nE no poder divino\nO enfermo se refaz.",
+            "estrofe3": "Coroa, trono e palmas\nTerá o vencedor,\nE tudo preparado\nPor Cristo, o Salvador.\nTal bênção não podemos\nGanhar nem merecer:\nÉ Cristo quem somente\nA pode conceder.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "A luz deste mundo é Cristo. (bis)\nÓ pecador, vem já, Jesus te salvará.\nA luz deste mundo é Cristo."
+        },
+        {
+            "id": 216,
+            "tb": 153,
+            "selecionado": true,
+            "estrofe1": "Atribulado coração,\nEm Cristo alívio encontrarás;\nConsolo, paz e Seu perdão,\nSim, dEle tu receberás.",
+            "estrofe2": "Dilacerado pela dor\nDas tuas culpas, do pecar,\nVem sem demora ao Salvador\nE vida nova hás de gozar.",
+            "estrofe3": "Se, para vir ao Salvador,\nTu tens fraquezas a vencer,\nOh! vem, pois Ele em Seu amor\nE em graça te dará poder.",
+            "estrofe4": "A Cristo, sem demora, vem,\nPois Ele almeja te valer\nE sempre quer buscar teu bem,\nConfia nEle em teu viver.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! vem sem demora ao Salvador!\nPor que vacilar e ter temor?\nOh! vem, vem já!\nDescanso te dará!"
+        },
+        {
+            "id": 217,
+            "tb": 199,
+            "selecionado": true,
+            "estrofe1": "Cada vez mais puro quero o coração,\nCada vez buscando mais a perfeição,\nCada vez mais santo, sempre mais leal,\nQuero ter desprezo para com o mal.",
+            "estrofe2": "Cada vez mais calmo ao cercar-me a dor,\nQuero ter paciência onde quer que for,\nMuito mais bondade, mais resignação\nAo divino plano, sob a Sua mão.",
+            "estrofe3": "Sendo confiante sempre no Senhor,\nFirme em Sua força, salvo em Seu amor,\nQuero herdar a vida santa e perenal\nLá no sempiterno Lar celestial.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 218,
+            "tb": 107,
+            "selecionado": true,
+            "estrofe1": "Entre os caminhos do viver\nDe tanta comoção,\nFaze, em quietude, no meu ser\nA Tua habitação.",
+            "estrofe2": "Eu, nesse abrigo, na aflição,\nCom fé me prostrarei,\nTudo depondo em Tua mão;\nMinha alma eu abrirei.",
+            "estrofe3": "Nesse lugar Te encontrarei,\nEm oração e paz;\nA Tua face, ó Deus, verei,\nE Tu me ajudarás.",
+            "estrofe4": "Tranqüilamente, nesse altar,\nÓ Deus, habitarás;\nTodo o meu ser vens inundar\nCom Tua santa paz.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 219,
+            "tb": 814,
+            "selecionado": true,
+            "estrofe1": "A cruz não será mais pesada\nDo que a graça que Deus dá;\nE, em meio à mais forte tormenta,\nSeu amor me assistirá.",
+            "estrofe2": "O mundo a meu Mestre despreza\nE persegue os de Jesus;\nMas por Seu amor, pela graça,\nLevarei a minha cruz.",
+            "estrofe3": "Fazer a vontade de Cristo\nÉ o meu desejo, sim;\nContando tão bela história,\nTenho gozo e paz sem fim.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "A cruz que me deu para levar,\nAs dores que a mim vêm assaltar,\nNão escondem meu Jesus,\nPois eu ando em Sua luz,\nVou vencendo para os céus."
+        },
+        {
+            "id": 220,
+            "tb": 812,
+            "selecionado": true,
+            "estrofe1": "Ó Deus dos patriarcas, clamamos a Ti,\nPois não nos faltaste jamais;\nVisita-nos, hoje, unidos aqui,\nAviva-nos outra vez!",
+            "estrofe2": "Vem, fogo divino, poder celestial,\nCom chama ardente, eficaz;\nSim, vem, purifica-nos de todo o mal,\nAviva-nos outra vez!",
+            "estrofe3": "Os servos de outrora puderam vencer,\nVitória também nos darás;\nPois Tua promessa garante poder,\nAviva-nos outra vez!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! toca-nos outra vez,\nDe novo vem-nos encher!\nEscuta, Senhor, o nosso clamor:\nBatiza-nos com poder!"
+        },
+        {
+            "id": 221,
+            "tb": 16,
+            "selecionado": true,
+            "estrofe1": "Cristo, Teu sangue eficaz\nBeleza traz ao coração;\nEm meio ao mundo, à perdição,\nEu ergo a fronte, puro, em paz.",
+            "estrofe2": "Cordeiro santo, divinal,\nQuiseste os céus por mim deixar,\nTão dura cruz aqui provar,\nMostrando graça eternal.",
+            "estrofe3": "Não mais vergonha, medo ou dor,\nNão mais as culpas do pecar;\nQuiseste assim me transformar,\nÓ meu Jesus, meu Redentor!",
+            "estrofe4": "No dia da ressurreição,\nQuando do pó me levantar,\nA Quem morreu pra me salvar\nHei de louvar com gratidão.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 222,
+            "tb": 767,
+            "selecionado": true,
+            "estrofe1": "Deixo a noite da escravidão,\nVindo a Ti, vindo a Ti,\nE entro na luz da libertação,\nVindo a Ti, Jesus.\nVai-se a fraqueza, vem o poder,\nReina a alegria, foge o sofrer,\nSai meu pecado, vens-me valer,\nVindo a Ti, Jesus.",
+            "estrofe2": "Deixo a queda, a perda, o falhar,\nVindo a Ti, vindo a Ti,\nGanho na cruz a bênção sem par,\nVindo a Ti, Jesus.\nBálsamo encontro, não mais a dor,\nCalma me cerca, foge o terror,\nSai a aflição e brota o louvor,\nVindo a Ti, Jesus.",
+            "estrofe3": "Deixo o orgulho, o falso ideal,\nVindo a Ti, vindo a Ti,\nTua vontade aceito, cabal,\nVindo a Ti, Jesus.\nLivre do eu, entrego-me a Ti,\nSem desespero, em êxtase aqui;\nPíncaros altos já conheci,\nVindo a Ti, Jesus.",
+            "estrofe4": "Deixo o temor da morte que vem,\nVindo a Ti, vindo a Ti,\nÉ meu o lar de luz no além,\nVindo a Ti, Jesus.\nFora das trevas, luz celestial,\nTerno abrigo és ao mortal;\nOh! quão glorioso ver-Te, afinal,\nCristo, meu Salvador!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 223,
+            "tb": 200,
+            "selecionado": true,
+            "estrofe1": "Antes eu vivia sempre com temor,\nMas descanso, agora, no meu Salvador;\nAntes esperava, mas eu hoje sei:\nSalvo estou em Cristo, meu bendito Rei.",
+            "estrofe2": "Antes desejava bênçãos do Senhor,\nHoje, mais de Cristo, mais do Seu amor!\nNão somente as bênçãos, celestial maná,\nMas a Ele, em quem a plenitude está.",
+            "estrofe3": "Antes era o mundo, hoje é só Jesus;\nAntes eram trevas, hoje há plena luz;\nAntes, os receios, hoje há doce paz;\nTudo tenho em Cristo, que me satisfaz.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Tudo tenho em Cristo, que por mim morreu,\nTudo, tudo em Cristo! Cristo é todo meu."
+        },
+        {
+            "id": 224,
+            "tb": 826,
+            "selecionado": true,
+            "estrofe1": "Muitas coisas eu não posso entender,\nMuitas são mistério para mim,\nMas bem claro eu vejo o grande dom de Deus\nQue é o Seu maravilhoso amor.",
+            "estrofe2": "Quando de Jesus eu me aproximei\nE Lhe confessei o meu temor,\nQuando no Seu nome eu acreditei,\nEle, em Sua graça, me salvou.",
+            "estrofe3": "Sua graça está além do meu pensar,\nÉ mais do que posso compreender:\nPor amor deixou Seu lar celestial,\nPra ser meu amigo e Salvador.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Infinitamente além do meu olhar,\nBem maior do que eu possa imaginar\nÉ o perdão ao qual meu Deus me conduziu,\nÉ o Seu grandioso amor."
+        },
+        {
+            "id": 225,
+            "tb": 621,
+            "selecionado": true,
+            "estrofe1": "Que segurança! Sou de Jesus!\nTenho antegozo do reino de luz!\nCom Cristo herdeiro, Deus me comprou,\nPelo Seu sangue, salvo estou.",
+            "estrofe2": "Inteiramente me submeti\nE às alturas celestes subi;\nAnjos descendo vêm-me trazer\nEcos da graça, santo prazer.",
+            "estrofe3": "Firmado em Cristo, no Seu amor,\nSigo contente ao meu Salvador.\nPor Sua volta hei de esperar,\nPara com Ele ir habitar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Canta, minha alma, canta ao Senhor (bis)\nRende-Lhe sempre grato louvor."
+        },
+        {
+            "id": 226,
+            "tb": 449,
+            "selecionado": true,
+            "estrofe1": "Na presença do meu Mestre, no refúgio divinal,\nA alegria é constante e o poder é sem igual.\nPor amor quero ofertar-Lhe e render-Lhe meu louvor,\nE o Senhor vai segredar-me: ―Viverás por Meu amor.‖",
+            "estrofe2": "Mais do que eu posso dar-Lhe, muito mais que o meu louvor\nÉ a devoção profunda ao meu Rei e Salvador.\nSó assim, enternecido e movido o coração,\nPermanecerei constante, fiel a Deus e à missão.",
+            "estrofe3": "Ó Senhor, o adorar-Te em espírito veraz\nHá de ser meu grande anelo, que alegria santa traz.\nO Teu selo me confirma a herança perenal:\nConhecer-Te, então servir-Te, contemplar-Te afinal.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Na presença do meu Mestre,\nEscondido em Seu poder,\nQuero amá-lO e servi-lO,\nConsagrando-Lhe meu ser."
+        },
+        {
+            "id": 227,
+            "tb": 637,
+            "selecionado": true,
+            "estrofe1": "Meu Senhor, sou Teu, Tua voz ouvi\nA chamar-me com amor;\nMas de Ti mais perto eu desejo estar,\nÓ bendito Salvador!",
+            "estrofe2": "A seguir-Te agora eu me decidi,\nConstrangido pelo amor;\nJubiloso, pois, me declaro Teu,\nSem reservas, meu Senhor.",
+            "estrofe3": "Que delícia e gozo eu irei fruir\nQuando junto a Ti morar\nE com grato amor e singela fé\nMeu Jesus sempre adorar!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Mais perto, perto da Tua cruz\nQuero estar, ó Salvador!\nMais perto, perto da Tua cruz\nQuem me dera estar, Senhor!"
+        },
+        {
+            "id": 228,
+            "tb": 519,
+            "selecionado": true,
+            "estrofe1": "Se por um dia eu Te olvidar,\nE o mundo a Tua imagem ofuscar,\nOh! vem cercar-me, então, com Teu amor!\nFaze meu ser voltar a Ti, Senhor!",
+            "estrofe2": "Com todo o meu amor, Jesus, eu sei\nQue pouco tenho para dar-Te, ó Rei;\nFaze-me digno de hoje contemplar\nO céu unir-se ao Teu sofrer sem par.",
+            "estrofe3": "O Teu Calvário faze-me sentir,\nAs Tuas chagas possam-me atrair.\nAmor divino, vem-me socorrer!\nÓ graça excelsa, vem selar meu ser!",
+            "estrofe4": "Servir-Te-ei, carrego a minha cruz!\nOlvido o mundo, sigo a Ti, Jesus!\nA Ti submisso, marcho sem temor\nAo meu Calvário, como Tu, Senhor!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 229,
+            "tb": 171,
+            "selecionado": true,
+            "estrofe1": "Aviva-nos, Senhor!\nOh! dá-nos Teu poder!\nDe santidade, fé e amor,\nReveste o nosso ser!",
+            "estrofe2": "Desperta-nos, Senhor!\nOh! faze-nos fruir\nAs ricas bênçãos divinais,\nPrimícias do porvir!",
+            "estrofe3": "Renova-nos, Senhor!\nInspira mais amor,\nMais zelo, graça e compaixão\nA bem do pecador!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Aviva-nos, Senhor!\nEis nossa petição!\nAteia o fogo do alto céu\nEm cada coração!"
+        },
+        {
+            "id": 230,
+            "tb": 680,
+            "selecionado": true,
+            "estrofe1": "Preciso de Jesus,\nDe Ti, ó meu Senhor!\nSomente a Tua voz\nTem para mim valor!",
+            "estrofe2": "Preciso de Jesus!\nUnido a Ti, Senhor,\nPecado e tentação\nSe mostram sem vigor.",
+            "estrofe3": "Preciso de Jesus!\nVem dar ao coração\nO gozo de viver\nEm santa retidão.",
+            "estrofe4": "Preciso de Jesus,\nDe Ti, meu Sumo Bem,\nNa lida terrenal\nE no eterno além.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "De Ti, Senhor, preciso\nHoje, eternamente!\nSomente a Tua bênção\nMe faz viver."
+        },
+        {
+            "id": 231,
+            "tb": 289,
+            "selecionado": true,
+            "estrofe1": "O meu coração, Senhor,\nEu Te rogo, com fervor,\nPor Teu trono vem tomar,\nSem rival aí reinar!",
+            "estrofe2": "Meus ouvidos vem abrir,\nFaze a Tua voz ouvir!\nO que mandas vou fazer,\nVou seguir-Te com prazer.",
+            "estrofe3": "Minhas mãos, a Ti, Senhor,\nEu entrego com amor;\nQue trabalhem sem cessar\nPara as novas proclamar.",
+            "estrofe4": "Faze que meus pés, Senhor,\nBem ligeiros no labor,\nCorram, por amor de Ti,\nDestros a servir-Te aqui.",
+            "estrofe5": "Os meus lábios vem encher\nDe verdade, amor, saber,\nPara eu melhor cantar,\nTua glória anunciar.",
+            "estrofe6": "Toma agora, meu Jesus,\nMinha mente e dá-lhe luz\nPara que o meu pensar\nPossa em tudo Te agradar.",
+            "estrofe7": "Toma enfim, ó Cristo meu,\nCorpo e alma, tudo é Teu.\nPara sempre então serei\nConsagrado a Ti, meu Rei.",
+            "estrofe8": "",
+            "estrofe9": "",
+            "estrofe10": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 232,
+            "tb": 177,
+            "selecionado": true,
+            "estrofe1": "O Senhor da ceifa está chamando:\n―Quem quer ir por Mim a procurar\nAlmas que no mundo vão chorando\nSem da salvação participar?‖",
+            "estrofe2": "O profeta, a Deus se aproximando,\nConsidera-se um pecador,\nMas o fogo santo o queimando\nTorna-o útil para seu Senhor.",
+            "estrofe3": "Muitos são os que vão expirando\nSem ter esperança de ver Deus;\nVai, depressa, lhes anunciando\nQue Jesus nos leva para os céus.",
+            "estrofe4": "Breve os trabalhos serão findos,\nBênçãos vão os servos desfrutar,\nE Jesus os saudará: ―Bem-vindos!‖\nEssa glória espero alcançar.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Fala, Deus! Fala, Deus!\nToca-me com brasas do altar!\nFala, Deus! Fala, Deus!\nSim, alegre atendo ao Teu mandar!"
+        },
+        {
+            "id": 233,
+            "tb": 456,
+            "selecionado": true,
+            "estrofe1": "Quero ser Teu santo templo,\nOnde Tu possas morar,\nPara sentir-Te bem perto\nE Tua voz acatar.",
+            "estrofe2": "Quero irradiar Tua glória,\nQuero Teu nome honrar.\nMeus votos hoje renovo,\nPondo-me no Teu altar.",
+            "estrofe3": "Rendo a Ti meus talentos\nNesta entrega real;\nCorpo e mente e minha alma\nDou-Te em renúncia total.",
+            "estrofe4": "Um coração compassivo\nDá-me, Te rogo, Senhor,\nPara buscar os perdidos\nE proclamar Teu amor.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Eis minha vida,\nRogo que a aceites, Senhor!\nTodo o meu ser Te consagro\nCom entusiasmo e amor!"
+        },
+        {
+            "id": 234,
+            "tb": 377,
+            "selecionado": true,
+            "estrofe1": "Tudo a Ti, Jesus, consagro,\nTudo entrego a Ti, meu Rei!\nResoluto, mas submisso,\nSempre a Ti eu seguirei!",
+            "estrofe2": "Tudo a Ti, Jesus, consagro,\nConstrangido por amor;\nVem, transforma a minha vida\nE meu coração, Senhor!",
+            "estrofe3": "Tudo a Ti, Jesus, consagro!\nQuanto gozo, meu Senhor!\nPaz completa, paz perfeita!\nGlória, glória ao Salvador!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Tudo entregarei! (bis)\nSim, por Ti, Jesus bondoso,\nTudo deixarei."
+        },
+        {
+            "id": 235,
+            "tb": 278,
+            "selecionado": true,
+            "estrofe1": "Tu, que sobre a amarga cruz\nRevelaste o Teu amor,\nTu, que vives, ó Jesus,\nVivifica-nos, Senhor!",
+            "estrofe2": "Neste mundo tentador,\nHá perigo de cair;\nCom Teu fogo abrasador\nPoderemos resistir.",
+            "estrofe3": "Quantos, que corriam bem,\nJá não mais conTigo vão,\nOutros seguem, mas, também,\nFrios, sem amor estão.",
+            "estrofe4": "Vem agora consumir\nTudo quanto, ó Salvador,\nQuer, altivo, resistir\nAo Teu brando e doce amor!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Imploramos, vem, Senhor,\nNossas almas despertar;\nCom Teu santo e puro amor,\nVem a todos renovar!\nOh! vem, oh! vem,\nNossas almas inflamar."
+        },
+        {
+            "id": 236,
+            "tb": 212,
+            "selecionado": true,
+            "estrofe1": "Vãos prazeres vêm chamar-me,\nA Jesus imito;\nNada pode escravizar-me,\nA Jesus imito.",
+            "estrofe2": "Das algemas libertou-me,\nA Jesus imito;\nSirvo alegre, pois amou-me;\nA Jesus imito.",
+            "estrofe3": "Nesta vida e até a glória,\nA Jesus imito;\nVou cantando a doce história,\nA Jesus imito.",
+            "estrofe4": "Quero vê-lO coroado,\nA Jesus imito;\nE sentir-me aprovado,\nA Jesus imito.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Como Cristo quero ser,\nNão seguindo a multidão,\nEm qualquer lugar que vá,\nTendo a Sua bênção!"
+        },
+        {
+            "id": 237,
+            "tb": 53,
+            "selecionado": true,
+            "estrofe1": "Só uma vida foi por Deus te dada,\nQue em tudo mostra a ti Seu grande amor;\nDá-Lhe teu ser, seguindo a estrada\nDAquele que contigo sempre vai.",
+            "estrofe2": "Um trilho só, com muito amor traçado,\nNem sempre fácil de se entender;\nFiel é Deus, estando ao teu lado,\nEm alegria e dor contigo vai.",
+            "estrofe3": "Um só Senhor, caminho e verdade,\nQuerendo o trono do teu coração;\nFaze-O Rei, proclama a vontade\nDAquele que contigo sempre vai.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Contigo está o teu celeste Pai,\nQue há muito planejou os passos teus;\nContigo está, contigo sempre vai,\nVelando sobre ti; crê no amor de Deus!\nEleva o teu olhar\nA Quem te quer livrar\nDa tentação, do mal\nE te guardar.\nContigo está, contigo sempre vai,\nVelando está por ti, Deus, o eterno Pai."
+        },
+        {
+            "id": 238,
+            "tb": 194,
+            "selecionado": true,
+            "estrofe1": "Vidas santas, consagradas,\nEm perfeita comunhão,\nQue a si mesmas não adorem,\nMas emanem compaixão.\nVidas nobres, renovadas\nPela graça divinal,\nRefletindo luz e gozo\nCom a glória celestial.",
+            "estrofe2": "Vidas santas, que trabalhem\nSob o símbolo da cruz,\nQue à humanidade levem\nA mensagem de Jesus.\nVidas nobres, abnegadas,\nInflamadas com poder,\nQue alegres se dediquem\nÀ observância do dever.",
+            "estrofe3": "Vidas santas, que levantem\nO caído pecador,\nNão medrosas, nem covardes,\nMas valentes no Senhor.\nVidas nobres, que obedientes\nSempre lutem com ardor\nE, com Cristo, participem\nDa vitória do amor!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Deus procura tais soldados:\nPuros, cheios de fervor,\nBatizados pelo fogo\nNo altar do Salvador."
+        },
+        {
+            "id": 239,
+            "tb": 461,
+            "selecionado": true,
+            "estrofe1": "Ah! que tempo inditoso\nQuando, altivo, resisti\nAo meu Salvador bondoso,\nRespondendo desdenhoso:\nSó quero o ―eu‖ e nada de Ti! (bis)",
+            "estrofe2": "Mas o Seu amor vencia\nQuando sobre a cruz O vi,\nE por mim intercedia;\nO meu coração dizia:\nQuero o ―eu‖ e quero a Ti! (bis)",
+            "estrofe3": "Com ternura me amparava,\nGraça e força recebi;\nMais e mais eu meditava\nE, humilde, segredava:\nNão tanto o ―eu‖ e mais de Ti! (bis)",
+            "estrofe4": "Por tão grande amor vencido,\nTudo ao bom Jesus cedi.\nAo meu Redentor unido,\nEste, agora, é meu pedido:\nNão mais o ―eu‖, só quero a Ti! (bis)",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 240,
+            "tb": 33,
+            "selecionado": true,
+            "estrofe1": "Com Cristo unido na morte da cruz,\nEu gozo a graça do reino da luz,\nQue para a vida dos céus me conduz,\nCada momento, com Cristo Jesus.",
+            "estrofe2": "Com Cristo unido na luta moral,\nNão cedo ao erro, ao pecado e ao mal,\nBem alto erguendo a bandeira real,\nCada momento mais firme e leal!",
+            "estrofe3": "Com Cristo unido na ressurreição,\nHei de alcançar eternal redenção!\nNunca em Cristo esperamos em vão,\nCada momento concede perdão.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Cada momento me guia o Senhor,\nCada momento dispensa favor;\nSua presença concede vigor,\nCada momento sou Teu, Salvador!"
+        },
+        {
+            "id": 241,
+            "tb": 220,
+            "selecionado": true,
+            "estrofe1": "Conheço a Ti, Senhor,\nTu tens poder, eu sei!\nAndando sem vigor,\nOh! quanto alento achei\nVendo, ao tremer sob minha cruz,\nAs marcas dos Teus pés, Jesus!",
+            "estrofe2": "Meu nome unido está\nConTigo, meu Senhor;\nTeu filho Te honrará,\nMeu Deus e Salvador.\nProssigo para o alvo além\nNos passos do meu Sumo Bem!",
+            "estrofe3": "Gozar conTigo, assim,\nTão doce comunhão\nÉ tudo para mim,\nÉ céu e inspiração!\nTeu meigo rosto hei de admirar\nE Tua graça exaltar.",
+            "estrofe4": "Sem Ti eu vou cair,\nSê minha proteção!\nHei de meu nome ouvir\nNa celestial mansão.\nQue a via dolorosa, aqui,\nDo Teu sofrer, me leve a Ti!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 242,
+            "tb": 372,
+            "selecionado": true,
+            "estrofe1": "Meu Senhor que me escolheste,\nTeu, e Teu somente, eu sou;\nCom Teu sangue me saraste;\nGlória, glória, aqui Te dou.",
+            "estrofe2": "Para obter tão grande prêmio,\nMuito e muito trabalhei;\nMas em vão foi todo o esforço:\nPela fé o alcancei.",
+            "estrofe3": "Crendo, pois, Jesus, meu Mestre,\nSempre confiarei em Ti;\nTeu poder e Tua graça\nHão de vir guardar-me aqui.",
+            "estrofe4": "Consagrado ao Teu serviço,\nQuero só por Ti viver;\nDando sempre testemunho\nCom ardor e com prazer.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! que glória! oh! que glória\nAbrasou-me o coração!\nAceitando-Te, ó Cristo,\nEm Teu sangue achei perdão."
+        },
+        {
+            "id": 243,
+            "tb": 685,
+            "selecionado": true,
+            "estrofe1": "Ouvi a voz que me chamava\nA Te seguir com minha cruz,\nMeu coração se rebelava\nEm aceitar-Te, meu Jesus.\nLutei em vão, sem ter sossego,\nSem encontrar consolação.",
+            "estrofe2": "O mundo, com seus vãos prazeres,\nPerdeu pra mim toda a atração.\nOs seus folguedos, seus tesouros,\nNão deram paz ao coração.\nAssim, tristonho e pesaroso,\nClamei a Ti, meu Salvador.",
+            "estrofe3": "Ouvi a voz que me dizia:\n―Oh! toma a cruz e segue a Mim!‖\nE eu, confiante, respondia:\nSou Teu, Senhor, pra Te servir,\nDá-me a força e, deste dia\nAté o fim, fiel serei!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Seguir-Te-ei, Jesus bendito,\nSeguir-Te-ei, mártir de amor,\nSeguir-Te-ei, aonde quiseres,\nPela graça seguirei."
+        },
+        {
+            "id": 244,
+            "tb": 218,
+            "selecionado": true,
+            "estrofe1": "Andava um dia pela estrada, só,\nE vi um estranho ali também,\nDobrado pela carga e pela dor,\nForçado a carregar a cruz.",
+            "estrofe2": "―Oh! dá-me a cruz!‖, clamei ao meu Senhor,\nE logo a mim apareceu\nAquela cruz que tanto desprezei,\nO bem que tanto eu neguei.",
+            "estrofe3": "A cruz em minha vida vou levar\nE a coroa receber.\nEm breve a jornada findará,\nE logo a Cristo eu hei de ver.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "―Oh! toma a cruz e segue a Mim!‖,\nOuvi chamar-me o Salvador.\nSerá demais um sacrifício assim\nSe Cristo o fez por mim?"
+        },
+        {
+            "id": 245,
+            "tb": 423,
+            "selecionado": true,
+            "estrofe1": "Luz do mundo, Jesus Cristo,\nVem, dissipa as ilusões,\nTira o véu dos nossos olhos,\nIlumina os corações\nPara ver-Te, para ver-Te!\nOuve nossas orações!",
+            "estrofe2": "Onde as trevas do pecado\nObscurecem Teu amor,\nFaze a luz do Teu ensino\nDominar, ó Salvador!\nResplandeça, resplandeça\nTua glória, ó Redentor!",
+            "estrofe3": "Luz dos homens! Luz da vida!\nBrilha com poder nos Teus,\nEsclarece as suas almas,\nMostra-lhes o grande Deus.\nLuz do mundo, Luz do mundo,\nÉs o resplendor dos céus!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 246,
+            "tb": 513,
+            "selecionado": true,
+            "estrofe1": "Pelo Teu sangue, ó Cordeiro de Deus,\nPuro serei! (bis)\nFaze-me ser dos fiéis servos Teus,\nPuro serei! (bis)\nQue lastimoso passado vivi!\nQuantas derrotas, em tempos, sofri!\nTuas promessas aceito, hoje, aqui;\nPuro serei! (bis)",
+            "estrofe2": "Os Teus preceitos mui pouco observei,\nSurdo me fiz! (bis)\nDos Teus conselhos eu longe andei,\nSurdo me fiz! (bis)\nÉs onisciente, o que faço Tu vês.\nRogo que, agora, o perdão Tu me dês.\nHoje confio nas grandes mercês\nE sou feliz! (bis)",
+            "estrofe3": "Os preconceitos jamais temerei,\nVou trabalhar! (bis)\nO evangelho anunciarei,\nVou trabalhar! (bis)\nFiel ao Teu mando, Senhor, quero ser\nE ao Teu amor, que ultrapassa o saber,\nO Teu insigne pendão vou erguer\nSem mais tardar! (bis)",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 247,
+            "tb": 439,
+            "selecionado": true,
+            "estrofe1": "Quero amar-Te, pois Tu pedes\nMeu amor, ó Salvador,\nTu, que deste a Tua vida\nPor amor de mim, Senhor.\nRedimido, a Ti pertenço:\nAlma, corpo, todo o ser;\nTeu na vida, Teu na morte,\nPor Ti sempre hei de viver.",
+            "estrofe2": "Sem o lume do Teu rosto,\nQue tristeza, que aflição,\nEnfraquece a energia,\nEsmorece o coração.\nMas, Teu santo rosto vendo,\nQuão feliz, Senhor, eu sou!\nTua doce voz ouvindo,\nSatisfeito e alegre vou.",
+            "estrofe3": "Quero amar-Te, pois, Te amando,\nTeus preceitos cumprirei;\nNa vereda da justiça\nPresto sigo a Ti, meu Rei!\nO amor é corajoso,\nNada sabe de temor;\nNunca fala em sacrifício\nQuem trabalha com amor.",
+            "estrofe4": "Quero amar-Te, mas quão fraco\nÉ por Ti o meu amor.\nTeu amor é todo puro,\nTodo ardente e vencedor!\nDesse amor, se possuído,\nDominado, mesmo, for,\nAmarei, sim, como devo,\nSempre a Ti, ó Salvador.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Quero amar-Te sempre,\nÓ meu Salvador!\nSatisfeito nunca estou\nSenão com Teu amor."
+        },
+        {
+            "id": 248,
+            "tb": 613,
+            "selecionado": true,
+            "estrofe1": "Quero chegar aos mananciais divinos,\nPara elevar a Deus minha oração.\nConsolador, que doce paz inspiras,\nConTigo quero estar em feliz comunhão.",
+            "estrofe2": "Lava meu ser do pó pecaminoso,\nDe toda a culpa, livra-me, Senhor;\nLimpa as manchas, em minha alma ocultas,\nNo rio transbordante do Teu grande amor.",
+            "estrofe3": "A santidade encontro nessa fonte,\nNela eu posso achar pureza enfim;\nQue essas águas reguem minha vida,\nTornando o deserto em verde jardim!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Do Calvário, sei, fluem sem cessar\nAs águas que agora me podem curar."
+        },
+        {
+            "id": 249,
+            "tb": 571,
+            "selecionado": true,
+            "estrofe1": "Dá tempo à tua alma, não deixes de orar,\nEstar com teu Mestre, Seu livro estudar,\nAmar e servi-lO, ao mundo valer,\nEm tudo, por tudo, com Ele viver.",
+            "estrofe2": "Dá tempo à tua alma, vem hoje buscar\nPureza no Mestre, com Ele ficar,\nTeus olhos bem fitos em Deus sempre ter,\nPor digna conduta, provar Seu poder.",
+            "estrofe3": "Dá tempo à tua alma, oh! vem renovar\nAs forças na Fonte: Deus te quer guiar.\nNo gozo ou tristeza, tu hás de vencer\nE Seus bons conselhos jamais esquecer.",
+            "estrofe4": "Dá tempo à tua alma no teu trabalhar,\nE muito mais útil será teu lidar.\nContente, ao teu Mestre, oh! vem-te render!\nE grato, sem medo, Seu reino estender.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
             id: 250,
             tb: 261,
             selecionado: true,
@@ -3650,224 +4243,1854 @@ const body = () => {
             coro: 'Com Jesus desejo permanecer\nE gozar real comunhão;\nDela vem a paz e o poder que traz\nPureza ao meu coração.'
         },
         {
-            id: 350,
-            tb: 190,
-            selecionado: true,
-            estrofe1: 'Mais junto, ó Deus, a Ti, mais junto a Ti,\nInda que aflições eu tenha aqui,\nAspiro ao gozo ali, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!',
-            estrofe2: 'E, quando ao pôr-do-sol, na solidão,\nDormir cansado e só, meu leito o chão,\nVer-me-ei, em sonho, ali, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!',
-            estrofe3: 'Sejam meus passos, pois, degraus do céu;\nTodas as provações, proveito meu.\nJá Teu amor senti, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!',
-            estrofe4: 'Pedra em Betel porei, vencida a dor,\nMeus dias encherei com Teu louvor.\nViver, já decidi, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!',
-            estrofe5: '',
-            som: '',
-            coro: ''
+            "id": 350,
+            "tb": 190,
+            "selecionado": true,
+            "estrofe1": "Mais junto, ó Deus, a Ti, mais junto a Ti,\nInda que aflições eu tenha aqui,\nAspiro ao gozo ali, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!",
+            "estrofe2": "E, quando ao pôr-do-sol, na solidão,\nDormir cansado e só, meu leito o chão,\nVer-me-ei, em sonho, ali, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!",
+            "estrofe3": "Sejam meus passos, pois, degraus do céu;\nTodas as provações, proveito meu.\nJá Teu amor senti, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!",
+            "estrofe4": "Pedra em Betel porei, vencida a dor,\nMeus dias encherei com Teu louvor.\nViver, já decidi, mais junto, ó Deus, a Ti,\nMais junto, ó Deus, a Ti, mais junto a Ti!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
         },
         {
-            id: 351,
-            tb: 444,
-            selecionado: true,
-            estrofe1: 'Preciosas são as horas\nNa presença de Jesus,\nComunhão deliciosa\nDa minha alma com a luz!\nOs cuidados deste mundo\nNão me podem abalar,\nPois é Ele o meu abrigo\nQuando o tentador chegar.',
-            estrofe2: 'Ao sentir-me rodeado\nDe cuidados terreais,\nIrritado e abatido\nOu em dúvidas fatais,\nA Jesus eu me dirijo\nNesses tempos de aflição,\nAs palavras que Ele fala\nTrazem-me libertação.',
-            estrofe3: 'Se confesso meus temores,\nToda a minha imperfeição,\nNele escuta com paciência\nNessa triste confissão;\nCom ternura repreende\nMeu pecado e todo o mal,\nEle é sempre o meu amigo,\nO melhor e mais leal.',
-            estrofe4: 'Se quereis saber quão doce\nÉ a divina comunhão,\nPodereis mui bem prová-la\nE tereis compensação;\nProcurai estar sozinhos\nEm conversa com Jesus,\nProvareis na vossa vida\nO poder que vem da cruz.',
-            estrofe5: '',
-            som: '',
-            coro: ''
+            "id": 351,
+            "tb": 444,
+            "selecionado": true,
+            "estrofe1": "Preciosas são as horas\nNa presença de Jesus,\nComunhão deliciosa\nDa minha alma com a luz!\nOs cuidados deste mundo\nNão me podem abalar,\nPois é Ele o meu abrigo\nQuando o tentador chegar.",
+            "estrofe2": "Ao sentir-me rodeado\nDe cuidados terreais,\nIrritado e abatido\nOu em dúvidas fatais,\nA Jesus eu me dirijo\nNesses tempos de aflição,\nAs palavras que Ele fala\nTrazem-me libertação.",
+            "estrofe3": "Se confesso meus temores,\nToda a minha imperfeição,\nNele escuta com paciência\nNessa triste confissão;\nCom ternura repreende\nMeu pecado e todo o mal,\nEle é sempre o meu amigo,\nO melhor e mais leal.",
+            "estrofe4": "Se quereis saber quão doce\nÉ a divina comunhão,\nPodereis mui bem prová-la\nE tereis compensação;\nProcurai estar sozinhos\nEm conversa com Jesus,\nProvareis na vossa vida\nO poder que vem da cruz.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
         },
-//         {
-//             id: 352,
-//             tb: 629,
-//             selecionado: true,
-//             estrofe1: 'O meu ser se encheu de música, alegria,
-// Com a força do Senhor eu vou subir!
-// Não há nuvens que me escondam Sua face,
-// E por Seu amor eu vou subindo aos céus!',
-//             estrofe2: 'Cada novo dia quero mais amá-lO,
-// Cada novo dia vou servi-lO mais;
-// Cada dia vou subindo mais depressa,
-// Almejando o Lar eterno alcançar.',
-//             estrofe3: 'Como é bom trazer os outros ao caminho,
-// Tantos quantos desejarem podem vir;
-// Pelo amor de Cristo, dado no Calvário,
-// Os pecados ninguém deve mais levar!',
-//             estrofe4: '',
-//             estrofe5: '',
-//             som: '',
-//             coro: '*Vou subindo a escada para a glória,\nTendo à frente a coroa da vitória.\nVou subindo pela luz, vou subindo sem parar,\nVou louvar o meu Senhor quando chegar!\nVou subindo a escada para a glória,\nTendo à frente a coroa da vitória.\nVou subindo pela luz, vou subindo sem parar,\nVou louvar o meu Senhor Jesus!'
-//         },
-//         {
-//             id: 353,
-//             tb: 612,
-//             selecionado: true,
-//             estrofe1: 'Em paz com Deus, que inefável
-// Viver assim, em comunhão,
-// Liberto de condenação,
-// É meu o dom inestimável.',
-//             estrofe2: 'Em paz com Deus, meu ser se acalma,
-// Tranqüilo tenho o coração;
-// Vivo entoando uma canção
-// A Cristo, que salvou minha alma.',
-//             estrofe3: 'Em paz com Deus, por mar bravio
-// Seguro irá o meu batel,
-// Pois sei que Ele é fiel,
-// Na Sua direção confio.
-// ',
-//             estrofe4: '',
-//             estrofe5: '',
-//             som: '',
-//             coro: 'Em Cristo achei descanso e paz,**\nA graça celestial me traz\nA paz com Deus, a paz com Deus.'
-//         },
-//         {
-//             id: 354,
-//             tb: 391,
-//             selecionado: true,
-//             estrofe1: 'Paz com Deus!, busquei ganhá-la
-// Com o mais real fervor,
-// Sem, contudo, obter descanso
-// Nem livrar-me do temor.',
-//             estrofe2: 'Cheio de temor estava
-// Sem a causa descobrir,
-// Ora em trevas, ora em luta,
-// Ignorando o meu porvir.',
-//             estrofe3: 'E por fim, em desespero,
-// Disse: ―Sem vigor estou!‖,
-// E dos céus ouvi resposta:
-// ―Tudo Cristo consumou!',
-//             estrofe4: 'Paz bendita nunca muda,
-// É constante seu valor,
-// Sim, por Deus é garantida
-// A quem busca o Salvador.',
-//             estrofe5: '',
-//             som: '',
-//             coro: 'Oh! que paz Jesus me dá,**
-//         \*\*Paz que outrora não gozei;\*\*
+        {
+            "id": 352,
+            "tb": 629,
+            "selecionado": true,
+            "estrofe1": "O meu ser se encheu de música, alegria,\nCom a força do Senhor eu vou subir!\nNão há nuvens que me escondam Sua face,\nE por Seu amor eu vou subindo aos céus!",
+            "estrofe2": "Cada novo dia quero mais amá-lO,\nCada novo dia vou servi-lO mais;\nCada dia vou subindo mais depressa,\nAlmejando o Lar eterno alcançar.",
+            "estrofe3": "Como é bom trazer os outros ao caminho,\nTantos quantos desejarem podem vir;\nPelo amor de Cristo, dado no Calvário,\nOs pecados ninguém deve mais levar!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "*Vou subindo a escada para a glória,\nTendo à frente a coroa da vitória.\nVou subindo pela luz, vou subindo sem parar,\nVou louvar o meu Senhor quando chegar!\nVou subindo a escada para a glória,\nTendo à frente a coroa da vitória.\nVou subindo pela luz, vou subindo sem parar,\nVou louvar o meu Senhor Jesus!"
+        },
+        {
+            "id": 353,
+            "tb": 612,
+            "selecionado": true,
+            "estrofe1": "Em paz com Deus, que inefável\nViver assim, em comunhão,\nLiberto de condenação,\nÉ meu o dom inestimável.",
+            "estrofe2": "Em paz com Deus, meu ser se acalma,\nTranqüilo tenho o coração;\nVivo entoando uma canção\nA Cristo, que salvou minha alma.",
+            "estrofe3": "Em paz com Deus, por mar bravio\nSeguro irá o meu batel,\nPois sei que Ele é fiel,\nNa Sua direção confio.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Em Cristo achei descanso e paz,**\nA graça celestial me traz\nA paz com Deus, a paz com Deus."
+        },
+        {
+            "id": 354,
+            "tb": 391,
+            "selecionado": true,
+            "estrofe1": "Paz com Deus!, busquei ganhá-la\nCom o mais real fervor,\nSem, contudo, obter descanso\nNem livrar-me do temor.",
+            "estrofe2": "Cheio de temor estava\nSem a causa descobrir,\nOra em trevas, ora em luta,\nIgnorando o meu porvir.",
+            "estrofe3": "E por fim, em desespero,\nDisse: ―Sem vigor estou!‖,\nE dos céus ouvi resposta:\n―Tudo Cristo consumou!",
+            "estrofe4": "Paz bendita nunca muda,\nÉ constante seu valor,\nSim, por Deus é garantida\nA quem busca o Salvador.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! que paz Jesus me dá,\n\t\t\t\tPaz que outrora não gozei;\n\n\t\t\t\tTudo novo se tornou\n\n\t\t\t\tDesde que essa paz achei."
+        },
+        {
+            "id": 355,
+            "tb": 272,
+            "selecionado": true,
+            "estrofe1": "Quero estar ao pé da cruz,\nDe onde rica fonte\nCorre franca, salutar,\nDe Sião no monte.",
+            "estrofe2": "A tremer ao pé da cruz,\nGraça eterna achou-me;\nMatutina Estrela, ali,\nRaios Seus mandou-me.",
+            "estrofe3": "Confiante, junto à cruz,\nSem temor vigio,\nPois à pátria santa irei,\nSalvo, além do rio.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sim, na cruz, sim, na cruz,**\n\t\t\t\t\*\*Sempre me glorio,\*\* \n\n\t\t\t\t\*\*Para, enfim, ir descansar\*\* \n\n\t\t\t\t\*\*Salvo, além do rio.\*\*"
+        },
+        {
+            "id": 356,
+            "tb": 668,
+            "selecionado": true,
+            "estrofe1": "Nunca penses que Deus Se olvidou de ti,\nQue te perdoou só para ser gentil.\nTenhas feito bem ou mal, receberás amor,\nPois Deus não Se escondeu do teu olhar.",
+            "estrofe2": "Nunca penses que estás sozinho aqui,\nQue não mais conseguirás viver feliz.\nTua vida tomará, também transformará,\nPois Deus não Se encondeu do teu olhar.",
+            "estrofe3": "Nunca penses que não podes mais cumprir\nA vontade do teu amoroso Pai.\nAo teu lado sempre está e quer-te ajudar\nCom Sua rica graça e amor sem par.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Seu amor é sempre igual, conhece o coração,\nNão penses que Ele quer-te abandonar;\nAo teu lado sempre está e quer-te ajudar\nCom Sua rica graça e amor sem par."
+        },
+        {
+            "id": 357,
+            "tb": 220,
+            "selecionado": true,
+            "estrofe1": "Tudo o que eu tenho quero entregar,\nToma a minha vida, o meu caminhar;\nMeus dias, horas, meu louvor,\nA Ti pertencem, meu Senhor!",
+            "estrofe2": "Tudo o que eu tenho, hei de confessar,\nVem do Teu amor e graça singular;\nEm gratidão por Teu favor,\nDevolvo tudo a Ti, Senhor!",
+            "estrofe3": "Tudo o que eu tenho trago com prazer,\nVem, ó fogo santo, brilha em meu viver,\nEnchendo-me de luz e amor,\nE cumpre o Teu querer, Senhor!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Tudo o que eu tenho,\nTudo o que eu sou,\nMeus talentos, meu amor,\nTudo a Ti eu dou!\nTudo o que eu tenho,\nTudo o que eu sou,\nTudo deixo em Teu altar,\nTudo a Ti eu dou!"
+        },
+        {
+            "id": 358,
+            "tb": 246,
+            "selecionado": true,
+            "estrofe1": "Jesus, Pastor amado,\nReunidos hoje aqui,\nConcede que sejamos\nUm corpo só em Ti.\nContendas e malícias\nQue longe de nós vão,\nNenhum desgosto impeça\nDa Igreja a santa união.",
+            "estrofe2": "Família unida somos,\nFamília de Jesus,\nIluminados todos\nDa mesma santa luz.\nA mesma fé nos prende\nNum só divino amor,\nE com o mesmo gozo\nServimos ao Senhor.",
+            "estrofe3": "Na mesma senda estreita,\nÉ Deus quem nos conduz;\nNão temos esperança\nSenão num só: Jesus,\nQue pela Sua morte\nA todos vida traz;\nDo Seu precioso sangue\nNos vem a mesma paz.",
+            "estrofe4": "Rebanho resgatado\nPor um só Salvador,\nDevemos ser unidos\nPor mais ardente amor,\nHumildes perdoando\nOs erros do irmão\nE todos ajudando\nCom terna compaixão.",
+            "estrofe5": "Se Tua Igreja toda\nAndar em santa união,\nEntão será bendito\nO nome de cristão.\nAquilo que pediste\nEm nós se cumprirá,\nE assim o mundo inteiro\nA Ti conhecerá.",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 359,
+            "tb": 165,
+            "selecionado": true,
+            "estrofe1": "Bendita e santa união\nQue, no fraterno amor,\nA todos sempre, em comunhão,\nNos prende no Senhor.",
+            "estrofe2": "Aqui tudo é comum:\nTristezas e prazer;\nEm Cristo somos todos um,\nÉ esse o Seu querer.",
+            "estrofe3": "Ao mesmo trono, além,\nVão nossas petições;\nQue desça o amor e a paz também\nAos nossos corações.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 360,
+            "tb": 170,
+            "selecionado": true,
+            "estrofe1": "Que vista amável é\nO intenso e puro amor\nDe irmãos, unidos pela fé,\nLouvando ao Senhor!",
+            "estrofe2": "O mundo observará\nTão santa e doce paz\nE, qual perfume, sentirá\nO gozo que ela traz.",
+            "estrofe3": "Envia-nos, Jesus,\nDo monte de Sião,\nDivina graça que produz\nPerfeita comunhão.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 361,
+            "tb": 331,
+            "selecionado": true,
+            "estrofe1": "Qual o adorno desta vida?\nÉ o amor. (bis)\nAlegria é concedida\nPelo amor. (bis)\nÉ benigno, é paciente,\nNão se torna maldizente (bis)\nEsse amor. (bis)",
+            "estrofe2": "Com suspeitas não se alcança\nVero amor; (bis)\nOnde houver desconfiança,\nAi do amor! (bis)\nDemonstremos lealdade\nUma vez que a falsidade (bis)\nMata o amor. (bis)",
+            "estrofe3": "O cristão não é mesquinho\nDesse amor; (bis)\nPois, então, ao teu vizinho\nMostra amor. (bis)\nO supremo Deus nos ama,\nCristo para o céu nos chama, (bis)\nQuanto amor! (bis)",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 362,
+            "tb": 202,
+            "selecionado": true,
+            "estrofe1": "Se da vida as vagas\nProcelosas são,\nSe com desalento\nJulgas tudo vão,\nLembra as muitas bênçãos,\nDize-as duma vez\nE verás surpreso\nQuanto Deus já fez.",
+            "estrofe2": "Tens acaso mágoas?\nTriste é teu lidar?\nÉ a cruz pesada\nQue tens de levar?\nConta as muitas bênçãos,\nLogo exultarás\nE, fortalecido,\nTudo vencerás!",
+            "estrofe3": "Quando vires outros\nCheios de ouro e bens,\nLembra que tesouros\nPrometidos tens.\nNunca os bens da terra\nPoderão comprar\nA mansão celeste\nQue vais habitar.",
+            "estrofe4": "Seja o teu combate\nLongo ou breve aqui,\nNão te desanimes,\nDeus será por ti.\nSeu divino auxílio,\nCorrigindo o mal,\nHá de assegurar-te\nGalardão final.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Conta as bênçãos, dize quantas são,\nRecebidas da divina mão\nVem contá-las, todas duma vez,\nE verás surpreso\nQuanto Deus já fez."
+        },
+        {
+            "id": 363,
+            "tb": 447,
+            "selecionado": true,
+            "estrofe1": "Graças dou por esta vida,\nPelo bem que me legou.\nGraças pelo meu futuro\nE por tudo o que passou.\nPelas bênçãos derramadas,\nPelo amor, pela aflição,\nPelas graças reveladas,\nPelo gozo do perdão.",
+            "estrofe2": "Graças pelo azul celeste\nE por nuvens que há, também,\nPelas rosas do caminho\nE os espinhos que elas têm.\nPela escuridão da noite,\nPela estrela que brilhou,\nPela prece respondida\nE a esperança que falhou.",
+            "estrofe3": "Pela cruz e o sofrimento\nE feliz ressurreição,\nPelo amor que é sem medida,\nPela paz no coração.\nPela lágrima vertida,\nTeu consolo que é sem par,\nPelo dom da eterna vida,\nSempre graças hei de dar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 364,
+            "tb": 312,
+            "selecionado": true,
+            "estrofe1": "Por belezas naturais,\nPelo azul do claro céu,1nPor encantos imortais,\nÓ Senhor, ao trono Teu \nSe erguerá, e com fervor,        ) bis\nNossa voz em Teu louvor.         )",
+            "estrofe2": "Por amigos e irmãos,\nPela luz do puro amor,\nPor poderem nossas mãos\nTrabalhar em Teu favor,\nSe erguerá, também, Senhor,      ) bis\nNossa voz em Teu louvor.         )",
+            "estrofe3": "Por teu grande, santo Dom,\nQue por nós morreu na cruz,\nPelo guia, Mestre bom,\nQue os fiéis ao céu conduz,\nSe erguerá, também, Senhor,      ) bis\nNossa voz em Teu louvor.         )",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 365,
+            "tb": 264,
+            "selecionado": true,
+            "estrofe1": "\nNão deixo a minha Bíblia, pois é de Deus penhor,\nDe todos, o tesouro divino e instrutor.\nÉ lâmpada divina, nas trevas a luzir,\nA voz do amado Cristo que a Si me quer unir.",
+            "estrofe2": "Não deixo a minha Bíblia, pois ela é quem me diz\nQue Cristo, o Filho amado, me quer fazer feliz.\nE dá-me, aqui, certeza de um dia ao céu chegar,\nPois Ele, com Seu sangue, me vem purificar.",
+            "estrofe3": "―Não deixo a minha Bíblia!‖, assim declararei,\nQue isto seja ouvido: ―Eu amo a Sua lei!‖\nE saiba o mundo inteiro que a cristandade tem\nA fé inabalável que desse livro vem.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 366,
+            "tb": 175,
+            "selecionado": true,
+            "estrofe1": "Minha Bíblia, livro santo, é luz incomparável\nQue do mal as trevas sempre vence, com valor,\nPois, brilhando em meu caminho, torna-o aceitável\nAo meu Deus eterno, meu Deus de amor.",
+            "estrofe2": "Quantos tristes, sem alento, jazem combalidos,\nPois a treva do pecado é noite vil, sem luz!\nPor que não levar a Bíblia a esses oprimidos\nSe, por eles, Cristo morreu na cruz?",
+            "estrofe3": "Dando à Pátria brasileira esse livro eterno,\nEm progresso, mui feliz, veremos o Brasil,\nPois o livro da verdade, grande bem superno,\nHá de conceder-lhe vitórias mil.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Alegre, reverente, minha Bíblia hei de ler,\nSeguindo seus ensinos, que bênção posso ser!\nÓ livro amado, glorioso, és caminho eficaz\nQue me concede perdão e paz."
+        },
+        {
+            "id": 367,
+            "tb": 414,
+            "selecionado": true,
+            "estrofe1": "Fonte da celeste vida,\nVem, revela o Teu poder!\nVivifica os sem-alento,\nFaze os mortos reviver.\nVida eterna, vida eterna\nVem a todos conceder. (bis)",
+            "estrofe2": "Vem abrir Teu santo livro,\nResplandece, ó Luz dos céus!\nAfugenta a todo o engano\nE dos erros livra os Teus!\nIlumina, ilumina\nNossas almas, grande Deus! (bis)",
+            "estrofe3": "Pelo estudo da Palavra\nAprendamos de Jesus.\nOh! concede os belos frutos\nQue o ensino Teu produz!\nE gozemos, e gozemos\nAlegria, vida e luz.   (bis)",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 368,
+            "tb": 713,
+            "selecionado": true,
+            "estrofe1": "Enquanto, ó Salvador, Teu livro ler,\nMeus olhos vem abrir, pois quero ver,\nDa mera letra, além, o que, Senhor,\nNos revelaste em Teu imenso amor.",
+            "estrofe2": "À beira-mar, Jesus, partiste o pão,\nSatisfazendo ali a multidão;\nDa vida o pão és Tu, vem, pois, assim,\nNutrir-me até entrar no céu, enfim.",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 369,
+            "tb": 480,
+            "selecionado": true,
+            "estrofe1": "Abrimos Teu livro, Senhor,\nPedindo divina instrução;\nCom fé, esperança e amor,\nAqui aprendamos         (bis)\nA Tua lição.",
+            "estrofe2": "Espírito Santo, eternal,\nDifunde entre nós Tua luz,\nOh! dá-nos o ensino vital,\nA graça excelsa (bis)\nDe nosso Jesus.",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 370,
+            "tb": 205,
+            "selecionado": true,
+            "estrofe1": "Eis o estandarte tremulando à luz,\nTendo por divisa: Glória pela cruz!\nPara a santa guerra vos conduzirá:\nSob o Rei divino, quem se alistará?",
+            "estrofe2": "Guerra contra as trevas! guerra contra o mal!\nContra o vil pecado, guerra divinal!\nGuerra contra o mundo! nela quem entrar\nHá de, sem reserva, tudo abandonar.",
+            "estrofe3": "Tudo soa duro? Receais a cruz?\nVede o exemplo que vos deu Jesus!\nÓ irmãos, lembrai-vos: Quem aqui vencer,\nCristo a coroa vai-lhe conceder.",
+            "estrofe4": "Oh! dizei a Cristo: Venho-me render;\nSó por Ti vencido poderei vencer;\nAo morrer conTigo, sempre viverei;\nTua cruz eu tomo, meu bondoso Rei!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Eis nosso estandarte tremulando à luz!\nLeva por divisa: Glória pela cruz!"
+        },
+        {
+            "id": 371,
+            "tb": 570,
+            "selecionado": true,
+            "estrofe1": "Erguei-vos, cristãos! O clarim já soou!\nÀ guerra vos chama Quem vos libertou.\nOs lombos cingindo, nas armas pegai,\nÀ sombra da cruz, corajosos lutai!",
+            "estrofe2": "Se o diabo rugir, que não haja temor!\nSem medo, segui ao bendito Senhor!\nNa santa peleja, ousados entrai!\nÀ sombra da cruz, corajosos lutai!",
+            "estrofe3": "As hostes do mal ide já encarar;\nDas mãos do inimigo os cativos livrar!\nValentes, a vossa firmeza mostrai!\nÀ sombra da cruz, corajosos lutai!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sede heróis (3x)\nE por Cristo lutai!"
+        },
+        {
+            "id": 372,
+            "tb": 843,
+            "selecionado": true,
+            "estrofe1": "Ide ao combate, salvos por Jesus,\nCheios do Espírito, marchai na luz!\nCom a Verdade, sempre trabalhai\nE então triunfai, triunfai!",
+            "estrofe2": "Nesta batalha a luta é real,\nE a recompensa é vida eternal,\nPois a coroa Cristo há de dar\nPara quem triunfar, triunfar!",
+            "estrofe3": "Perseverantes, nada temereis,\nA vitória certa por Jesus tereis!\nO inimigo sempre afugentai\nE assim triunfai, triunfai!",
+            "estrofe4": "Logo o conflito há de terminar\nE o dia da divina paz raiar!\nO inimigo subjugado, sim,\nLá no céu gozarei paz sem fim!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Seja nosso lema: Triunfar, triunfar!\nSeja nosso lema: Triunfar!\nCom coragem santa e com oração:\nTriunfar, triunfar, triunfar!"
+        },
+        {
+            "id": 373,
+            "tb": 732,
+            "selecionado": true,
+            "estrofe1": "Levantai-vos, ó guerreiros,\nIde ao campo de batalha,\nLuta intensa lá se trava\nContra o tentador!\nJá é hora de acordardes,\nRejeitando a vida fácil;\nVede as multidões em trevas\nSem o Salvador!",
+            "estrofe2": "Dai a Cristo, alegremente,\nVosso coração inteiro;\nVossa vida está segura\nSobre o altar.\nQuer usar-vos sabiamente\nPara a salvação do mundo,\nIde, corajosamente,\nTrevas enfrentar!",
+            "estrofe3": "Avançai, guerreiros santos,\nNo encalço do inimigo;\nA vitória em Cristo é certa,\nForte é Sua mão!\nInspirai-vos na certeza\nQue almas ganhas nessa luta,\nLibertadas do maligno,\nPaz alcançarão!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Proclamai ao mundo\nO evangelho vivo!\nAo chamado obedecei,\nRodeando a cruz, cantando em tom altivo!\nRevesti-vos da verdade,\nTende fé na eternidade;\nA armadura vos prepara\nCristo, o Vencedor!"
+        },
+        {
+            "id": 374,
+            "tb": 661,
+            "selecionado": true,
+            "estrofe1": "Nós marchamos para aquele bom país\nOnde o salvo, sim, é Cristo quem o diz,\nPara sempre com seu Salvador, feliz,\nVai, por certo, descansar.",
+            "estrofe2": "Trabalhemos, pois, com zelo e com vigor,\nConstrangidos pelo Seu imenso amor,\nTrabalhemos pelo nosso Benfeitor\nAté Ele nos chamar!",
+            "estrofe3": "Revestidos da couraça de Jesus,\nComo filhos Seus e fiéis à Sua luz,\nGloriando-nos em Cristo e Sua cruz,\nVamos, vamos trabalhar!",
+            "estrofe4": "Prossigamos os perdidos a buscar\nE aos desesperados vamos declarar\nQue o Cordeiro pode a todos resgatar,\nEia, vamos trabalhar!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Acordai! acordai! despertai! despertai!\nExultai! exultai! o Senhor não tardará!\nEis conosco o nosso insigne Capitão,\nQue nos dá segura e eterna salvação!\nEis da santa fé o invicto pavilhão!\nVamos, vamos trabalhar!"
+        },
 
-//         \*\*Tudo novo se tornou\*\*
-
-//         \*\*Desde que essa paz achei.\*\*'
-//         },
-//         {
-//             id: 355,
-//             tb: 272,
-//             selecionado: true,
-//             estrofe1: 'Quero estar ao pé da cruz,
-// De onde rica fonte
-// Corre franca, salutar,
-// De Sião no monte.',
-//             estrofe2: 'A tremer ao pé da cruz,
-// Graça eterna achou-me;
-// Matutina Estrela, ali,
-// Raios Seus mandou-me.',
-//             estrofe3: 'Confiante, junto à cruz,
-// Sem temor vigio,
-// Pois à pátria santa irei,
-// Salvo, além do rio.',
-//             estrofe4: '',
-//             estrofe5: '',
-//             som: '',
-//             coro: 'Sim, na cruz, sim, na cruz,**
-//         \*\*Sempre me glorio,\*\*
-
-//         \*\*Para, enfim, ir descansar\*\*
-
-//         \*\*Salvo, além do rio.\*\*'
-//         },
         {
-            id: 356,
-            tb: 668,
-            selecionado: true,
-            estrofe1: 'Nunca penses que Deus Se olvidou de ti,\nQue te perdoou só para ser gentil.\nTenhas feito bem ou mal, receberás amor,\nPois Deus não Se escondeu do teu olhar.',
-            estrofe4: '',
-            estrofe2: 'Nunca penses que estás sozinho aqui,\nQue não mais conseguirás viver feliz.\nTua vida tomará, também transformará,\nPois Deus não Se encondeu do teu olhar.',
-            estrofe3: 'Nunca penses que não podes mais cumprir\nA vontade do teu amoroso Pai.\nAo teu lado sempre está e quer-te ajudar\nCom Sua rica graça e amor sem par.',
-            estrofe5: '',
-            som: '',
-            coro: 'Seu amor é sempre igual, conhece o coração,\nNão penses que Ele quer-te abandonar;\nAo teu lado sempre está e quer-te ajudar\nCom Sua rica graça e amor sem par.'
+            "id": 375,
+            "tb": 644,
+            "selecionado": true,
+            "estrofe1": "Ao fundo vale com meu Salvador irei,\nOnde, bem segura, Ele traz Sua grei.\nPor qualquer lugar eu seguirei meu Salvador,\nProtegido pelo Seu eterno amor.",
+            "estrofe2": "Se meu Senhor aos altos montes me chamar,\nEle me ensina a vigiar e orar.\nHai de sempre ao lado de Jesus permanecer\nE, por Sua graça, todo o mal vencer.",
+            "estrofe3": "Se para a guerra meu Senhor me conduzir,\nQuero, sem receio, jubiloso seguir.\nQuem por Cristo agora com valor aqui lutar,\nVai, por certo, em glória, com Jesus reinar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sempre, sempre seguirei a Cristo!\nAonde quer que Ele for, eu O seguirei!\nSempre, sempre seguirei a Cristo!\nAonde quer que Ele for, segui-lO-ei!"
         },
         {
-            id: 357,
-            tb: 220,
-            selecionado: true,
-            estrofe1: 'Tudo o que eu tenho quero entregar,\nToma a minha vida, o meu caminhar;\nMeus dias, horas, meu louvor,\nA Ti pertencem, meu Senhor!',
-            estrofe2: 'Tudo o que eu tenho, hei de confessar,\nVem do Teu amor e graça singular;\nEm gratidão por Teu favor,\nDevolvo tudo a Ti, Senhor!',
-            estrofe3: 'Tudo o que eu tenho trago com prazer,\nVem, ó fogo santo, brilha em meu viver,\nEnchendo-me de luz e amor,\nE cumpre o Teu querer, Senhor!',
-            estrofe4: '',
-            estrofe5: '',
-            som: '',
-            coro: 'Tudo o que eu tenho,\nTudo o que eu sou,\nMeus talentos, meu amor,\nTudo a Ti eu dou!\nTudo o que eu tenho,\nTudo o que eu sou,\nTudo deixo em Teu altar,\nTudo a Ti eu dou!'
+            "id": 376,
+            "tb": 640,
+            "selecionado": true,
+            "estrofe1": "Castelo forte é nosso Deus,\nEspada e bom escudo;\nCom Seu poder defende os Seus\nEm todo o transe agudo.\nCom fúria pertinaz\nPersegue Satanás,\nCom ânimo cruel;\nAstuto e mui rebel,\nIgual não há na terra.",
+            "estrofe2": "A força do homem nada faz,\nSozinho está perdido;\nMas nosso Deus socorro traz\nEm Seu Filho escolhido.\nSabeis quem é? Jesus,\nO que venceu na cruz,\nSenhor dos altos céus;\nE, sendo o próprio Deus,\nTriunfa na batalha.",
+            "estrofe3": "Se nos quisessem devorar\nDemônios não contados,\nNão poderiam dominar\nNem ver-nos assustados.\nO príncipe do mal,\nCom seu plano infernal,\nJá condenado está;\nVencido cairá\nPor uma só palavra.",
+            "estrofe4": "De Deus o verbo ficará,\nSabemos com certeza,\nE nada nos perturbará\nCom Cristo por defesa.\nSe temos de perder\nFamília, bens, prazer,\nSe tudo se acabar\nE a morte nos chegar,\nCom Ele reinaremos!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
         },
         {
-            id: 358,
-            tb: 246,
-            selecionado: true,
-            estrofe1: 'Jesus, Pastor amado,\nReunidos hoje aqui,\nConcede que sejamos\nUm corpo só em Ti.\nContendas e malícias\nQue longe de nós vão,\nNenhum desgosto impeça\nDa Igreja a santa união.',
-            estrofe2: 'Família unida somos,\nFamília de Jesus,\nIluminados todos\nDa mesma santa luz.\nA mesma fé nos prende\nNum só divino amor,\nE com o mesmo gozo\nServimos ao Senhor.',
-            estrofe3: 'Na mesma senda estreita,\nÉ Deus quem nos conduz;\nNão temos esperança\nSenão num só: Jesus,\nQue pela Sua morte\nA todos vida traz;\nDo Seu precioso sangue\nNos vem a mesma paz.',
-            estrofe4: 'Rebanho resgatado\nPor um só Salvador,\nDevemos ser unidos\nPor mais ardente amor,\nHumildes perdoando\nOs erros do irmão\nE todos ajudando\nCom terna compaixão.',
-            estrofe5: 'Se Tua Igreja toda\nAndar em santa união,\nEntão será bendito\nO nome de cristão.\nAquilo que pediste\nEm nós se cumprirá,\nE assim o mundo inteiro\nA Ti conhecerá.',
-            som: '',
-            coro: ''
+            "id": 377,
+            "tb": 192,
+            "selecionado": true,
+            "estrofe1": "Ó mocidade, Cristo vos convida\nA construir com Ele um novo mundo;\nNa Sua luta as trevas se dissipam,\nRefulge a glória, Cristo é vitória!",
+            "estrofe2": "Cristo padece vendo o mundo enfermo,\nCheio de chagas pelo seu pecado,\nA caminhar, vencido, para o inferno,\nSem esperança, desencorajado.",
+            "estrofe3": "Está na hora, o clarim soou,\nVamos à luta, o que importa a morte?\nUm novo mundo espera a cristandade,\nCuja bandeira é fraternidade!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Ó jovens, marchemos\nConfiados no poder do Salvador!\nÓ moços, avante!\nA glória só pertence ao vencedor!"
         },
         {
-            id: 359,
-            tb: 165,
-            selecionado: true,
-            estrofe1: 'Bendita e santa união\nQue, no fraterno amor,\nA todos sempre, em comunhão,\nNos prende no Senhor.',
-            estrofe2: 'Aqui tudo é comum:\nTristezas e prazer;\nEm Cristo somos todos um,\nÉ esse o Seu querer.',
-            estrofe3: 'Ao mesmo trono, além,\nVão nossas petições;\nQue desça o amor e a paz também\nAos nossos corações.',
-            estrofe4: '',
-            estrofe5: '',
-            som: '',
-            coro: ''
+            "id": 378,
+            "tb": 24,
+            "selecionado": true,
+            "estrofe1": "Um pendão real vos deu Jesus, o Rei,\nA vós, soldados Seus;\nCorajosos, pois, em tudo o defendei,\nMarchando para os céus.",
+            "estrofe2": "Eis formados já malignos batalhões\nDo grande usurpador!\nRevelai-vos hoje, bravos campeões,\nNas hostes do Senhor.",
+            "estrofe3": "Quem receio sente no seu coração\nE fraco se mostrar\nNão terá jamais o honroso galardão\nQue Cristo lhe quer dar.",
+            "estrofe4": "Oh! sejamos todos a Jesus fiéis\nE a Seu real pendão;\nOs que lutam firmes ganham os lauréis,\nCom Ele reinarão.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Com valor! Sem temor!\nPor Cristo, prontos a sofrer!\nBem alto erguei o Seu pendão,\nFirmes sempre até morrer!"
+        }, {
+            "id": 379,
+            "tb": 62,
+            "selecionado": true,
+            "estrofe1": "O bom soldado de Jesus\nAtaca o inferno e todo o mal;\nZeloso, firme e fiel,\nDefende altivo o ideal.\nLá, onde o inimigo está,\nPor Cristo sempre lutará:\nEis o seu campo de ação\nOnde proclama a salvação.",
+            "estrofe2": "O bom soldado de Jesus\nEnfrenta a triste solidão;\nLutando sempre vencerá\nCom testemunho de cristão!\nAs cargas leva com amor,\nNão volta atrás, não tem temor\nE cumprirá o seu dever,\nSujeito a Deus e ao Seu querer.",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Vamos encher o mundo de alegria,\nVamos sorrir e não murmurar,\nVamos cantar de Cristo, noite e dia,\nE o mundo com Jesus transformar!"
         },
         {
-            id: 360,
-            tb: 170,
-            selecionado: true,
-            estrofe1: 'Que vista amável é\nO intenso e puro amor\nDe irmãos, unidos pela fé,\nLouvando ao Senhor!',
-            estrofe2: 'O mundo observará\nTão santa e doce paz\nE, qual perfume, sentirá\nO gozo que ela traz.',
-            estrofe3: 'Envia-nos, Jesus,\nDo monte de Sião,\nDivina graça que produz\nPerfeita comunhão.',
-            estrofe4: '',
-            estrofe5: '',
-            som: '',
-            coro: ''
+            "id": 380,
+            "tb": 102,
+            "selecionado": true,
+            "estrofe1": "Já contemplamos toda a terra\nQue o Senhor dará!\nDeixando esta fase aqui,\nSigamos para lá!",
+            "estrofe2": "Herança de bravura temos,\nLutas, dor até.\nDeus quer de todos união,\nRenovação na fé.",
+            "estrofe3": "Sejamos fortes, corajosos\nPara avançar;\nEm obediência vamos nós\nA terra conquistar!",
+            "estrofe4": "Proezas nEle nós faremos,\nMuros cairão!\nTomemos posse do lugar\nDe todo o coração.",
+            "estrofe5": "É nossa a terra, aleluia!\nVamos celebrar!\nComprometidos com Jesus\nIremos continuar!",
+            "som": "",
+            "coro": "Possuir essa terra pra Jesus:\nTremenda é a visão!\nConosco vem à guerra, já,\nAbraçando a real missão!"
         },
         {
-            id: 361,
-            tb: 331,
-            selecionado: true,
-            estrofe1: 'Qual o adorno desta vida?\nÉ o amor. (bis)\nAlegria é concedida\nPelo amor. (bis)\nÉ benigno, é paciente,\nNão se torna maldizente (bis)\nEsse amor. (bis)',
-            estrofe2: 'Com suspeitas não se alcança\nVero amor; (bis)\nOnde houver desconfiança,\nAi do amor! (bis)\nDemonstremos lealdade\nUma vez que a falsidade (bis)\nMata o amor. (bis)',
-            estrofe3: 'O cristão não é mesquinho\nDesse amor; (bis)\nPois, então, ao teu vizinho\nMostra amor. (bis)\nO supremo Deus nos ama,\nCristo para o céu nos chama, (bis)\nQuanto amor! (bis)',
-            estrofe4: '',
-            estrofe5: '',
-            som: '',
-            coro: ''
+            "id": 381,
+            "tb": 171,
+            "selecionado": true,
+            "estrofe1": "Remidos do Senhor, a Cristo exaltai\nE vosso gozo e santo amor \t\t\t (bis)\nAlegres publicai. \t\t\t(bis)",
+            "estrofe2": "Quem nunca O conheceu que deixe de cantar,\nMas nós, por quem Jesus morreu, \t (bis)\nQueremos graças dar. \t\t\t(bis)",
+            "estrofe3": "No monte de Sião, prepara-nos Jesus\nPrazeres que supernos são \t\t\t (bis)\nE puros como a luz. \t\t\t\t\t (bis)",
+            "estrofe4": "Bem alto desfraldai Seu santo pavilhão\nE jubilosos proclamai \t\t\t\t\t (bis)\nA Sua salvação. \t\t\t\t\t\t (bis)",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Marchemos, marchemos\nPara a cidade celeste.\nMarchemos, avante, cantando,\nÀ bela cidade dos céus."
         },
         {
-            id: 362,
-            tb: 202,
-            selecionado: true,
-            estrofe1: 'Se da vida as vagas\nProcelosas são,\nSe com desalento\nJulgas tudo vão,\nLembra as muitas bênçãos,\nDize-as duma vez\nE verás surpreso\nQuanto Deus já fez.',
-            estrofe2: 'Tens acaso mágoas?\nTriste é teu lidar?\nÉ a cruz pesada\nQue tens de levar?\nConta as muitas bênçãos,\nLogo exultarás\nE, fortalecido,\nTudo vencerás!',
-            estrofe3: 'Quando vires outros\nCheios de ouro e bens,\nLembra que tesouros\nPrometidos tens.\nNunca os bens da terra\nPoderão comprar\nA mansão celeste\nQue vais habitar.',
-            estrofe4: 'Seja o teu combate\nLongo ou breve aqui,\nNão te desanimes,\nDeus será por ti.\nSeu divino auxílio,\nCorrigindo o mal,\nHá de assegurar-te\nGalardão final.',
-            estrofe5: '',
-            som: '',
-            coro: 'Conta as bênçãos, dize quantas são,\nRecebidas da divina mão\nVem contá-las, todas duma vez,\nE verás surpreso\nQuanto Deus já fez.'
+            "id": 382,
+            "tb": 282,
+            "selecionado": true,
+            "estrofe1": "Salvos, não há descansar!\nNo perigo, alerta estai!\nEsforçai-vos sem cessar,\nVigiai e sempre orai! \t) bis",
+            "estrofe2": "Grande turba desleal\nContra vós altiva sai,\nProcurando o vosso mal,\nVigiai e sempre orai! ) bis",
+            "estrofe3": "Nunca em vós, pois, confieis!\nArmas divinais tomai,\nDesse modo vencereis,\nVigiai e sempre orai! ) bis",
+            "estrofe4": "Muitos reinam já, em paz!\nSeu exemplo contemplai.\nTudo cede à fé audaz,\nVigiai e sempre orai! \t) bis",
+            "estrofe5": "Fala sempre o Salvador,\nSeus conselhos escutai!\nTerno e sábio é Seu amor,\nVigiai e sempre orai! \t) bis",
+            "som": "",
+            "coro": ""
         },
         {
-            id: 363,
-            tb: 447,
-            selecionado: true,
-            estrofe1: 'Graças dou por esta vida,\nPelo bem que me legou.\nGraças pelo meu futuro\nE por tudo o que passou.\nPelas bênçãos derramadas,\nPelo amor, pela aflição,\nPelas graças reveladas,\nPelo gozo do perdão.',
-            estrofe2: 'Graças pelo azul celeste\nE por nuvens que há, também,\nPelas rosas do caminho\nE os espinhos que elas têm.\nPela escuridão da noite,\nPela estrela que brilhou,\nPela prece respondida\nE a esperança que falhou.',
-            estrofe3: 'Pela cruz e o sofrimento\nE feliz ressurreição,\nPelo amor que é sem medida,\nPela paz no coração.\nPela lágrima vertida,\nTeu consolo que é sem par,\nPelo dom da eterna vida,\nSempre graças hei de dar.',
-            estrofe4: '',
-            estrofe5: '',
-            som: '',
-            coro: ''
+            "id": 383,
+            "tb": 635,
+            "selecionado": true,
+            "estrofe1": "Meu irmão, procura ser\nComo Daniel:\nResoluto em combater\nO usurpador cruel!",
+            "estrofe2": "Em coragem singular,\nSegue a Cristo, o Rei,\nSempre ousado em confessar\nJesus e Sua lei!",
+            "estrofe3": "Não se turbe o coração,\nLarga a timidez!\nMuitos males cairão\nPerante a intrepidez!",
+            "estrofe4": "O soldado do Senhor\nTem, nas trevas, luz;\nMesmo o fraco é vencedor\nEm nome de Jesus!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Firme e corajoso como Daniel:\nEntre os infiéis, a Cristo sempre sê fiel!"
         },
-
+        {
+            "id": 384,
+            "tb": 264,
+            "selecionado": true,
+            "estrofe1": "Avante, avante, ó crentes,\nSoldados de Jesus!\nErguei Seu estandarte,\nLutai por Sua cruz!\nContra hostes inimigas,\nAnte essas multidões,\nO excelso Comandante\nDirige os batalhões.",
+            "estrofe2": "Avante, avante, ó crentes,\nPor Cristo pelejai!\nVesti Sua armadura,\nEm Seu poder marchai!\nNo posto sempre achados,\nFiéis permanecei,\nEm meio de perigos\nSegui o grande Rei!",
+            "estrofe3": "Avante, avante, ó crentes,\nA passo triunfal!\nHojá há combate horrendo,\nMui cedo a paz final!\nEntão, eternamente,\nBendito o vencedor,\nNo céu glorificado\nCom Cristo, o Salvador!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 385,
+            "tb": 508,
+            "selecionado": true,
+            "estrofe1": "Camaradas, ao Éden marchai,\nEntoando uma nova canção!\nMembros sois de Jesus, avançai\nCom o Exército de Salvação.",
+            "estrofe2": "Vencereis todo o mal por Jesus,\nQue aos perdidos mostrou compaixão,\nÉ o Guia, o Poder, clara Luz\nDeste Exército de Salvação.",
+            "estrofe3": "O triunfo na luta tereis,\nRecebendo o eternal galardão,\nPois soldados leais vós sereis\nNeste Exército de Salvação.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Avançai! Desfraldai\nO amarelo, o vermelho e o azul!\nAvançai! Pelejai\nNeste mundo, do norte ao sul!"
+        },
+        {
+            "id": 386,
+            "tb": 159,
+            "selecionado": true,
+            "estrofe1": "No Exército de Deus lutamos\nContra todo o mal;\nO campo de batalha\nÉ cidade ou pantanal.\nNão contra a carne a luta é,\nMas contra o pecar;\nSeguindo a Cristo, Rei dos reis,\nIremos batalhar.",
+            "estrofe2": "Em toda a língua canta\nEssa hoste do Senhor;\nEm Cristo, o Rei, se une\nToda a classe, raça e cor.\nSeu povo marcha, alegre,\nDesfilando com pendões,\nOu, solitários, lutam\nDerrotando vis paixões.",
+            "estrofe3": "Sem força humana o reino vem,\nDivino é seu poder.\nE enfim o amor, a graça\nE a justiça hão de vencer.\nNum monte revelado\nVemos, na escuridão,\nQue a cruz é a espada,\nE essa arma trouxe a salvação.",
+            "estrofe4": "Quem luta pelo reino\nUsa armas não-carnais,\nPois elas são forjadas\nPor virtudes celestiais.\nTal como o sol dissipa\nAs trevas com seu resplendor,\nGlorioso, o reino há de vir,\nVencendo pelo amor!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "É impossível resistir\nÀ Espada do Senhor!\nE enfim, na terra, há de vir\nO reino de amor!"
+        },
+        {
+            "id": 387,
+            "tb": 785,
+            "selecionado": true,
+            "estrofe1": "Cheios de alegria, pronto vamos batalhar,\nPelo evangelho o inimigo derrotar,\nCom ardor e zelo, revestidos de poder,\nMarchemos juntos pra glória.",
+            "estrofe2": "Salvos pela fé, havemos de perseverar,\nMesmo que o maligno queira sempre intimidar,\nCom valor lutemos, apesar do seu furor,\nMarchemos juntos pra glória.",
+            "estrofe3": "Com Jesus à frente, a paz iremos conquistar,\nNovos convertidos almejando recrutar,\nToda a resistência do pecado vai cair,\nMarchemos juntos pra glória.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Marchai, marchai,\nGuerreiros do Senhor!\nLutai, lutai,\nSalvando o pecador.\nA todos proclamai que Cristo é o Salvador,\nO Rei eterno da glória."
+        },
+        {
+            "id": 388,
+            "tb": 226,
+            "selecionado": true,
+            "estrofe1": "De novo a combater por Ti, ó Salvador,\nSoldados Teus e com fervor,\nLutando só por Ti!\nUnidos no dever, estamos nós aqui.",
+            "estrofe2": "Reveste-nos de amor, de fé, de intrepidez,\nRemove a nossa timidez,\nNos dá resolução,\nMais força, mais vigor e fraternal união.",
+            "estrofe3": "Em nome do Senhor, ergamos o pendão\nDo Exército de Salvação.\nLutemos pela cruz,\nOremos com fervor, soframos por Jesus!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Às armas, pois, e com valor,\nFiéis soldados do Senhor!\nSoldados firmes no Senhor!\nÀs armas, pois, e com valor!"
+        },
+        {
+            "id": 389,
+            "tb": 598,
+            "selecionado": true,
+            "estrofe1": "Eia, avante, na luz de Deus,\nPor Jesus, Salvador e Rei;\nGraça dá aos remidos Seus,\nEia, avante, andai!",
+            "estrofe2": "Eia, avante, a proclamar\nA mensagem do Salvador;\nVitoriosos a batalhar,\nEia, avante, andai!",
+            "estrofe3": "Eia, avante, com Seu amor\nMuitas almas a redimir;\nNosso Líder é vencedor,\nEia, avante, andai!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Olhai o que Jesus me deu:\nA salvação, perdão e paz;\nDescanso em Seu grande amor\nE alegre sempre estou.\nJesus, para salvar-me,\nSeu sangue derramou,\nBem contente e livre eu estou;\nEm breve Cristo há de voltar\nPara me levar,\nE vou, então, morar no Lar celeste!"
+        },
+        {
+            "id": 390,
+            "tb": 210,
+            "selecionado": true,
+            "estrofe1": "Ó fiéis soldados, salvos por Jesus,\nIde avante: à guerra Cristo vos conduz!\nContra o inimigo vai o General;\nAvançai na luta contra todo o mal.\nIde, pois, soldados, salvos por Jesus, ) bis\nContra o inimigo Cristo vos conduz. \t)",
+            "estrofe2": "Oh! cingi os lombos de verdade e luz,\nProtegei o peito pela fé na cruz.\nTende os pés calçados com divina paz,\nPonde a armadura sempre eficaz.\nProntos, ó soldados, salvos por Jesus, \t\t\t ) bis\nContra as potestades Cristo vos conduz. \t\t )",
+            "estrofe3": "Sempre avante, ó salvos, nesta vocação\nPelejai constantes, sempre em oração.\nProclamai ao mundo: ―Crê e deixa o mal,\nQuem quiser vitória siga o General!‖\nLestos, pois, soldados, salvos por Jesus; \t\t ) bis\nNesta nobre empresa Cristo vos conduz! \t\t\t )",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 390,
+            "tb": 210,
+            "selecionado": true,
+            "estrofe1": "Ó fiéis soldados, salvos por Jesus,\nIde avante: à guerra Cristo vos conduz!\nContra o inimigo vai o General;\nAvançai na luta contra todo o mal.\nIde, pois, soldados, salvos por Jesus, ) bis\nContra o inimigo Cristo vos conduz. \t)",
+            "estrofe2": "Oh! cingi os lombos de verdade e luz,\nProtegei o peito pela fé na cruz.\nTende os pés calçados com divina paz,\nPonde a armadura sempre eficaz.\nProntos, ó soldados, salvos por Jesus, \t\t\t ) bis\nContra as potestades Cristo vos conduz. \t\t )",
+            "estrofe3": "Sempre avante, ó salvos, nesta vocação\nPelejai constantes, sempre em oração.\nProclamai ao mundo: ―Crê e deixa o mal,\nQuem quiser vitória siga o General!‖\nLestos, pois, soldados, salvos por Jesus; \t\t ) bis\nNesta nobre empresa Cristo vos conduz! \t\t\t )",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 391,
+            "tb": 182,
+            "selecionado": true,
+            "estrofe1": "Oh! levantai-vos já, soldados de Jesus,\nE fortes sede em Seu poder e em Seu divino amor;\nVitória vos dará na luta pela cruz,\nPois quem confia em Seu poder é mais que vencedor.",
+            "estrofe2": "Vinde, sem mais tardar, à luta contra o mal\nE logo sobre vós tomai as armas do Senhor;\nTereis, ao trabalhar, a graça divinal,\nA graça que vos dá o Pai por Cristo, o Salvador.",
+            "estrofe3": "Sim, batalhai com fé, vigiando em oração,\nCom vosso Capitão ireis vencer a Satanás;\nEm breve raiará a eterna redenção,\nE juntos com Jesus tereis um Lar de eterna paz.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 392,
+            "tb": 651,
+            "selecionado": true,
+            "estrofe1": "Quando li de heróis da fé\nQue morreram por Jesus\nE a coroa receberam,\nProntamente decidi:\nBom soldado quero ser\nComo aqueles que venceram.",
+            "estrofe2": "Tais heróis quero imitar\nE a mesma espada usar\nPara atacar o inimigo;\nNovo nome hei de ganhar\nE qual vencedor entrar\nNo reino eterno, lá na glória.",
+            "estrofe3": "Queres nesta luta entrar\nE o inimigo derrotar\nCom o exército de Cristo?\nEle chama a guerrear,\nVem, ocupa o teu lugar\nJunto a milhares de remidos.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Vestindo a armadura à luta irei;\nFiel, decidido, por Cristo serei,\nE, onde quer que me encontrar,\nO inimigo cairá,\nPois por Jesus estou lutando."
+        },
+        {
+            "id": 393,
+            "tb": 210,
+            "selecionado": true,
+            "estrofe1": "Quem está ao lado do bom Salvador,\nPronto a dedicar-se hoje ao seu Senhor,\nTudo abandonando e a Jesus seguir,\nEncarando tudo quanto possa vir?",
+            "estrofe2": "Não ambicionando glórias ou poder,\nNos erguemos firmes para combater;\nQuem o amor de Cristo chega a ver na cruz\nHá de achar-se ao lado do Senhor Jesus.",
+            "estrofe3": "Não com ouro ou prata, Deus nos quis remir,\nMas, por nós, Seu Filho veio a lei cumprir,\nCom precioso sangue, sangue expiador,\nSomos resgatados pelo Seu amor.",
+            "estrofe4": "Nos conflitos duros hemos de vencer,\nForte inimigo não nos faz temer,\nPois o Onipotente, Cristo, o Rei dos reis,\nDá triunfo certo para os Seus fiéis!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Quem de Cristo ao lado\nSempre quer andar?\nQuem quer outras almas\nA Jesus chamar?\n―Pela Tua graça, pelo Teu amor,\nEis-nos ao Teu lado, somos Teus, Senhor!‖"
+        },
+        {
+            "id": 394,
+            "tb": 201,
+            "selecionado": true,
+            "estrofe1": "Cristo vive e vencerá\nSempre, aleluia!\nO inimigo quer tragar\nQuem por Cristo luta.\nMas, se é forte o tentador,\nMais potente é o Salvador.\nCristo vive e vencerá\nSempre, aleluia!",
+            "estrofe2": "Na batalha mais cruel,\nCristo é vitorioso,\nE com Ele o fiel\nVence corajoso.\nSob o divinal pendão,\nVem lutar com decisão.\nCristo vive e vencerá\nSempre, aleluia!",
+            "estrofe3": "Se a guerra dura for,\nNunca desanimes!\nDeus socorre ao lutador,\nFaz seus passos firmes.\nO Cordeiro divinal\nDá triunfo sobre o mal.\nCristo vive e vencerá\nSempre, aleluia!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 395,
+            "tb": 706,
+            "selecionado": true,
+            "estrofe1": "Sou feliz, vitorioso ao lado de Cristo,\nAleluia! Sou feliz no Exército de Deus.\nCantarei, ao Senhor, meu louvor de gratidão,\nCom Jesus viverei, tenho paz no coração.\nSalvo estou do mal, sei que vou morar\nJunto com Jesus, no celeste Lar;\nAgora e sempre hei de batalhar\nNas fileiras do Senhor!",
+            "estrofe2": "Sou feliz, vitorioso ao lado de Cristo,\nAleluia! Sou feliz no Exército de Deus.\nProclamai, sem cessar, novas de libertação;\nEm Jesus, Salvador, há vitória e perdão!\nImprimi bem forte no coração:\n―Sangue e fogo‖, o lema do pavilhão!\nCom harmonia e percussão,\nLouvai ao Redentor!",
+            "estrofe3": "Sou feliz, vitorioso ao lado de Cristo,\nAleluia! Sou feliz no Exército de Deus.\nEncontrei salvação, santidade e poder,\nTodo o mal terrenal com Jesus eu vou vencer.\nPelo fogo, sim, do Consolador,\nRefletindo o brilho do Seu amor,\nEu vou viver pelo meu Senhor,\nEm glória triunfal!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sou feliz, vitorioso ao lado de Cristo,\nAleluia! Sou feliz, sou soldado de Jesus."
+        },
+        {
+            "id": 396,
+            "tb": 193,
+            "selecionado": true,
+            "estrofe1": "Firmes, soldados, a lutar, sem desanimar;\nGlória eterna e o céu terá o que triunfar.\nTodo o pranto e gemido Cristo apagará.\nGozareis a recompensa ao chegardes lá!",
+            "estrofe2": "Quando a luta dura for, Deus ajudará!\nSempre lutai, pois, com fervor, força em Cristo há.\nNão temais, cumpri os votos feitos a Jesus,\nObtereis o grande prêmio por levar a cruz.",
+            "estrofe3": "Se Satanás insinuar que inútil é\nTodo o esforço ao lutar, oh! mantende a fé!\nSob o pavilhão lutai sem desfalecer,\nProsseguindo no combate, prontos a vencer.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Se andarmos com Jesus nesta vida cá,\nObteremos a coroa ao chegarmos lá!"
+        },
+        {
+            "id": 397,
+            "tb": 199,
+            "selecionado": true,
+            "estrofe1": "Pelos valados e ruas entrai\nEm busca do pecador.\nOs aleijados e os coxos trazei,\nÉ o que nos manda o Senhor.",
+            "estrofe2": "A apostasia campeia ao redor,\nO amor parece esfriar;\nFixando os olhos em Cristo Jesus,\nHavemos de triunfar!",
+            "estrofe3": "Lembrai-vos bem: sois da terra o sal,\nCuidado com a insipidez,\nGuardai a fé, bem vivo o fervor,\nSenão pisados sereis!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Soldados de Jesus Cristo,\nAvante com fé e amor!\nO mundo esperançado\nContempla o vosso fervor.\nTomai de Deus a armadura\nPara resistir ao mal,\nNão vos desvieis da visão celestial!"
+        },
+        {
+            "id": 398,
+            "tb": 841,
+            "selecionado": true,
+            "estrofe1": "Triunfantes marcharemos,\nCom firmeza e valor,\nPara derrotar as hostes\nInimigas do Senhor.\nCristo é o Capitão\nDeste exército glorioso;\nO soldado, em oração,\nNunca foge ao perigo.",
+            "estrofe2": "Triunfantes marcharemos,\nConduzidos por Jesus,\nCom fervor proclamaremos\nA mensagem da Sua luz.\nQuando cheio de furor\nNos ataca o inimigo,\nCom a espada do Senhor\nSempre havemos de vencê-lo.",
+            "estrofe3": "Triunfantes marcharemos,\nOs perdidos a buscar,\nA Jesus os levaremos,\nPois os ama e quer perdoar.\nDeus dará o galardão\nA quem for vitorioso\nE, no céu, real mansão\nJunto com os redimidos!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Não cedamos, avancemos\nSob o estandarte da cruz;\nA vitória ganharemos com Jesus.\nSou vencedor, pelo sangue do Cordeiro,\nSou vencedor, pela Sua cruz!"
+        },
+        {
+            "id": 399,
+            "tb": 776,
+            "selecionado": true,
+            "estrofe1": "Vinde conosco por Cristo a lutar,\nO inimigo vencido será;\nDeus vem conosco, bendita união.\nAvante, pois, Exército de Salvação.",
+            "estrofe2": "Vinde conosco perdidos buscar,\nCristo morreu para o ímpio salvar;\nTodo o inferno se opõe qual leão.\nAvante, pois, Exército de Salvação.",
+            "estrofe3": "Vinde conosco, convida Jesus,\nNão demoreis em levar Sua cruz;\nSempre na luta com dedicação,\nAvante, pois, Exército de Salvação.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Triunfarão! Triunfarão!\nAs armas divinas vitórias terão.\nInvicta hoste é a de Sião.\nAvante, pois, Exército de Salvação."
+        },
+        {
+            "id": 400,
+            "tb": 382,
+            "selecionado": true,
+            "estrofe1": "Vou marchando para a glória,\nSou soldado de Jesus.\nVinde ouvir a doce história\nDos que andam nessa luz.",
+            "estrofe2": "Vou contar o que me leva\nA lutar com devoção:\nÉ o grande amor de Cristo\nQue me dá motivação.",
+            "estrofe3": "Quando comecei a luta,\nO inimigo me tentou,\nCrendo que eu desistiria,\nMas na luta inda estou.",
+            "estrofe4": "Ao findar a minha vida,\nHaverá canção no céu,\nE irei, como um guerreiro,\nReceber o meu troféu.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Amo a Cristo, aleluia!\nAmo a Jesus Cristo, sim.\nSalvador maravilhoso,\nSua vida deu por mim."
+        },
+        {
+            "id": 401,
+            "tb": 344,
+            "selecionado": true,
+            "estrofe1": "Camaradas, a divisa\nMostra-se nos céus!\nA vitória está segura,\nQuem socorre é Deus!",
+            "estrofe2": "Nas batalhas, poderoso,\nVem o General,\nCom bandeira flutuando,\nSempre triunfal!",
+            "estrofe3": "A peleja é dura e intensa?\nCedo findará!\nEia! avante, camaradas!\nCristo perto está.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Guarda o forte! Em breve Eu venho!,\nDiz o Salvador.\nRespondamos: ―Venceremos\nSó por Teu amor!‖"
+        },
+        {
+            "id": 402,
+            "tb": 175,
+            "selecionado": true,
+            "estrofe1": "Os soldados se preparam para a batalha,\nÉ Jesus, o Mestre, que à luta os levará;\nA milícia dos remidos marcha resoluta,\nCerta que a vitória alcançará.",
+            "estrofe2": "Eis os batalhões de Cristo, prosseguindo avante,\nNão os vês, com que valor combatem contra o mal?\nPodes tu ficar dormindo, mesmo vacilante,\nFrente a esta guerra universal?",
+            "estrofe3": "Dá-te pressa, não vaciles, hoje Deus te chama,\nPara que pelejes sempre ao lado do Senhor;\nEntra no combate onde mais o fogo inflama\nE guerreia contra o tentador.",
+            "estrofe4": "A peleja é intensa, torna-se renhida,\nMas são poucos os soldados para batalhar;\nOh! vem libertar as almas tristes e sem vida,\nDe quem, furioso, as quer tragar.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Em som de guerra, vamos\nSalvação a proclamar,\nA obra redentora\nDe Cristo anunciar.\nOh! quão preciosa é a nova\nQue nós temos de espalhar:\nQue Jesus Cristo nos quer salvar!"
+        },
+        {
+            "id": 403,
+            "tb": 22,
+            "selecionado": true,
+            "estrofe1": "O Salvador nos chama para combater;\nOuvi o som do divinal clarim!\nO Rei dos céus quer ensinar-nos a vencer\nE ficará conosco até o fim!",
+            "estrofe2": "A combater, soldados bravos e leais,\nAcompanhai o vosso Capitão!\nSem vacilar, pegai nas armas divinais,\nPois Deus nos dá a Sua proteção!",
+            "estrofe3": "A combater até sairmos triunfais\nEm nossa luta contra todo o mal!\nJesus nos dá, depois, as honras eternais\nE o galardão no reino celestial!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Avante, pois, salvacionistas!\nOh! desfraldai o pavilhão\nAzul, vermelho\nE amarelo,\nAugusto emblema do perdão.\nNós não queremos fatalistas\nNa hoste santa do Senhor,\nMas, sim, soldados\nEntusiasmados,\nQue vão à luta sem temor!"
+        },
+        {
+            "id": 404,
+            "tb": 210,
+            "selecionado": true,
+            "estrofe1": "Pela fé batalhando os soldados\nDo Exército de Salvação,\nCom ardor a Jesus devotados,\nEste mundo ao Senhor levarão.\nDesde o sul aos extremos do norte,\nEste canto jamais cessará:\n―Deus perdoa e Seu braço é forte;\nPecador, salvação Cristo dá!",
+            "estrofe2": "Eis a pátria em grande perigo,\nMilhares se perdem no mal;\nSó Jesus é a rocha e o abrigo\nNo fragor do maior temporal.\nOnde impera o vício e o crime,\nO pendão ―Sangue e Fogo‖ exporá\nA mensagem tão bela e sublime:\n―Pecador, salvação Cristo dá!",
+            "estrofe3": "Com amor inflamado e desvelo,\nIde sempre os piores buscar.\nNunca falte em vós esse zelo\nPara em tudo o Mestre honrar.\nOh! que nunca a milícia deixemos,\nAo fiel o Senhor exaltará,\nE que sempre esta nova anunciemos:\n―Pecador, salvação Cristo dá!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "―Oh! sim, salvação Cristo dá! (bis)\nPor ti foi na cruz levantado,\nPecador, salvação Cristo dá!‖"
+        },
+        {
+            "id": 405,
+            "tb": 794,
+            "selecionado": true,
+            "estrofe1": "Moços, declarai guerra contra o mal,\nExaltai a cruz do Senhor.\nFirmes, empunhai armas não carnais,\nSempre confiando em Seu amor.",
+            "estrofe2": "Moços, prossegui, fortes vos tornais\nSe o valor da fé conheceis!\nTremulante em luz, vede o Seu guião,\nGarantia de que vencereis.",
+            "estrofe3": "Deus, o vosso Pai, mostra o Seu favor\nE na guerra vos faz vencer,\nTriunfar-vos faz do inimigo aqui\nE a coroa eterna receber!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Todos juntos ao redor da cruz,\nProntos, lestos, escutai-Lhe a voz:\n―Ide avante! sim, marchai!‖ Hosanas!\nCristo é quem ordena a todos nós."
+        },
+        {
+            "id": 406,
+            "tb": 385,
+            "selecionado": true,
+            "estrofe1": "Eia, avante, ó soldados!\nVamos a Jesus servir;\nA peleja é gloriosa,\nDeus nos há de dirigir.\nEia, avante, ó camaradas!\nDe olhos postos em Jesus;\nCaminhemos, destemidos,\nE avancemos para a luz!",
+            "estrofe2": "Eia, avante, ó soldados!\nNunca, nunca atrás voltar;\nSó há um, um só caminho,\nVamos, juntos, avançar!\nEia, avante, camaradas!\nSoem como um clarim\nAs palavras do convite:\n―Vinde, todos, vinde a Mim!‖",
+            "estrofe3": "Eia, avante, ó soldados!\nConfiando no Senhor;\nOnde há fé, ninguém vacila;\nHaja vida, luz, vigor!\nEia, avante, camaradas!\nSempre unidos a lutar,\nSempre unidos na esperança,\nSempre unidos a avançar!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Por Jesus, com zelo santo,\nVinde, todos, combater!\nA bandeira do evangelho\nDefendei até morrer!\nPor Jesus, com zelo santo,\nVinde, todos, combater!\nA bandeira do evangelho\nDefendei até morrer!"
+        },
+        {
+            "id": 407,
+            "tb": 202,
+            "selecionado": true,
+            "estrofe1": "Busquei por longo tempo,\nAnsioso, o Seu perdão;\nEntão, clamando a Cristo,\nGanhei a salvação!",
+            "estrofe2": "Preguemos aos vizinhos\nE amigos sem a luz\nO evangelho vivo\nDa graça de Jesus.",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Do alto das montanhas,\nSobre os telhados, anunciemos\nEm todos os lugares\nQue Cristo quer salvar!"
+        },
+        {
+            "id": 408,
+            "tb": 179,
+            "selecionado": true,
+            "estrofe1": "Dá o melhor para o Mestre,\nDá tua força e valor,\nPõe o vigor de tua alma\nÀs ordens do teu Senhor.\nCristo Jesus deu o exemplo\nDe fortaleza e vigor;\nDá-Lhe teu zelo em dobro,\nDá-Lhe de tudo o melhor!",
+            "estrofe2": "Dá o melhor para o Mestre,\nAbre-Lhe teu coração,\nAo Seu serviço consagra\nInteira dedicação.\nDá, pois, e te será dado,\n- Deus deu Seu Filho co’amor -\nGrato e fiel em servi-lO,\nDá-Lhe de tudo o melhor!",
+            "estrofe3": "Dá o melhor para o Mestre,\nBem pequenino é o favor\nA Quem só por teu resgate\nMorreu como um malfeitor.\nPor esse Seu sacrifício,\nFeito por ti, pecador,\nDá-Lhe louvores sinceros,\nDá-Lhe de tudo o melhor!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Dá o melhor para o Mestre,\nDá tua força e valor,\nVeste a armadura celeste\nÀs ordens do teu Senhor."
+        },
+        {
+            "id": 409,
+            "tb": 16,
+            "selecionado": true,
+            "estrofe1": "Eu quero trabalhar por meu Senhor,\nLevando a palavra com amor,\nQuero de Jesus falar,\nO evangelho espalhar\nNa seara do Senhor.",
+            "estrofe2": "Eu quero cada dia trabalhar,\nEscravos do pecado libertar,\nConduzi-los a Jesus,\nNosso Guia, nossa Luz,\nNa seara do Senhor.",
+            "estrofe3": "Eu quero ser obreiro de valor,\nConfiando no poder do Salvador;\nSe quiseres trabalhar,\nAcharás também lugar\nNa seara do Senhor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Trabalhai e orai\nNa seara, na seara do Senhor!\nMeu desejo é orar\nE por Cristo trabalhar\nNa seara do Senhor."
+        },
+        {
+            "id": 410,
+            "tb": 25,
+            "selecionado": true,
+            "estrofe1": "Mãos ao trabalho, crentes,\nCom incessante ardor;\nVamos enquanto temos\nNossa vida em flor.\nVamos, enquanto é dia,\nCom força trabalhar,\nPois, quando chega a noite,\nJá não há lidar.",
+            "estrofe2": "Mãos ao trabalho, crentes,\nAntes que fuja a luz;\nTemos agora tempo\nDe servir Jesus.\nVamos à Sua causa\nHojé nos dedicar,\nPois, quando chega a noite,\nJá não há lidar.",
+            "estrofe3": "Mãos ao trabalho, crentes,\nVem já o anoitecer,\nFirmes enquanto a morte\nNão nos surpreender.\nVamos, irmãos, à obra,\nPor Cristo trabalhar,\nPois, quando chega a noite,\nVamos descansar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 411,
+            "tb": 485,
+            "selecionado": true,
+            "estrofe1": "Eu vou no poder do Senhor\nPor sendas que Ele marcou;\nA Sua Palavra é luz\nQue brilha à frente, aonde vou.\nMeus passos não vacilarão,\nE tudo me há de suprir;\nEnquanto viver vou lutar\nAté o meu alvo atingir.",
+            "estrofe2": "Eu vou no poder do Senhor.\nCumprindo o santo dever,\nRenova-se em mim o vigor\nE aumenta a alegria em meu ser.\nRecuso-me a olhar para trás,\nO medo não vou conhecer.\nSó nEle há graça e paz.\nDe males me irá proteger.",
+            "estrofe3": "Eu vou no poder do Senhor\nA grande batalha enfrentar,\nCom zelo, coragem e fé\nBastante pra me amparar.\nÀ voz de comando, fiel,\nCom a luz vou as trevas ferir.\nSofrendo ou sorrindo, irei\nA Sua vontade cumprir!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Eu vou no poder do Senhor. (4x)"
+        },
+        {
+            "id": 412,
+            "tb": 542,
+            "selecionado": true,
+            "estrofe1": "Povo de Deus, cumpri o vosso encargo\nDe proclamar, do nosso Deus, o amor!\nPois Ele, compassivo, não deseja\nA perdição do pobre pecador!",
+            "estrofe2": "Oh! contemplai milhares que perecem\nPresos nas garras do pecado e mal,\nSem que haja quem, com pena, lhes indique\nCristo Jesus, libertador real!",
+            "estrofe3": "Não consintais que fiquem desgarradas\nAs almas pelas quais Jesus sofreu;\nHaja cuidado que ninguém se perca\nPelo descuido da ordem que nos deu!",
+            "estrofe4": "Disseminai entre as nações e tribos\nQue o nosso Deus é o Deus do eterno amor,\nQue Ele deixou as glórias infinitas\nPara salvar o mundo pecador.",
+            "estrofe5": "Ei-lO que vem! Mas antes dessa vinda\nApregoai a graça e Seu amor!\nQue estejam prontos todos os remidos\nPara aclamá-lO: Cristo! Redentor!",
+            "som": "",
+            "coro": "As boas novas anunciai!\nQue Deus nos ama, contentes proclamai! (bis)"
+        },
+        {
+            "id": 413,
+            "tb": 204,
+            "selecionado": true,
+            "estrofe1": "Eis os milhões que, em trevas tão medonhas,\nJazem perdidos sem o Salvador!\nQuem, quem irá as novas proclamando\nQue Deus, em Cristo, salva o pecador?",
+            "estrofe2": "Portas abertas eis por todo o mundo!\nCristãos, erguei-vos! Já avante andai!\nCrentes em Cristo, uni as vossas forças,\nDa escravidão os povos libertai.",
+            "estrofe3": "―Oh! vinde a Mim!‖, a voz divina clama;\n―Vinde!‖, clamai em nome de Jesus;\nPra nos salvar da maldição eterna,\nSeu sangue derramou por nós na cruz.",
+            "estrofe4": "Ó Deus, apressa o dia glorioso\nEm que os remidos, todos, se unirão\nE em coro excelso, santo, jubiloso,\nPra todo o sempre glória a Ti darão!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "―Todo o poder o Pai Me deu\nNa terra como lá no céu!\nIde, pois, anunciar o evangelho,\nE eis-Me convosco sempre!‖"
+        },
+        {
+            "id": 414,
+            "tb": 548,
+            "selecionado": true,
+            "estrofe1": "Mais uma vez, em contagiante graça,\nNos reunimos para dar louvor.\nConstantemente a luz de Cristo emana,\nMostrando-nos o caminhar de amor.",
+            "estrofe2": "Queremos ver a redenção completa,\nO Seu triunfo traz inspiração.\nEm oração seguimos Seu caminho,\nSubmissos à celestial visão.",
+            "estrofe3": "Estende a mão, Senhor, fazendo o povo\nEstremecer ante o viver em luz.\nRevelações maiores nos concede\nDo Teu poder, agora, ó Jesus!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Salvacionista,\nVá proclamar:\nCristo o mal venceu\nE sempre vai reinar."
+        },
+        {
+            "id": 415,
+            "tb": 176,
+            "selecionado": true,
+            "estrofe1": "Conta a história tão doce e real:\nQuanto nos ama o Senhor.\nOutros crerão se puderes mostrar\nNo teu viver esse amor.",
+            "estrofe2": "Pelos caminhos escuros estão\nMuitos ansiando por paz;\nLeva o brilho da luz de Jesus,\nMostra o calor que Ele traz!",
+            "estrofe3": "Lembra o estado em que Cristo te achou\nQuando te deu Seu perdão.\nSê um amigo a quem precisar\nDessa real salvação.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Faze-me bênção, faze-me bênção,\nCristo brilhando em meu andar.\nFaze-me bênção, eis minha oração,\nFaze-me bênção a quem encontrar."
+        },
+        {
+            "id": 416,
+            "tb": 540,
+            "selecionado": true,
+            "estrofe1": "O Filho de Deus veio para salvar\nAs almas perdidas no mal.\nAmor impeliu-O ao mundo baixar,\nFiel ao desígnio divinal.\nSoldados valentes precisa Jesus,\nObreiros que tenham valor,\nQue salvem as almas e levem a luz\nDe Cristo ao vil pecador.",
+            "estrofe2": "O povo, sem Deus, se afasta do bem\nE muitos vão à perdição.\nNão há quem lhes fale da senda do além,\nDa vida, da paz, do perdão.\nGuerreiros audazes precisa o Senhor,\nQue cheios de santa paixão\nSe lancem na luta com todo o ardor,\nEntregues a Deus, sem condição.",
+            "estrofe3": "A ciência jamais poderá inventar\nRemédio que cure o mal\nDa alma ferida de muito pecar,\nSedenta de paz celestial.\nDerrama em mim o Teu santo amor!\nTeu servo fiel hei de ser\nEm todos os tempos; com grande fervor,\nPor Ti vou lutar até morrer.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Se eu não tiver compaixão,\nEnchendo meu ser do Teu amor,\nJamais poderei os perdidos amar\nAssim como Tu, meu Salvador.\n\nDesperta em mim compaixão\nE o mesmo amor do Senhor.\nQue em toda a palavra e em toda a ação\nProcure salvar o pecador."
+        },
+        {
+            "id": 417,
+            "tb": 546,
+            "selecionado": true,
+            "estrofe1": "O que fazer num mundo de tristezas?\nA esperança - como a restaurar?\nOnde estou, palavras de conforto\nDo evangelho hei de anunciar.",
+            "estrofe2": "O que fazer perante tantas dores?\nA humanidade - como a aliviar?\nOnde estou, aos homens carregados\nEstenderei a mão pra ajudar.",
+            "estrofe3": "O que fazer de minha vida inútil,\nJustificando meu lugar aqui?\nDe mim farei Teu porta-voz, ó Cristo,\nUngido vou, obediente a Ti.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Onde Tu queres, Senhor, meu Mestre,\nÉ meu desejo sempre estar.\nSou Teu somente e alegremente\nVou sempre Te amar."
+        },
+        {
+            "id": 418,
+            "tb": 178,
+            "selecionado": true,
+            "estrofe1": "Quero ser um vaso de bênção,\nSim, um vaso escolhido por Deus\nPara as novas levar aos perdidos,\nBoas novas que vêm lá dos céus.",
+            "estrofe2": "Quero ser um vaso de bênção,\nPara todos os dias fazer\nOs culpados, que vivem nas trevas,\nO perdão de Jesus conhecer.",
+            "estrofe3": "Quero ser um vaso de bênção,\nSim, um vaso de bênção sem par,\nAnunciando que os crentes em Cristo\nJubilosos no céu hão de entrar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Faze-me vaso de bênção, Senhor,\nVaso que leve a mensagem de amor!\nEis-me submisso:\nAo Teu serviço\nEu me consagro, bendito Senhor!"
+        },
+        {
+            "id": 419,
+            "tb": 199,
+            "selecionado": true,
+            "estrofe1": "Tu, Jesus bondoso, resgataste a mim,\nE dos meus pecados livre estou, enfim;\nHojé e para sempre sirvo a Ti, meu Rei,\nObedeço e amo Tua santa lei.",
+            "estrofe2": "Nos conflitos rudes, faze-me fiel;\nQue seguro, à praia, chegue o meu batel.\nAlmas preciosas quero aqui buscar;\nPossam, por Teu sangue, puras se tornar!",
+            "estrofe3": "Nesta empresa santa vou-me ocupar,\nLuz e liberdade quero espalhar;\nSó com Teu auxílio isso eu farei;\nCai o inimigo. Glória a Ti, meu Rei!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sim, meu ser inteiro quero a Ti dedicar\nE os pecadores a Teus pés levar."
+        },
+        {
+            "id": 420,
+            "tb": 775,
+            "selecionado": true,
+            "estrofe1": "Ama o teu próximo, busca o perdido,\nLeva a mensagem de luz e amor;\nServe com compaixão, nutre o faminto,\nConta a história do terno Senhor.",
+            "estrofe2": "Dentro do coração, triste e abatido,\nSurge o anelo de paz e perdão;\nCom terno e doce amor, Cristo o chama\nPara salvá-lo da vil perdição.",
+            "estrofe3": "Cumpre o teu dever junto ao caído,\nDá-lhe esperança em Cristo Jesus;\nGuia o pecador arrependido\nPelo caminho divino da cruz.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Ama o incrédulo, ganha sua alma,\nDeus o aceitará, o salvará!"
+        },
+        {
+            "id": 421,
+            "tb": 386,
+            "selecionado": true,
+            "estrofe1": "Nas tormentas desta vida\nPerto está a perdição.\nAos incautos navegantes\nQuem trará a salvação?",
+            "estrofe2": "Sempre brilha, em graça imensa,\nRico amor do eterno Deus;\nCumpre a nós mostrar o rumo\nDa viagem para os céus.",
+            "estrofe3": "Nuvens de paixão mundana\nObscurecem-lhes o sol.\nErgue o grito de perigo,\nAlça as luzes no farol!",
+            "estrofe4": "Os errantes insensatos\nGuia ao porto divinal!\nEm Jesus há vero abrigo\nDo furor do temporal.",
+            "estrofe5": "Noite eterna se aproxima,\nDe remorso e de amargor!\nClama, avisa os infelizes,\nInsta-os para o Salvador!",
+            "som": "",
+            "coro": "Resplandeçam nossas luzes\nAtravés do escuro mar,\nPois nas trevas do pecado\nAlmas podem naufragar!"
+        },
+        {
+            "id": 422,
+            "tb": 182,
+            "selecionado": true,
+            "estrofe1": "No serviço do meu Rei eu sou feliz,\nSatisfeito e abençoado,\nProclamando do meu Rei a salvação\nNo serviço do meu Rei.",
+            "estrofe2": "No serviço do meu Rei eu sou feliz,\nObediente e corajoso;\nNa tristeza ou na alegria sei sorrir\nNo serviço do meu Rei.",
+            "estrofe3": "No serviço do meu Rei eu sou feliz,\nJubiloso e consagrado;\nAo Seu lado desafio a todo o mal\nNo serviço do meu Rei.",
+            "estrofe4": "No serviço do meu Rei eu sou feliz,\nVenturoso e decidido;\nQuanto tenho no serviço gastarei,\nNo serviço do meu Rei.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "No serviço do meu Rei\nMinha vida empregarei;\nGozo, paz, felicidade\nTem quem serve ao meu bom Rei."
+        },
+        {
+            "id": 423,
+            "tb": 624,
+            "selecionado": true,
+            "estrofe1": "Espalhemos, todos, a semente santa\nDesde a madrugada até o anoitecer,\nCalmos, aguardando o tempo da colheita,\nQuando, alegremente, havemos de colher!",
+            "estrofe2": "Semeemos quando seres perniciosos\nA semente boa querem destruir;\nDeus abençoando a lavoura santa,\nQuem O serve nunca há de desistir.",
+            "estrofe3": "Vamos, pois, obreiros, semear ousados\nA semente viva da verdade e luz,\nProclamando a Cristo, Seu poder e glória,\nSalvação perfeita que alcançou na cruz!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Colheremos, sim! (bis)\nPreciosos frutos a Deus ofertar!\nColheremos, sim! (bis)\nE os celeiros, fartos, hão de transbordar!"
+        },
+        {
+            "id": 424,
+            "tb": 448,
+            "selecionado": true,
+            "estrofe1": "Há um caminho espinhoso\nDe conduta exemplar,\nÉ o caminho do dever\nQue leva ao celeste Lar.\nAo trilharmos essa senda,\nDeus estende o Seu favor,\nPois bem perto corre o rio\nDo Seu paternal amor.",
+            "estrofe2": "Senda abençoada e pura,\nCheia de alegria e paz,\nMas às vezes pedregosa,\nQue angústia e dores traz.\nImitando nosso Mestre\nNo amor e exemplo Seus,\nSurge a aurora que ilumina\nO caminho para Deus.",
+            "estrofe3": "Eu prossigo na vereda\nDo dever com decisão,\nLevantando minha face\nPara o Autor da salvação;\nCom Jesus o fardo é leve,\nPois me estende o Seu favor;\nAcho alento junto ao rio\nDo Seu paternal amor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Corre o rio da graça \t\t\t\t ) bis\nPela senda do dever. \t\t\t\t )"
+        },
+        {
+            "id": 425,
+            "tb": 180,
+            "selecionado": true,
+            "estrofe1": "Não somente pra fazer um feito singular\nÉ mister agir com muito ardor,\nMas as coisas mais humildes para executar\nDeves fazê-las com fervor.",
+            "estrofe2": "Oh! talvez alguma vida possas alegrar\nCom palavras doces, em amor,\nOu talvez algumas almas tristes alcançar\nCom a mensagem do Senhor.",
+            "estrofe3": "Por maior que seja teu esforço a exercer,\nPor mais firme a tua devoção,\nEm redor vê quantas almas vivem sem prazer,\nJazem na densa escuridão.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Brilha no meio do teu viver, (bis)\nPois talvez algum aflito possas socorrer;\nBrilha no meio do teu viver."
+        },
+        {
+            "id": 426,
+            "tb": 181,
+            "selecionado": true,
+            "estrofe1": "Oh! onde os obreiros a trabalhar\nNo campo tão vasto a laborar?\nA obra requer prontidão, vigor,\nOh! quem quer ceifar com desvelo e ardor?",
+            "estrofe2": "O joio do mal tende a aumentar\nE o trigo do Mestre quer sufocar.\nCeifeiros, avante, no campo entrai\nE enquanto é dia ceifai, ceifai!",
+            "estrofe3": "Eis portas abertas à pregação,\nNações almejando a salvação!\nOh! onde os obreiros a proclamar\nDe Deus o perdão, Seu amor sem par?",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Onde os obreiros? Oh! quem quer ir\nNo campo tão vasto a escassez suprir?\nQuem pronto está hoje a atender\nE os frutos benditos vir recolher?"
+        },
+        {
+            "id": 427,
+            "tb": 451,
+            "selecionado": true,
+            "estrofe1": "Ouve! a voz divina clama:\n―Quem deseja trabalhar?‖.\nRicos campos nos convidam,\nHojé entremos a ceifar!\nIncessante o Mestre apela,\nChama obreiros para Si.\nQuem responderá, dizendo:\n―Manda-me! estou pronto aqui!‖?",
+            "estrofe2": "Corre! aponta aos pecadores\nO benigno Salvador!\nVai, conduze os cordeirinhos\nAo regaço do Pastor!\nLeva às almas doloridas\nNovas de consolação!\nVai, publica a todo o mundo:\n―Em Jesus há salvação.‖",
+            "estrofe3": "Ah! não digas, ocioso:\n―Eu não tenho o que fazer!‖\nEis os povos que falecem,\nMultidões a perecer!\nOlha o Mestre que suplica,\nOuve a voz chamando a ti!\nOh! responde sem demora:\n―Manda-me! estou pronto aqui!‖",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 428,
+            "tb": 557,
+            "selecionado": true,
+            "estrofe1": "Vamos nós trabalhar, somos servos de Deus,\nNosso Mestre seguir no caminho dos céus\nE no Seu bom conselho o vigor renovar,\nDiligentes, fazendo o que Cristo ordenar!",
+            "estrofe2": "Vamos nós trabalhar e os famintos fartar,\nPara a fonte os sedentos depressa levar!\nSó na cruz do Senhor nossa glória será,\nPois Jesus salvação por Seu sangue nos dá!",
+            "estrofe3": "Vamos nós trabalhar, ajudados por Deus,\nQue a coroa de glória nos dá lá nos céus!\nA mansão dos fiéis sempiterna será,\nPois Jesus salvação inefável nos dá!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "No labor, com fervor, a seguir a Jesus,\nCom amor e fé e com oração,\nAté que volte o bom Senhor!"
+        },
+        {
+            "id": 429,
+            "tb": 628,
+            "selecionado": true,
+            "estrofe1": "Anuncia ao mundo em redor\nO que fez por ti o Salvador,\nConta como o Seu tão grande amor\nMuda em alegria toda a dor.\nVai a Bíblia ao povo entregar,\nEla diz que há vida num olhar.\nVai, proclama ao mundo inteiro:\nEm Cristo há salvação!",
+            "estrofe2": "Quando fazes o tambor rufar,\nBrada que Jesus quer perdoar\nAo que humilde nEle confiar\nE o mal quiser abandonar.\nFala ao pobre, ao rico e a todo o ser\nDeste evangelho de poder.\nVai, proclama ao mundo inteiro:\nEm Cristo há salvação!",
+            "estrofe3": "Insta a nossa força juvenil\nA lutar com zelo e amor febril\nPelas almas longe do redil,\nPerecendo em perigos mil.\nConta do glorioso céu de amor,\nOnde harpas soam e há fulgor.\nVai, proclama ao mundo inteiro:\nEm Cristo há salvação!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Conta aos homens do Menino de Belém,\nQue, obediente a Deus,\nVeio a nós, mostrando o amor do Sumo Bem\nLá dos altos céus.\nSeja a tua vida um exemplo aqui,\nAma o pecador.\nSem as trevas temer, faze a todos saber:\nEm Cristo há salvação!"
+        },
+        {
+            "id": 430,
+            "tb": 504,
+            "selecionado": true,
+            "estrofe1": "Mestre e Senhor, com devoção\nTeu povo se une em oração;\nCom Teu amor, oh! vem selar ) bis\nAs vidas postas no altar. \t)",
+            "estrofe2": "Chamados para batalhar,\nUnimo-nos num só lugar\nCom um só alvo: o mal vencer ) bis\nE Teu glorioso reino erguer. \t\t\t)",
+            "estrofe3": "Chamados do pecado vil\nAo Teu serviço varonil,\nNo mundo havemos de andar, ) bis\nMas separados do pecar. \t)",
+            "estrofe4": "Por Ti queremos combater;\nDébeis, pedimos Teu poder!\nO Teu Espírito de amor ) bis\nDerrama em nós e dá valor. \t\t)",
+            "estrofe5": "Teu povo fiel queremos ser,\nSantificados no viver;\nAssim iremos batalhar ) bis\nAté a glória alcançar! )",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 431,
+            "tb": 183,
+            "selecionado": true,
+            "estrofe1": "Além do ocaso, manhã grandiosa\nSerenamente despontará;\nNão mais a noite, mas a alvorada\nDe um brilho infindo nos cercará.",
+            "estrofe2": "Além do ocaso, nenhuma nuvem\nOu tempestade afligirá;\nPassado o choro, a dor e a morte,\nO salvo em Cristo descansará.",
+            "estrofe3": "Além do ocaso, chegando ao porto,\nÀ nossa espera Jesus está;\nO adoraremos ante o Seu trono,\nNossos louvores aceitará.",
+            "estrofe4": "Além do ocaso, encontraremos\nUm povo santo naquele Lar;\nNa bela terra, reais moradas\nEstá Jesus a nos preparar.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 432,
+            "tb": 47,
+            "selecionado": true,
+            "estrofe1": "Em breve a vida vai findar,\nAqui não mais eu cantarei;\nNo céu, então, irei morar\nCom meu Jesus, amado Rei.",
+            "estrofe2": "Ali a voz ressoará\nDe Cristo, terno Redentor:\n―Fiel, bom servo, bem está,\nDesfruta o gozo do Senhor.‖",
+            "estrofe3": "Por meu Jesus eu vou viver,\nDeixando a minha luz brilhar,\nE dia a dia vou fazer\nAquilo que ao Senhor honrar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sim, face a face, vê-lO-ei! \t\t) bis\nA Sua graça cantarei. \t\t\t\t )"
+        },
+        {
+            "id": 433,
+            "tb": 484,
+            "selecionado": true,
+            "estrofe1": "Falamos do mundo feliz,\nDo gozo que nele haverá,\nDas glórias do lindo país,\nQue maravilhoso será!",
+            "estrofe2": "Falamos da paz e do amor\nQue Cristo ali nos dará,\nDas vozes de grato louvor,\nQue maravilhoso será!",
+            "estrofe3": "Falamos do brilho da luz,\nDas jóias que o céu conterá,\nDa face do nosso Jesus,\nQue maravilhoso será!",
+            "estrofe4": "Nem mancha, pecado ou dor,\nNem pranto jamais entrará\nNa casa de nosso Senhor,\nQue maravilhoso será!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "No porvir, com Jesus, ) bis\nQue maravilhoso será! )"
+        },
+        {
+            "id": 434,
+            "tb": 249,
+            "selecionado": true,
+            "estrofe1": "Jerusalém excelsa,\nGloriamo-nos em ti,\nAfável esperança\nDe todo o crente aqui.\nRadiante é tua porta,\nQue ao longe já se vê,\nPor onde tem entrada\nO que em Cristo crê.",
+            "estrofe2": "A cruz e sua glória\nE o grande Redentor\nEm ti são exaltados\nEm cantos de louvor.\nQue gozo tu me inspiras,\nEterna habitação,\nPois sei que em ti se finda\nA peregrinação!",
+            "estrofe3": "Ó doce Lar amado,\nDescanso meu serás\nQuando eu tiver herdado\nTeu bem e tua paz.\nÓ coração que gemes,\nNa dor que te desfaz,\nCom Deus, que te redime,\nFeliz, enfim, serás.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 435,
+            "tb": 529,
+            "selecionado": true,
+            "estrofe1": "Quando meu tempo de lutas passar,\nQuando meu Deus para Si me chamar,\nGrato, perante Jesus hei de estar;\nGlória perene será para mim!",
+            "estrofe2": "Quando, por graça do Seu grande amor,\nEu alcançar o infinito favor\nDe ir para perto do meu Salvador,\nGlória perene será para mim!",
+            "estrofe3": "Muitos amigos ali hei de achar,\nPaz, alegria, eternal bem-estar;\nMas, quando meu Salvador me saudar,\nGlória perene será para mim!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sim, há de ser glória pra mim!\nGlória pra mim! Glória pra mim!\nQuando puder o Seu rosto mirar,\nOh! há de ser grande glória pra mim!"
+        },
+        {
+            "id": 436,
+            "tb": 126,
+            "selecionado": true,
+            "estrofe1": "Há uma terra de prazer,\nMorada dos que crêem;\nO dia eterno reina ali,\nTristezas nunca têm.",
+            "estrofe2": "É primavera sempre ali,\nE as flores durarão;\nAlegres campos, verdes, bons,\nNa linda terra estão.",
+            "estrofe3": "Porém à entrada do país\nHá um profundo mar;\nPor suas águas, nós, mortais,\nHavemos de passar.",
+            "estrofe4": "E o Senhor caminho abriu,\nTirou da morte o horror;\nCom gozo os salvos hão de entrar\nNaquele Lar de amor.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 437,
+            "tb": 483,
+            "selecionado": true,
+            "estrofe1": "Pensai nesse Lar lá do céu,\nBem ao lado do rio de luz,\nOnde os santos descansam e gozam\nDa presença de Cristo Jesus.",
+            "estrofe2": "Pensai nos amigos do céu,\nQue venceram a luta final,\nE nos cantos que as harpas ressoam\nNa harmonia do Lar divinal.",
+            "estrofe3": "Em breve no céu estarei;\nVejo o fim da jornada chegar.\nMeu bondoso Jesus lá me espera\nPara as bênçãos eternas me dar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! pensai! Oh! pensai!\nPensai nesse Lar lá do céu!\nLá do céu! Lá do céu!\nPensai nesse Lar lá do céu!"
+        },
+        {
+            "id": 438,
+            "tb": 484,
+            "selecionado": true,
+            "estrofe1": "Junto ao trono de Deus, preparado\nHá, cristão, um lugar para ti;\nHá prazeres, há gozo exaltado,\nHá delícias profusas ali.\nSim, ali, sim, ali,\nDe Seus anjos fiéis rodeado,\nNuma esfera de glória e de luz,\nJunto a Deus nos espera Jesus.",
+            "estrofe2": "Os encantos da terra não podem\nDar idéia do gozo dali;\nSe na terra os prazeres acodem,\nSão prazeres que morrem aqui.\nMas, ali, mas, ali,\nAs venturas eternas concorrem\nNa existência perpétua da luz\nAo tornar-te feliz com Jesus.",
+            "estrofe3": "Conservemos em nossa lembrança\nAs riquezas do lindo país\nE guardemos conosco a esperança\nDe uma vida melhor, mais feliz,\nPois, ali, pois, ali,\nUma voz verdadeira não cansa\nDe chamar-nos ao reino de luz,\nAo amor protetor de Jesus.",
+            "estrofe4": "Se quisermos gozar da ventura\nQue no belo país haverá,\nÉ somente pedir de alma pura\nQue de graça Jesus nos dará,\nPois, ali, pois, ali,\nTodo cheio de amor, de ternura,\nDesse amor revelado na cruz,\nNos escuta, nos ouve Jesus.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 439,
+            "tb": 245,
+            "selecionado": true,
+            "estrofe1": "Milhares e milhares, em refulgente luz,\nEis os guerreiros santos, a milícia de Jesus!\nCompleta, sim, completa a dura luta aqui,\nCom Cristo, seu Senhor e Rei, vão descansar ali.",
+            "estrofe2": "No céu, que harmonia de vozes mil sem par!\nQue coros de aleluias quando o crente ali chegar;\nVerá naquele dia, o dia triunfal,\nO Cristo, Rei da criação, em glória eternal.",
+            "estrofe3": "Não haverá mais choro, não mais a tentação;\nAs dores, as tristezas, para sempre fugirão;\nE os remidos, todos, verão seu Salvador,\nE consumado, enfim, será o plano redentor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 440,
+            "tb": 110,
+            "selecionado": true,
+            "estrofe1": "Na pátria celeste, no eterno e doce Lar,\nPrepara Jesus, para os Seus, um lugar;\nPois, longe do mal, do pecado e da dor,\nAli para sempre os quer o Senhor.",
+            "estrofe2": "Oh! lar sacrossanto de paz e de amor!\nAlém, sobre o trono, verei meu Senhor,\nO meigo Cordeiro, reinando em luz,\nPor todos louvado, bendito Jesus!",
+            "estrofe3": "Que puras delícias se encontram em Ti;\nQue gozos supernos esperam ali\nAqueles que junto de Ti estarão,\nVivendo alegrias na eterna mansão.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! doce, doce lar!\nAli, com Jesus, vou feliz descansar."
+        },
+        {
+            "id": 441,
+            "tb": 92,
+            "selecionado": true,
+            "estrofe1": "Foi a rude cruz só do Salvador,\nSeu peso e dor sem fim?\nTal cruz devemos compartilhar,\nPois Jesus o quer assim.",
+            "estrofe2": "Preciosa cruz, bendita cruz,\nEm ti me gloriarei,\nPois és meu passaporte ao céu;\nCom amor te levarei!",
+            "estrofe3": "Ó Jesus, Senhor, pela Tua cruz\nAqui me valerás!\nNo dia da ressurreição,\nSalvo, me despertarás!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Se a cruz eu carregar,\nCoroado serei;\nCom Jesus, no eterno Lar,\nPara sempre viverei!"
+        },
+        {
+            "id": 442,
+            "tb": 424,
+            "selecionado": true,
+            "estrofe1": "Nada temam! Cristo mesmo\nVai ao leme a governar,\nO batel não segue a esmo,\nAtravés do imenso mar,\nPara o porto, para o porto\nOnde vamos descansar. ) bis",
+            "estrofe2": "Ventos e ondas do oceano\nNão nos devem assustar,\nVai conosco o Soberano,\nEle os sabe apaziguar.\nO Seu gesto, o Seu gesto\nBasta para os abrandar. ) bis",
+            "estrofe3": "Outros tempos nos esperam\nNesse abrigo, doce lar,\nOnde os ares não se alteram\nNem se agita o grande mar.\nDoce calma, doce calma\nVamos em Jesus gozar. ) bis",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 443,
+            "tb": 126,
+            "selecionado": true,
+            "estrofe1": "Qual bravo navegante, enfrenta o mar\nQuando em bonança ou pior temporal;\nSe nuvens densas te vierem cercar,\nOlha a Estrela da Manhã, teu guia leal.",
+            "estrofe2": "A luz desponta, o dia já vai raiar;\nAlém das vagas, terra firme se vê.\nViagem árdua logo há de findar,\nForça aos remos, luta, persevera e crê!",
+            "estrofe3": "Brilhante aurora varre a escuridão,\nÉ a chegada desse dia sem par!\nErgue alto a voz em tom de adoração:\n―Glória a Jesus, Senhor da terra e do mar!‖",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Rema ao porto com todo o vigor,\nDeixa as fortes ondas todas pra trás;\nSeguindo a Cristo, fiel e forte protetor,\nÀs gloriosas margens celestiais chegarás!"
+        },
+        {
+            "id": 444,
+            "tb": 206,
+            "selecionado": true,
+            "estrofe1": "Glorioso vem dia tão feliz\nQuando o Príncipe da Paz os Seus virá buscar!\nSaibam as nações, um convite há:\nPara as bodas do Cordeiro, vinde já!\nHostes celestiais seus louvores dão,\nE a noiva se adorna com justiça e amor,\nO cortejo em festa começa a andar\nPara as bodas do Cordeiro iniciar!",
+            "estrofe2": "Carregar a cruz e andar na luz\nÉ preciso para a santa festa partilhar;\nVigiar e orar nestes dias maus\nPara as bodas do Cordeiro desfrutar.\nMancha alguma deve em teu manto haver\nSe as atenções do Noivo queres receber;\nNem pecado ou dor, só pureza e amor\nNessas bodas do Cordeiro pode haver.",
+            "estrofe3": "Quando vencedor desta luta eu for,\nJá passados os combates e a perseguição,\nCom a paz do céu a reinar em mim,\nPara as bodas do Cordeiro vou assim!\nCristo morto foi pelo pecador,\nDeves aceitar tão grande prova de amor;\nEle voltará e convida, vem,\nE às bodas do Cordeiro irás também!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Eu ouvi o chamado e vou\nUnir-me aos santos que compõem a grande multidão.\nEu ouvi o chamado e vou\nCom vestes preparadas para a grande ocasião."
+        },
+        {
+            "id": 445,
+            "tb": 398,
+            "selecionado": true,
+            "estrofe1": "Há um rio cristalino\nNa divina habitação,\nSai do trono do Cordeiro\nPara gozo do cristão.",
+            "estrofe2": "Antes de a esse rio\nNós podermos contemplar,\nRetidão e santidade\nTemos todos de alcançar.",
+            "estrofe3": "Lá na margem desse rio\nVamos com Jesus viver,\nAdorando-O para sempre\nCom fervor e com prazer.",
+            "estrofe4": "Em chegando ao santo rio,\nFinda a peregrinação,\nPassaremos todo o tempo\nNo louvor da salvação.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sim, a ele nós iremos,\nA Cristo, nosso protetor, veremos,\nDesse rio sempre beberemos,\nAo lado do bom Redentor!"
+        },
+        {
+            "id": 446,
+            "tb": 831,
+            "selecionado": true,
+            "estrofe1": "Do oeste e do leste milhares virão\nE no reino de Deus sentarão;\nMultidões de remidos de cada nação,\nSim, no reino de Deus sentarão.\nNinguém perguntará quem são,\nPois vestes brancas usarão;\nDo oeste e do leste milhares virão\nE no reino de Deus sentarão.",
+            "estrofe2": "Do oeste e do leste milhares virão\nE no reino de Deus sentarão;\nPelo Pai recebidos, benditos serão\nE no reino de Deus sentarão.\nAs raças todas se unirão,\nSuas cores não importarão;\nDo oeste e do leste milhares virão\nE no reino de Deus sentarão.",
+            "estrofe3": "Do oeste e do leste milhares virão\nE no reino de Deus sentarão;\nLivres da grande tribulação estarão\nE triunfantes no céu entrarão.\nDe cada raça e nação,\nTal como irmãos se abraçarão;\nDo oeste e do leste milhares virão\nE no reino de Deus sentarão.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 447,
+            "tb": 440,
+            "selecionado": true,
+            "estrofe1": "Oh! vem encontrar-me à fonte\nDa Jerusalém do céu!\nSim, à cristalina fonte\nQue Jesus aos crentes deu!\nLá encontrarei amigos\nQue me querem como irmão;\nNo céu não verei perigos,\nPaz terá meu coração!",
+            "estrofe2": "Oh! vem encontrar-me à fonte,\nEu te reconhecerei\nPelo brilho que, na fronte,\nHá de ter a santa grei.\nHei de achar mais melodia\nNesse coro a que me unir,\nSe naquele eterno dia\nTua voz eu nele ouvir!",
+            "estrofe3": "Oh! vem encontrar-me à fonte,\nEu desejo aí te ver!\nOnde o Salvador divino\nA mim há de receber.\nOh! vem encontrar-me, amigo,\nJunto à fonte, pois Jesus\nNos céus nos dará, conSigo,\nLar eterno em plena luz!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! vem à celeste fonte\nQue Jesus nos quis abrir!\nSim, vem à celeste fonte,\nSalvação com Deus fruir!"
+        },
+        {
+            "id": 448,
+            "tb": 753,
+            "selecionado": true,
+            "estrofe1": "Quando o rio passarmos unidos\nE entrarmos no céu, vamos ver,\nComo areia da praia, os remidos;\nOh! que vista gloriosa há de ser!",
+            "estrofe2": "Quando os salvos de todos os tempos\nEncontrarmos no céu, que prazer!\nCelestiais saudações trocaremos;\nOh! que vista gloriosa há de ser!",
+            "estrofe3": "Quando virmos a terra bendita,\nFrutos, flores, a fonte a correr,\nO cordeiro e o leão convivendo,\nOh! que vista gloriosa há de ser!",
+            "estrofe4": "Quando, enfim, entre aplausos vibrantes\nFormos nosso Senhor conhecer,\nVer Jesus, Rei dos reis, coroado,\nExperiência gloriosa há de ser!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sim, tantos como areia da praia,\nSim, tantos como areia do mar!\nQue gozo sentirá todo o salvo ao contemplar,\nSim, tantos como areia da praia!"
+        },
+        {
+            "id": 449,
+            "tb": 261,
+            "selecionado": true,
+            "estrofe1": "Salvo em Jesus, meu Mestre, gozo a bendita paz;\nTal comunhão com Ele minha aflição desfaz.\nEle me dá certeza: salvo estarei no além.\nOh! que prazer, que gozo enche meu ser também!",
+            "estrofe2": "Cristo me dá a vida, fonte Ele é de amor,\nTira de mim as mágoas, todo o pesar e dor.\nQuando eu sofrer a prova, fácil será ganhar,\nMas, se verter o pranto, Ele o irá limpar.",
+            "estrofe3": "Hei de passar a noite sem mais sentir temor,\nBreve virá o dia com perenal fulgor.\nOh! que prazer supremo ver a Jesus no Lar,\nLá na mansão da glória com meu Jesus reinar!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Salvo em Jesus, meu Mestre, gozo o prazer da paz;\nTal comunhão com Ele toda a aflição desfaz."
+        },
+        {
+            "id": 450,
+            "tb": 508,
+            "selecionado": true,
+            "estrofe1": "Pela fé avistamos além\nUma terra que brilha em fulgor!\nNas moradas do Pai, Sumo Bem,\nUm lugar nos prepara o Senhor!",
+            "estrofe2": "Cantaremos, no belo país,\nMelodias do mais puro ardor;\nNessa pátria celeste e feliz\nNão há pranto, gemido nem dor.",
+            "estrofe3": "Sim, daremos a Cristo Jesus\nUm tributo de grato louvor\nPelas bênçãos do reino de luz,\nPelo dom do inefável amor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Sim, no doce porvir,  ) bis\nViveremos no santo país. )"
+        },
+        {
+            "id": 451,
+            "tb": 204,
+            "selecionado": true,
+            "estrofe1": "Essas vestes brancas, que Jesus vai dar,\nEssas belas palmas, quem irá ganhar?\nOs fiéis, remidos, a quem tanto amou,\nPobres pecadores, que Ele resgatou.",
+            "estrofe2": "Os que despertarem ao chamar de Deus,\nRenunciando a todos os cuidados seus;\nOs que sempre seguem ao seu Salvador\nE, por seu tesouro, buscam Seu amor.",
+            "estrofe3": "Os que, dedicados a seu Rei Jesus,\nNão retrocedendo, tomam sua cruz.\nSim, quem tudo perde tudo ganhará,\nQuem com Cristo sofre glória enfim terá.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 452,
+            "tb": 12,
+            "selecionado": true,
+            "estrofe1": "À pátria abençoada vou,\nAnsioso peregrino sou\nEm busca do feliz lugar\nNo qual eu hei de descansar.",
+            "estrofe2": "Comigo vai o meu Senhor,\nDo mal me guarda com amor,\nDe paz inunda o coração\nE dá-me eterna salvação.",
+            "estrofe3": "Na vastidão celestial\nRessoa o canto angelical\nDe triunfante multidão\nFeliz por sua redenção.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! bela terra de esplendor,\nQuerida herança do Senhor;\nOlhando, vejo, além do mar,\nQue breve eu hei de atravessar,\nA praia áurea, perenal,\nDo lindo Lar celestial."
+        },
+        {
+            "id": 453,
+            "tb": 156,
+            "selecionado": true,
+            "estrofe1": "Pequena vila de Belém,\nRepousa em teu dormir\nEnquanto os astros lá no céu\nEstão a refulgir;\nPorém nas tuas trevas\nResplende eterna luz\nIncomparável, divinal;\nNasceu o bom Jesus!",
+            "estrofe2": "Da virgem mãe nasceu Jesus.\nVós, anjos, dai a Deus\nLouvor, e aos homens proclamai\nAs novas lá dos céus.\nEstrelas matutinas,\nEm hinos de louvor\nAos anjos e homens proclamai\nDe Deus o eterno amor.",
+            "estrofe3": "O dom glorioso, divinal,\nNenhum estrondo faz,\nAssim aos homens o Senhor\nConcede graça e paz.\nSereno e sem alarde\nVem Ele ao mundo, assim,\nTrazendo aos homens redenção,\nAmor e paz sem fim.",
+            "estrofe4": "Ó Santo Infante de Belém,\nEm nossos corações\nHabita, faze-os entrever\nCelestiais visões.\nNos céus proclamam anjos\nDe Deus o amor fiel!\nOh! vem, Senhor, em nós morar,\nEterno Emanuel.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 454,
+            "tb": 693,
+            "selecionado": true,
+            "estrofe1": "Surgem anjos proclamando\nPaz à terra e a Deus louvor.\nVão seus hinos ecoando\nNas montanhas em redor.",
+            "estrofe2": "Vão-se alegres os pastores\nVer o Infante celestial\nE acrescentam seus louvores\nAo louvor angelical.",
+            "estrofe3": "Berço rude Lhe foi dado,\nMas do céu Lhe vem louvor.\nEle é o Salvador amado,\nBem merece o nosso amor.",
+            "estrofe4": "Povos, tribos, celebrai-O!\nGlória a Deus, também dizei.\nAjoelhados, adorai-O,\nEle é o Cristo, o grande Rei!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Glória, glória a Deus nas alturas! (bis)"
+        },
+        {
+            "id": 455,
+            "tb": 198,
+            "selecionado": true,
+            "estrofe1": "Uma luz resplandecente\nIlumina a vastidão.\nLá nos campos, os pastores\nVigiam em compunção.\nÉ a esses pobrezinhos\nQue resplende a grande luz,\n―Não temais!‖, diz-lhes um anjo,\n―Em Belém nasceu Jesus!‖",
+            "estrofe2": "Como é belo ouvir-se\nO canto da milícia celestial!\nTodo o céu está em festa\nAnunciando o Natal.\nSurge, assim, no firmamento,\nQue se abre par em par,\nUma multidão de anjos\nA dizer e a cantar:",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "―Glória a Deus nas alturas\nPaz na terra! Deus é amor!‖\nOs anjos cantam em Belém:\n―Nasceu o Salvador!‖"
+        },
+        {
+            "id": 456,
+            "tb": 64,
+            "selecionado": true,
+            "estrofe1": "Ó pinheirinho de Natal, ) bis\nDe ramas sempre verdes. \t)\nQualquer que seja a estação,\nAs tuas ramas verdes são.\nÓ pinheirinho de Natal,\nFidelidade ensinas.",
+            "estrofe2": "Ó pinheirinho de Natal, ) bis\nDe tronco forte e firme. )\nMui débil sou e sem valor,\nOh! dá-me, Cristo, tal vigor!\nÓ pinheirinho de Natal,\nSer forte me ensinas!",
+            "estrofe3": "Ó pinheirinho de Natal, ) bis\nDe prendas enfeitado. )\nTu representas dons de Deus\nE as alegrias lá dos céus.\nÓ pinheirinho de Natal,\nDe alegres ramas feito.",
+            "estrofe4": "Ó pinheirinho de Natal, ) bis\nCom verdes ramas sempre. \t)\nTu simbolizas uma cruz\nE a vida eterna em Jesus.\nÓ pinheirinho de Natal,\nCoisas felizes lembras.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 457,
+            "tb": 552,
+            "selecionado": true,
+            "estrofe1": "Oh! vinde, fiéis, triunfantes, alegres,\nSim, vinde a Belém já movidos de amor;\nNasceu vosso Rei, lá do céu prometido;\nOh! vinde, adoremos (3x) a nosso Senhor.",
+            "estrofe2": "Olhai, admirados, a Sua humildade,\nOs anjos O louvam com grande fervor,\nPois veio conosco habitar encarnado;\nOh! vinde, adoremos (3x) a nosso Senhor.",
+            "estrofe3": "Por nós, das alturas celestes baixando,\nEm forma de servo Se fez, por amor,\nE em glórias a vida nos dá, sempiterna;\nOh! vinde, adoremos (3x) a nosso Senhor.",
+            "estrofe4": "Nos céus, adorai-O, vós, anjos em coro,\nE todos na terra Lhe rendam louvor;\nA Deus honra e glória, contentes, rendamos;\nOh! vinde, adoremos (3x) a nosso Senhor.",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 458,
+            "tb": 800,
+            "selecionado": true,
+            "estrofe1": "Noite de paz! Noite de amor!\nTudo dorme em derredor.\nEntre os astros que espargem a luz,\nProclamando o Menino Jesus,\nBrilha a estrela da paz! (bis)",
+            "estrofe2": "Noite de paz! Noite de amor!\nNas campinas, ao pastor,\nLindos anjos, mandados por Deus,\nAnunciam a nova dos céus:\nNasce o bom Salvador! (bis)",
+            "estrofe3": "Noite de paz! Noite de amor!\nOh! que belo resplendor\nIlumina o Menino Jesus!\nNo presépio do mundo eis a luz,\nSol de eterno fulgor! (bis)",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 459,
+            "tb": 650,
+            "selecionado": true,
+            "estrofe1": "Mal supõe aquela gente\nQue em Belém quer ir parar\nQue uma luz tão refulgente\nVai ali brilhar.\nÉ por anjos anunciado,\nE os pastores logo vêem\nQue o Senhor, por Deus mandado,\nNasce em Belém.",
+            "estrofe2": "Mundo triste! Oh! desperta!\nTeus grilhões desfeitos são!\nTens a porta franca, aberta;\nSai da vil prisão!\nNão te mostres duvidoso;\nEste dom do céu provém;\nCristo, Todo-Poderoso,\nNasce em Belém.",
+            "estrofe3": "Proclamai a todo o mundo,\nToda a raça, toda a cor,\nQue, em Jesus, o amor profundo\nSalva o pecador.\nConfiança plena tende,\nNão desprezará ninguém.\nVinde, os braços vos estende!\nNasce em Belém.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Vinde ouvir a doce história\nQue dos altos céus nos vem:\nO Messias, Rei da glória,\nNasce em Belém."
+        },
+        {
+            "id": 460,
+            "tb": 146,
+            "selecionado": true,
+            "estrofe1": "Lembrai-vos, habitantes do mundo terrenal:\nNasceu Jesus, o Cristo, no dia de Natal,\nA fim de a todos libertar das trevas e do mal.",
+            "estrofe2": "De Deus, o Pai celeste, um anjo proclamou\nAos homens todos, pobres, quão grande dom chegou\nE como no Menino Deus o amor se nos mostrou!",
+            "estrofe3": "―Regozijai-vos‖, disse o anjo do Senhor:\n―Nasceu-vos neste dia, Jesus, o Salvador,\nA fim de a todos libertar da morte e do temor‖.",
+            "estrofe4": "Cantemos jubilosos por dia tão feliz\nE com amor sigamos o que Jesus nos diz.\nNa festa santa do Natal, Seu povo a Deus bendiz!",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Oh! novas alegres de paz!\nNovas de paz!\nOh! novas alegres de paz!"
+        },
+        {
+            "id": 461,
+            "tb": 421,
+            "selecionado": true,
+            "estrofe1": "Jubilosa, venturosa\nNoite santa de Natal!\nMundo perdido:\nCristo é nascido!\nAlegrai-vos, alegrai-vos, ó cristãos!",
+            "estrofe2": "Jubilosa, venturosa\nNoite santa de Natal!\nGlória, os anjos cantam,\nO Infante exaltam.\nAlegrai-vos, alegrai-vos, ó cristãos!",
+            "estrofe3": "Jubilosa, venturosa\nNoite santa de Natal!\nCristo é chegado,\nVosso Rei amado.\nAlegrai-vos, alegrai-vos, ó cristãos!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 462,
+            "tb": 555,
+            "selecionado": true,
+            "estrofe1": "Exultem, ó povos! Alerta ao sinal!\nNo céu uma estrela anuncia o Natal;\nMilícia celeste, vestida de luz,\nProclama: ―Nasceu o Menino Jesus!‖",
+            "estrofe2": "Pastores já deixam rebanhos que têm\nE vão procurar a Jesus em Belém;\nDe longe vêm magos que, em devoção,\nAjoelham-se e prestam-Lhe adoração!",
+            "estrofe3": "Exultem, ó povos! Alerta ao sinal!\nJá tangem os sinos saudando o Natal!\nBendita criança, Jesus, Salvador,\nAceita a oferta do meu vero amor!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 463,
+            "tb": 145,
+            "selecionado": true,
+            "estrofe1": "Já vem perto o Natal:\nCanta o verde pinhal,\nHá sons festivos no ar,\nVibram acordes no lar.",
+            "estrofe2": "Cessem prantos e dor,\nVence as mágoas o amor\nDo meigo Infante Jesus,\nQue muda as trevas em luz.",
+            "estrofe3": "Folga o meu coração;\nOuve a doce oração\nDa multidão celestial:\n―Já está perto o Natal!‖",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 464,
+            "tb": 153,
+            "selecionado": true,
+            "estrofe1": "Em linda noite veio a nós\nUm coro de esplendor,\nCom harpas de ouro a cantar\nUm hino de louvor.\n―Aos homens paz e glória a Deus‖\n— Mensagem divinal!\nA terra toda então ouviu\nO canto angelical.",
+            "estrofe2": "Pairando sobre a terra estão\nOs anjos a cantar\nE sobre o mundo pecador\nDerramam luz sem par.\nAcima das tribulações\nDa luta terrenal,\nProclama a vinda singular\nO canto angelical.",
+            "estrofe3": "Enquanto aqui na terra estão\nOs dias a passar,\nOs povos vivem sem amor,\nNum mundo a guerrear.\nMas, quando, enfim, reinar a paz,\nEm glória triunfal,\nDos salvos todos se ouvirá\nO canto angelical.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 465,
+            "tb": 816,
+            "selecionado": true,
+            "estrofe1": "Eis que um anjo proclamou o primeiro Natal\nA uns pobres pastores ao pé de Belém,\nLá nos campos os rebanhos guardando do mal,\nNuma noite tão fria, escura também.",
+            "estrofe2": "E de súbito no céu linda estrela surgiu,\nNo oriente brilhou com estranho fulgor.\nE a terra recebeu essa luz que fulgiu\nMuitas noites em tão grandioso esplendor.",
+            "estrofe3": "Tendo visto a clara luz dessa estrela sem par,\nDo oriente alguns magos a foram seguir,\nÀ procura de um rei que devia chegar\nAos judeus e antigas promessas cumprir.",
+            "estrofe4": "Essa estrela apareceu e os magos guiou\nNa estrada que para a Judéia conduz;\nE, chegando a Belém, essa estrela parou,\nBem acima da casa em que estava Jesus.",
+            "estrofe5": "E os magos, com afã e com grande temor,\nNesse humilde lugar se vieram prostrar\nCom ofertas liberais e de muito valor;\nOuro e mirra e incenso vieram-Lhe dar.",
+            "estrofe6": "E com eles vamos nós, com sincero fervor,\nTributar homenagens a Quem nos amou,\nAdorar de coração o supremo Senhor\nQue, morrendo na cruz, nossas almas salvou!",
+            "som": "",
+            "coro": "Natal! Natal! Natal! Natal!\nÉ-nos nascido um Rei divinal!"
+        },
+        {
+            "id": 466,
+            "tb": 322,
+            "selecionado": true,
+            "estrofe1": "Eis dos anjos a harmonia!\nCantam glória ao Rei Jesus.\nPaz aos homens! que alegria!\nPaz com Deus em plena luz.\nOuçam, povos exultantes,\nErgam salmos triunfantes,\nAclamando o seu Senhor;\nNasce Cristo, o Redentor!",
+            "estrofe2": "Cristo, eternamente honrado,\nDo Seu trono Se ausentou.\nEntre homens encarnado,\nDeus conosco Se mostrou.\nQue sublime divindade!\nQue excelsa humanidade!\nSalve, glória de Israel,\nLuz do mundo, Emanuel!",
+            "estrofe3": "Cante o povo resgatado\nGlória ao Príncipe da paz;\nDeus, em Cristo revelado,\nVida e luz ao mundo traz!\nNasce a fim de renascermos,\nVive para ressurgirmos,\nRei, Profeta e Salvador.\nLouvem todos ao Senhor!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Toda a terra e os altos céus\nCantem sempre glória a Deus!"
+        },
+        {
+            "id": 467,
+            "tb": 773,
+            "selecionado": true,
+            "estrofe1": "Pelos anjos anunciado,\nPor pastores adorado,\nDom de Deus, dos céus mandado,\nEm Belém Jesus nasceu!",
+            "estrofe2": "A Seus pés de longe vindo,\nDa alta estrela a luz seguindo,\nMagos prostram-se, sorrindo,\nA adorar o Rei dos reis!",
+            "estrofe3": "Ó Jesus, de Deus nascido,\nEm Maria concebido,\nVenho a Ti agradecido\nPelo dia de Natal!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 468,
+            "tb": 402,
+            "selecionado": true,
+            "estrofe1": "De Belém formosa estrela,\nResplendente em seu fulgor,\nAnuncia a todo o mundo\nTer nascido o Salvador.",
+            "estrofe2": "Este dia tão glorioso,\nCelebrado entre as nações,\nNos demonstra que o Messias\nVem reinar nos corações.",
+            "estrofe3": "Surge, enfim, uma alvorada\nQue dá gozo ao coração,\nPois nos diz que Jesus Cristo\nTraz ao mundo a redenção.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Ressoem sinos de Natal!\nExulte o coro angelical!\nAo mundo veio a eterna luz,\nNasceu o Rei Jesus!"
+        },
+        {
+            "id": 469,
+            "tb": 103,
+            "selecionado": true,
+            "estrofe1": "Cristo nasceu! Nações, ouvi,\nO vosso Rei saudai;\nOs corações a Ele abri,\nOh! terra e céus, cantai! \t\t(bis)\nOh! terra, oh! terra e céus, cantai!",
+            "estrofe2": "Ao mundo veio o Salvador!\nVós, homens, celebrai!\nFlorestas, rios e prado em flor\nContentes, exaltai! \t\t(bis)\nContentes, todos, exaltai!",
+            "estrofe3": "Fujam pecado, escuridão,\nEspinhos e temor;\nPois Ele traz a redenção\nE é nosso Benfeitor, \t\t\t (bis)\nÉ nosso, é nosso Benfeitor!",
+            "estrofe4": "Ele as nações governará\nCom graça divinal;\nGlorioso dom concederá\nDe glória perenal, \t\t\t (bis)\nDe glória, glória perenal!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 470,
+            "tb": 144,
+            "selecionado": true,
+            "estrofe1": "Cessam as vozes do mundo, falam as vozes do céu!\nUm Salvador é nascido — eis a mensagem de Deus.\nTemos a nova de grande valor,\nBoa vontade aos homens de fé.\nCessam as vozes do mundo,\nFalam as vozes do céu!",
+            "estrofe2": "Luzem nos céus as estrelas, brilha nas almas a luz\nE, como luz verdadeira, é ela que nos conduz.\nDo alto a aurora a nós visitou,\nPara alumiar os que em trevas estão;\nCumprindo a profecia,\nA todos veio salvar!",
+            "estrofe3": "Verbo de Deus feito carne, conosco veio habitar\nEntre a miséria e pobreza, aos homens Se revelar,\nTrazendo vida a quem tanto Ele amou,\nPara levá-los à glória do céu.\nGlória cantemos a Deus,\nPelo penhor que mandou!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 471,
+            "tb": 144,
+            "selecionado": true,
+            "estrofe1": "Bem junto a seu rebanho ali\nVigia o pastor;\nA noite é de harmonia e fé\nE pleno e santo amor.",
+            "estrofe2": "Formosa estrela de Belém,\nBrilhante em seu fulgor,\nA todo o mundo anunciou:\nNasceu o Salvador!",
+            "estrofe3": "Eis que anjos surgem lá no céu,\nCelestiais visões\nCantando: ―Glória! Glória a Deus\nE paz aos corações!‖",
+            "estrofe4": "A aurora que nos visitou,\nRevelação de Deus,\nA terra inteira iluminou,\nChamando os filhos Seus!",
+            "estrofe5": "Louvores demos ao Senhor\nPor nossa redenção\nE nos prostremos a Seus pés\nEm vera adoração.",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 472,
+            "tb": 143,
+            "selecionado": true,
+            "estrofe1": "Alta noite estão pastores\nDe Belém, ao derredor;\nE os cercou de resplendores\nLuz celeste do Senhor.",
+            "estrofe2": "Glória a Deus e paz bendita,\nEis o canto angelical,\nPara toda a gente aflita,\nTão glorioso e triunfal.",
+            "estrofe3": "Ver Jesus na manjedoura,\nOnde veio repousar,\nQuerem eles sem demora,\nPara a nova confirmar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "―Novas tenho, dar-vos venho‖,\nDisse um anjo com dulçor;\n―É nascido o Bem-amado,\nJesus Cristo, o Salvador‖."
+        },
+        {
+            "id": 473,
+            "tb": 195,
+            "selecionado": true,
+            "estrofe1": "Numa noite de luar,\nAstros a brilhar,\nNas campinas tudo dorme em paz,\nE pobre em Belém\nComo mais ninguém\nNasceu Jesus - Rei e Salvador!",
+            "estrofe2": "Eis pastores vêm chegar\nAo humilde lar\nE, adorando, louvam ao Senhor,\nE agora todos crêem,\nPaz aos homens vem\nDo bom Jesus - Rei e Salvador!",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Cantou o coro angelical, \t\t\t) bis\nTocaram sinos de Natal: \t\t\t)\nNasceu Jesus - Rei e Salvador! )"
+        },
+        {
+            "id": 474,
+            "tb": 208,
+            "selecionado": true,
+            "estrofe1": "Noite fria e bela\nTrouxe ao mundo a paz.\nDom divino, santo e bom,\nTu, ó Deus, nos dás.\nEis nos céus o resplendor\nDe tão grande luz.\nÉ o Natal bendito\nDe Jesus.",
+            "estrofe2": "Meu Senhor, agora,\nQue Te posso dar?\nTua glória, amor, poder,\nSempre proclamar.\nAnjos cantam pelos céus:\nEis o Salvador!\nVos nasceu, humilde,\nUm Senhor!",
+            "estrofe3": "Glorioso e santo\nVem a nós, Jesus.\nFaze-nos, então, seguir\nO que a Ti conduz.\nVem, inclina os corações\nPara Te louvar:\nComo fez Maria,\nTe adorar!",
+            "estrofe4": "Santo e puro és, Cristo,\nNão há outro igual.\nPobre, em humildade, vens:\nEis o Teu Natal!\nMas a glória que Tu tens\nDás aos filhos Teus:\nÉ a esperança nossa\nLá dos céus!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 475,
+            "tb": 735,
+            "selecionado": true,
+            "estrofe1": "Vão-se os anos, vão-se as eras,\nMorre a planta, murcha a flor,\nPassa o gozo, foge o riso,\nMas eterno és Tu, Senhor!",
+            "estrofe2": "Tudo passa nesta vida,\nAlegria e dissabor;\nTudo foge como a sombra,\nTudo foge qual vapor.",
+            "estrofe3": "Ano velho que termina\nNunca volta a refluir,\nMas a fé que me conforta\nHá de sempre reluzir.",
+            "estrofe4": "Imutável, Deus bondoso,\nVem minha alma proteger!\nVem livrar-me dos reveses,\nVem em tudo me valer!",
+            "estrofe5": "Vem, aclara a estreita senda\nQue terei de palmilhar!\nVem, dirige minha vida,\nOs meus passos vem guiar!",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 476,
+            "tb": 147,
+            "selecionado": true,
+            "estrofe1": "Rompe a aurora! Vai-se embora\nMais um ano de labor!\nNão temamos, prossigamos\nA lutar com mais fervor.",
+            "estrofe2": "Raia o dia! Que alegria!\nTudo vem de Sua mão!\nPaz, repouso, santo gozo,\nEis os dons da salvação.",
+            "estrofe3": "No momento, os talentos\nEmpreguemos com prazer;\nE sem susto, ante o Justo,\nSempre havemos de viver.",
+            "estrofe4": "Oh! louvemos e cantemos\nHoje a Deus com grande ardor!\nVem do arcano mais um ano\nQue anuncia Seu favor.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Ano findo nunca mais veremos;\nAno novo hoje recebemos!\nVem! vê o belo dom que Deus nos dá!"
+        },
+        {
+            "id": 477,
+            "tb": 396,
+            "selecionado": true,
+            "estrofe1": "Já termina o ano velho;\nDamos a Jesus louvor,\nQue do mal nos tem guardado\nEste ano com amor.",
+            "estrofe2": "A verdade em nós conserva,\nTem nossa alma em proteção;\nDe doutrina falsa e ímpia\nLivra nosso coração.",
+            "estrofe3": "Do pecado nos afasta,\nNossos passos vem guiar\nE, esquecidas nossas culpas,\nUm bom ano vem-nos dar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 478,
+            "tb": 423,
+            "selecionado": true,
+            "estrofe1": "Ano velho, já findado,\nFoste dom do Criador.\nAno bom, que vens entrando,\nVens do mesmo Benfeitor.\nTodo o tempo, todo o tempo\nTestemunha o Seu amor.",
+            "estrofe2": "Ano bom, a tua vinda\nCelebramos com festim,\nMas teus dias fugitivos\nPrestes voam para o fim.\nIgnoramos, ignoramos\nSe veremos outro assim.",
+            "estrofe3": "Cantaremos esta graça\nCom acorde e suave som.\nE, com vivo regozijo,\nBendizendo o excelso dom,\nSaudaremos, saudaremos\nO ano novo, o ano bom!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 479,
+            "tb": 82,
+            "selecionado": true,
+            "estrofe1": "Quiseste às bodas de Caná,\nSenhor, comparecer.\nVem hoje os noivos inspirar\nUnidos a viver!",
+            "estrofe2": "Tu proclamaste santo e bom\nO voto conjugal,\nPrefigurando o Teu amor\nÀ Igreja terrenal.",
+            "estrofe3": "Os que se achegam ao altar\nPara esta santa união\nImploram bênçãos perenais\nE Tua proteção.",
+            "estrofe4": "Permite àqueles que hoje vêm\nUnir-se em santo amor\nA graça de se amarem mais,\nVivendo em Teu temor.",
+            "estrofe5": "E dá-lhes Teu divino dom,\nQue a todos satisfaz;\nConcede-lhes, da vida ao fim,\nA Tua eterna paz.",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 480,
+            "tb": 543,
+            "selecionado": true,
+            "estrofe1": "Pai, colocaste já no ser humano\nTeus sentimentos, Teu divino amor;\nEis que, segundo Teu sagrado plano,\nVem este par perante Ti, Senhor.",
+            "estrofe2": "Bem como às aves dás seguro abrigo,\nBem como aos ninhos dás também calor,\nDá para os noivos lar ameno e amigo,\nDá proteção, e reine assim o amor.",
+            "estrofe3": "Vem conceder-lhes luz em sua história,\nFé, confiança, mais amor também;\nTua presença seja-lhes notória\nConstantemente em seu viver. Amém!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 481,
+            "tb": 430,
+            "selecionado": true,
+            "estrofe1": "Abençoa, Deus eterno,\nEstes noivos hoje aqui.\nQue, ao darem este passo,\nSe aproximem mais de Ti.\nPõe Teu selo, põe Teu selo\nSobre esta santa união. ) bis",
+            "estrofe2": "Sobre a esposa, acumula\nTua bênção, Teu favor.\nDá, por dote, imensa graça,\nTeu excelso e santo amor.\nVirtuosa, virtuosa,\nOh! que possa sempre ser. \t) bis",
+            "estrofe3": "Sê, Tu, guia do esposo\nPara os votos seus cumprir.\nOh! concede o Teu amparo\nVenha o que possa vir.\nVenturoso, venturoso\nSeja ele até o fim. \t) bis",
+            "estrofe4": "Santifica este enlace,\nOs nubentes vem guiar.\nSê o hóspede bem-vindo,\nVem com eles habitar.\nTuas bênçãos, Tuas bênçãos\nDá-lhes sempre, ó Senhor. \t) bis",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 482,
+            "tb": 220,
+            "selecionado": true,
+            "estrofe1": "Bendito Salvador,\nCom Tua aprovação,\nConduze em doce amor\nTeus filhos nesta união.\nOh! vem aos noivos conceder\nA graça que lhes é mister!",
+            "estrofe2": "Concede-lhes andar\nUnidos no Senhor\nE a vida assim passar\nEm santo e puro amor.\nLigados no temor de Deus,\nCaminhem juntos para os céus.",
+            "estrofe3": "Senhor, se Te aprouver\nOuvir nossa oração,\nPodemos compreender,\nÓ Pai, que nesta união\nImagem temos desse amor\nQue prende a Igreja e o Salvador.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 483,
+            "tb": 4,
+            "selecionado": true,
+            "estrofe1": "Senhor, queremos dedicar\nA Ti tão precioso ser;\nNas Tuas mãos o vem tomar,\nE assim, por Ti, há de viver.",
+            "estrofe2": "Por Tua graça e Teu poder\nObedecendo à Tua lei,\nLeal, feliz há de crescer\nE Te servir, ó grande Rei.",
+            "estrofe3": "Os nossos votos, santo Pai,\nA Ti queremos renovar;\nE assim também crescendo vai\nTeu povo, em graça salutar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 484,
+            "tb": 266,
+            "selecionado": true,
+            "estrofe1": "Jesus, nós Te queremos\nAgora oferecer\nOs nossos pequeninos,\nPrimícias do viver.",
+            "estrofe2": "Liberta as suas almas\nDe apegos terreais\nE inspira-lhes anelos\nDe glórias imortais.",
+            "estrofe3": "Aos pais concede a graça\nDo vigilante amor,\nFiel e abnegado,\nConstante no Senhor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Entrando nesta vida,\nPerigos correm mil;\nDefende-os, pois, ó Cristo,\nDo fascinante ardil."
+        },
+        {
+            "id": 485,
+            "tb": 730,
+            "selecionado": true,
+            "estrofe1": "Vinde, meninos, vinde a Jesus,\nQue vos obteve bênçãos na cruz!\nOs pequeninos Ele conduz,\nVinde ao Salvador!",
+            "estrofe2": "―Amo as crianças!‖, Cristo vos diz,\nQuer que entreis no lindo país;\nQuer conceder-vos vida feliz,\nVinde ao Salvador!",
+            "estrofe3": "Eis a mensagem: ―Oh! vinde a Mim!‖\nOutro não há que vos queira assim;\nSeu é o amor que nunca tem fim!\nVinde ao Salvador!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Que alegria! Sem pecado ou mal,\nReunidos todos, afinal,\nNesse país feliz, eternal,\nJunto ao Salvador!"
+        },
+        {
+            "id": 486,
+            "tb": 424,
+            "selecionado": true,
+            "estrofe1": "Venham, todas as crianças,\nAo bendito Salvador;\nÉ Jesus quem quer salvá-las,\nQuer mostrar-lhes Seu favor.\nCristo sempre nos concede\nSua graça, Seu amor! ) bis",
+            "estrofe2": "―Venham, todas as crianças‖,\nÉ o convite de Jesus;\nEle, a fim de perdoá-las,\nSua vida deu na cruz.\nCristo sempre, com ternura,\nQuer guiar-nos para a luz! ) bis",
+            "estrofe3": "Venham, todas as crianças,\nAo Senhor Jesus servir,\nReceber os Seus preceitos,\nSua sábias leis ouvir.\nCristo sempre quer a todos,\nCom paciência, instruir. ) bis",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 487,
+            "tb": 350,
+            "selecionado": true,
+            "estrofe1": "Vejo no céu resplendente\nDo sol a clara luz;\nQuero viver tão somente\nBrilhando por Jesus.",
+            "estrofe2": "Quero em tudo exaltá-lO\nNa escola e no estudar,\nTambém jamais esquecê-lO\nEm casa e no brincar.",
+            "estrofe3": "Pronto a servir toda a gente,\nAssim me quer Jesus,\nRosto alegre e contente,\nBrilhando como a luz.",
+            "estrofe4": "Do feio e triste pecado\nJesus me vem guardar;\nPor Ele sempre amparado\nDesejo, sim, andar.",
+            "estrofe5": "Sendo da Sua vontade,\nBrilhando viverei;\nE, pela Sua bondade,\nAo lindo céu irei.",
+            "som": "",
+            "coro": "Brilhando, brilhando,\nQuero brilhar como a luz;\nBrilhando, brilhando,\nQuero brilhar por Jesus!"
+        },
+        {
+            "id": 488,
+            "tb": 187,
+            "selecionado": true,
+            "estrofe1": "Sabes quantas estrelinhas\nLá no firmamento estão?\nSabes quantas nuvenzinhas\nPelo vasto mundo vão?\nDeus a todas tem contado,\nUma só não há faltado,\nNem de tantas uma só. (bis)",
+            "estrofe2": "Sabes quantas aves voam\nPelo luminoso ar?\nQuantos peixes que não cansam,\nDivertindo-se no mar?\nDeus a todos deu a vida,\nCada um tem sua lida,\nAlegria e prazer. (bis)",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 489,
+            "tb": 737,
+            "selecionado": true,
+            "estrofe1": "Oh! vinde, crianças!\nCantai a linda história\nDo bom Messias, Rei dos reis,\nJesus, o Salvador!\nE repeti, com gratidão,\nA doce e terna exclamação:\n―Deixai os pequeninos que venham a Mim!‖",
+            "estrofe2": "Pais crentes, devotos,\nTraziam os filhinhos,\nBuscando a bênção e o favor\nDe Cristo, Emanuel.\nE, com palavras de rigor,\nSão afastados do Senhor:\n―Levai os pequeninos, tirai-os daqui!‖",
+            "estrofe3": "Mas eis que o bom Mestre,\nCom carinhoso gesto,\nAs criancinhas chama a Si\nE aos presentes diz:\n―Sobre elas Minhas mãos porei,\nEu mesmo as abençoarei;\nDeixai os pequeninos que venham a Mim!‖",
+            "estrofe4": "Sim, vinde, crianças!\nJesus vos deu Seu sangue\nE vos convida para o céu,\nBuscai a salvação.\nEle é o divinal Pastor!\nOuvi a voz do Redentor:\n―Deixai os pequeninos que venham a Mim!‖",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 490,
+            "tb": 627,
+            "selecionado": true,
+            "estrofe1": "Oh! louvai-O, todas as crianças, \t\t) bis\nDeus é amor, Deus é amor. \t\t) ",
+            "estrofe2": "Sede gratas, todas as crianças, ) bis\nDeus é amor, Deus é amor. \t\t)",
+            "estrofe3": "Oh! amai-O, todas as crianças, ) bis\nDeus é amor, Deus é amor. \t\t)",
+            "estrofe4": "Coroai-O, todas as crianças, \t\t) bis\nDeus é amor, Deus é amor. \t\t)",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 492,
+            "tb": 538,
+            "selecionado": true,
+            "estrofe1": "É tão linda essa história do bom Salvador,\nQue no mundo como homem andou\nE com meigas palavras de terno amor\nPara Si os meninos chamou.\nSua mão repousou com carinho e poder\nNas crianças reunidas assim.\nAh! quão doce seria escutá-lO dizer:\n―Os meninos que venham a Mim!‖",
+            "estrofe2": "Venho agora, eu, com minha oração a Jesus,\nA pedir-Lhe o indizível favor\nDe acolher-me em Seus braços no mundo de luz,\nOnde eu veja o bendito Senhor!\nSim, espero habitar com Jesus, outrossim,\nNo palácio dos filhos de Deus,\nJá que muitos meninos se ajuntam ali,\nPois ―dos tais é o reino dos céus.‖",
+            "estrofe3": "Mas é certo que tantos milhares jamais\nConseguiram saber desse amor;\nFolgaríamos nós que esses pobres mortais\nConhecessem o bom Redentor.\nOh! que todos, bem cedo, recebam com fé\nA mensagem que traz salvação,\nE conosco terão de Jesus a mercê\nDe viverem em Sua mansão.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 493,
+            "tb": 578,
+            "selecionado": true,
+            "estrofe1": "Eis que Cristo vem à terra\nBuscar Suas jóias,\nSuas jóias mui preciosas\nDe muito valor.",
+            "estrofe2": "Vem buscá-las, vai levá-las\nAo reino celeste,\nSuas jóias resplendentes\nDe muito valor.",
+            "estrofe3": "Os meninos e as meninas\nQue servem a Cristo\nSão-Lhe jóias, ricas jóias,\nDe muito valor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Como estrelas da aurora\nBrilhando na fronte\nDe Jesus, lá na glória\nAdorno serão."
+        },
+        {
+            "id": 494,
+            "tb": 220,
+            "selecionado": true,
+            "estrofe1": "Por minha boa mãe\nE pelo seu amor,\nImenso e sem rival,\nSou grato ao Senhor!",
+            "estrofe2": "Pois ela me cuidou\nDa vida ao despertar\nE aos pés do bom Jesus\nFez-me encaminhar.",
+            "estrofe3": "Se rico ou pobre for,\nJamais hei de a esquecer\nE minha boa mãe\nNa mente hei de ter.",
+            "estrofe4": "É bom aqui sentir\nDa mãe o santo amor;\nPor ela, o coração\nBendiz o Criador.",
+            "estrofe5": "",
+            "som": "",
+            "coro": "É grande o bem\nQue na alma tem\nQuem pode a alguém\nChamar de mãe.\nMãe querida,\nSempre estás no meu coração.\nRecebe a minha gratidão,\nÓ conselheira querida."
+        },
+        {
+            "id": 495,
+            "tb": 266,
+            "selecionado": true,
+            "estrofe1": "A nós aqui reunidas,\nSenhor, envia luz;\nSão Tuas nossas vidas,\nGanhaste-as já na cruz.\nÉ vão qualquer trabalho\nSem Tua aprovação,\nO nosso esforço é falho,\nSe não nos dás a mão.",
+            "estrofe2": "Se a nossa fé se abala\nEm face às tentações,\nSerenamente fala\nAos nossos corações.\nA experiência viva\nDo Teu fiel amor\nO nosso ardor ativa\nE inspira em nós fervor.",
+            "estrofe3": "Esposas, mães piedosas\nQueremos ser, Senhor,\nFiéis e carinhosas\nEnchendo o lar de amor.\nQue a paz e a harmonia\nDominem nosso lar.\nEm nossa companhia\nVem Tu sempre habitar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Nós, crentes, redimidas,\nConfiamos nosso lar\nE as nossas próprias vidas\nA Ti, no Teu altar."
+        },
+        {
+            "id": 496,
+            "tb": 362,
+            "selecionado": true,
+            "estrofe1": "Sempre unidas, companheiras,\nDeclaremos, por Jesus,\nGuerra santa contra as trevas,\nPelejando junto à cruz.",
+            "estrofe2": "Somos fracas, bem sabemos,\nMas havemos de vencer\nSe tivermos confiança,\nSe cumprirmos o dever.",
+            "estrofe3": "Sempre firmes na esperança,\nConfiando no Senhor,\nImploremos Sua graça\nE busquemos Seu amor!",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Vamos todas, companheiras!\nSempre unidas no Senhor!\nComo esposas, mães ou filhas,\nTrabalhemos com fervor."
+        },
+        {
+            "id": 497,
+            "tb": 237,
+            "selecionado": true,
+            "estrofe1": "Tudo é belo em derredor\nCom amor no lar;\nNossa vida é melhor\nCom amor no lar.\nEsse amor produz a paz,\nToda a mágoa e dor desfaz,\nLuz, saúde e gozo traz\nSempre o amor no lar.",
+            "estrofe2": "Na choupana há prazer\nCom amor no lar;\nÓdio e mal não pode haver\nCom amor no lar.\nCada rosa no jardim\nCanta hinos para mim,\nDando à vida alegre fim,\nCom amor no lar.",
+            "estrofe3": "Harmonia há de vir\nCom amor no lar;\nTodos vão poder sentir\nEsse amor no lar.\nDo riacho o murmurar\nE das aves o cantar,\nTudo leva a jubilar\nCom amor no lar.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Com o amor do Senhor,\nNão há dor, não há pesar,\nCom Jesus no lar."
+        },
+        {
+            "id": 498,
+            "tb": 447,
+            "selecionado": true,
+            "estrofe1": "Desce, ó Deus, com Tua graça\nE abençoa o nosso lar;\nDá-lhe calma e confiança\nMesmo quando a dor chegar!\nCobre o teto, nosso abrigo,\nCom Teu manto protetor,\nEnche o ar que nos envolve,\nDe alegria, paz e amor.",
+            "estrofe2": "Nesta casa e em nossas almas,\nBrilhe a Tua santa luz!\nQue vivamos irmanados,\nSob a égide da cruz!\nFaze deste lar um templo\nDe onde ardentes orações\nSubam, qual fragrante incenso,\nDe submissos corações.",
+            "estrofe3": "",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 499,
+            "tb": 215,
+            "selecionado": true,
+            "estrofe1": "Divino Salvador,\nContempla com favor\nNosso país!\nDá-nos interna paz,\nGoverno bom, capaz,\nVida que satisfaz,\nNação feliz.",
+            "estrofe2": "Olhamos para Ti,\nVem dominar aqui,\nÓ Rei dos reis!\nDirige o pátrio lar,\nEnsina a governar\nConforme o Teu mandar,\nPor justas leis.",
+            "estrofe3": "Do crime e rebelião\nConcede a proteção\nQue é divinal.\nGuardar-nos vem, Senhor,\nDe guerras e terror;\nSê nosso defensor,\nDesvia o mal.",
+            "estrofe4": "Poder supremo tens!\nOutorga os altos bens\nDa salvação.\nBrilhe a benigna luz\nQue o Teu favor produz!\nReine o Senhor Jesus\nSobre a nação!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 500,
+            "tb": 249,
+            "selecionado": true,
+            "estrofe1": "Ó Pátria minha amada,\nBrasil dos sonhos meus,\nDirija o teu destino\nA mão do eterno Deus!\nQue brilhe em teu caminho\nA refulgente luz\nDo amor e da verdade,\nDa glória de Jesus!",
+            "estrofe2": "Que o Pai dirija e guarde\nA vida nacional\nE a livre de perigos,\nPecado e todo o mal!\nA quantos que governam\nConceda o Seu favor\nE guie em paz o povo\nNa senda ideal do amor!",
+            "estrofe3": "O Deus Onipotente\nNão cesse de abençoar\nO pai, a mãe, os filhos,\nO rico e o pobre lar!\nO obreiro em seu trabalho,\nO mestre, o moço, o ancião\nAlcancem, cada dia,\nDivina proteção!",
+            "estrofe4": "Jesus, protege sempre\nO povo do Brasil,\nE desçam sobre a terra\nAs Tuas bênçãos mil!\nA gratidão nos leve\nA erguer-Te o coração\nEm culto fervoroso,\nEm santa adoração!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 501,
+            "tb": 191,
+            "selecionado": true,
+            "estrofe1": "Por nossa Pátria oramos\nA Ti, supremo Deus!\nPor nosso lar clamamos\nA Ti, ó Rei dos céus!\nBendize a vida pastoril,\nGoverna o brio senhoril,\nModera a lida mercantil.\nDeus salve a Pátria!",
+            "estrofe2": "Da Pátria que nos deste,\nDesvie Tua mão\nDesgraças, fome e peste,\nPerfídia e sedição;\nSustenta a ordem nacional,\nO bom governo imparcial,\nE dá-nos graça divinal.\nDeus salve a Pátria!",
+            "estrofe3": "Dá-nos real civismo,\nFiel, constante, audaz;\nPromove o cristianismo\nDo Príncipe da Paz;\nDa Pátria afasta crenças vãs,\nDerrama bênçãos temporãs,\nDominem só doutrinas sãs.\nDeus salve a Pátria!",
+            "estrofe4": "A Tua Igreja inflama\nCom zelo e terno amor,\nE seja o seu programa\nCumprido com vigor.\nEntão, os salvos de Jesus,\nLutando firmes pela cruz,\nDifundirão de Cristo a luz\nPor toda a Pátria!",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 502,
+            "tb": 246,
+            "selecionado": true,
+            "estrofe1": "Da Igreja, o fundamento\nÉ Cristo, o Salvador;\nEm Seu poder descansa\nE é forte em Seu amor.\nEm Cristo bem firmada,\nSegura sempre está\nE sobre a Rocha eterna\nJamais se abalará.",
+            "estrofe2": "A Pedra preciosa\nQue Deus predestinou\nSustenta pedras vivas\nQue a graça trabalhou.\nE, quando o monumento\nSurgir em plena luz,\nA glória do edifício\nSerá do Rei Jesus!",
+            "estrofe3": "Senhor, nós Te rogamos\nQue, erguido por amor,\nO templo consagrado\nRedunde em Teu louvor\nE que almas redimidas\nAqui, em comunhão,\nSe tornem templo santo\nDa Tua habitação.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": ""
+        },
+        {
+            "id": 503,
+            "tb": 506,
+            "selecionado": true,
+            "estrofe1": "Deus vos guarde pelo Seu poder,\nProtegidos, abençoados,\nDesfrutando os Seus cuidados,\nDeus vos guarde pelo Seu poder.",
+            "estrofe2": "Deus vos guarde para o Seu louvor,\nConsolados e contentes,\nSempre em comunhão com os crentes;\nDeus vos guarde para o Seu louvor.",
+            "estrofe3": "Deus vos guarde bem no Seu amor,\nNo trabalho venturoso,\nPara o dia glorioso,\nDeus vos guarde bem no Seu amor.",
+            "estrofe4": "",
+            "estrofe5": "",
+            "som": "",
+            "coro": "Pelo Seu poder e no Seu amor,\nEstaremos juntos com Jesus,\nPelo Seu poder e no Seu amor,\nOh! que Deus nos guarde em Sua luz!"
+        }
 
     ])
 
@@ -3877,6 +6100,9 @@ const body = () => {
     const musica = letra.find(item => item.id === musicaSelecionada);
     //Caso eu queira ver o total de música
     const musicTotal = letra.length;
+    //------------------------
+    // Alert.alert("total de musicas", `${musicTotal}`)
+
 
     //Verificar se tem coro
     let conteudoCoro;
@@ -3901,17 +6127,19 @@ const body = () => {
     }
 
     return (
-        <ScrollView>
+        <ScrollView style={[styles.scrollContainer, {backgroundColor: isDarkMode ? '#111' : '#eee'}]} >
             <StatusBar hidden />
-            <View style={[styles.picContainer, { backgroundColor: isDarkMode ? '#001' : '#eee' }]}>
-                <Picker
+            <View style={[styles.picContainer, { backgroundColor: isDarkMode ? '#111' : '#eee' }]}>
+                <Picker itemStyle={{color:"red"}}
                     selectedValue={musicaSelecionada}
                     onValueChange={(itemValue) => setMusicaSelecionada(itemValue)}
-                    style={[styles.picker, { color: isDarkMode ? '#fff' : '#001' }]}>
-                    {letra.map(val => (
-                        <Picker.Item key={val.id} label={`Canção ${val.id}`} value={val.id}
-                        />
-                    ))}
+                    style={[styles.picker, { color: isDarkMode ? '#fff' : '#222' }]}>
+                    {
+                        letra.map(val => (
+                            <Picker.Item key={val.id} label={`Canção ${val.id}`} value={val.id}
+                            />
+                        ))
+                    }
                 </Picker>
                 {/* BOTÃO REPRODUZIR ÁUDIO */}
                 <TouchableOpacity style={{ width: '20%' }} onPress={playSound} >
@@ -3925,7 +6153,7 @@ const body = () => {
             <View style={styles.container} >
                 <View style={styles.estrofe} >
                     {musica && (
-                        <Text style={[styles.estrofe, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe1}</Text>
+                        <Text style={[styles.letra, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe1}</Text>
                     )}
                 </View>
                 {/* VIEW REFRÃO - CORO */}
@@ -3937,7 +6165,7 @@ const body = () => {
                 <View style={styles.estrofe} >
                     <Text  >
                         {musica && (
-                            <Text style={[styles.estrofe, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe2}</Text>
+                            <Text style={[styles.letra, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe2}</Text>
                         )}
                     </Text>
                 </View>
@@ -3945,7 +6173,7 @@ const body = () => {
                 <View style={styles.estrofe} >
                     <Text  >
                         {musica && (
-                            <Text style={[styles.estrofe, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe3}</Text>
+                            <Text style={[styles.letra, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe3}</Text>
                         )}
                     </Text>
                 </View>
@@ -3953,26 +6181,26 @@ const body = () => {
                 <View style={styles.estrofe} >
                     <Text  >
                         {musica && (
-                            <Text style={[styles.estrofe, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe4}</Text>
+                            <Text style={[styles.letra, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe4}</Text>
                         )}
                     </Text>
                 </View>
                 {/* VIEW ESTROFE 5 */}
                 <View style={styles.estrofe} >
-                    <Text style={styles.letra} >
+                    <Text  >
                         {
                             musica && (
-                                <Text style={[styles.estrofe, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe5}</Text>
+                                <Text style={[styles.letra, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe5}</Text>
                             )
                         }
                     </Text>
                 </View>
                 {/* VIEW ESTROFE 6 */}
                 <View style={styles.estrofe} >
-                    <Text style={styles.letra} >
+                    <Text >
                         {
                             musica && (
-                                <Text style={[styles.estrofe, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe6}</Text>
+                                <Text style={[styles.letra, { color: isDarkMode ? '#fff' : '#001' }]}>{musica.estrofe6}</Text>
                             )
                         }
                     </Text>
@@ -3983,27 +6211,34 @@ const body = () => {
 }
 
 const styles = StyleSheet.create({
+    scrollContainer:{
+        backgroundColor:"#fff",
+        height:"100%"
+    },
     container: {
         margin: 10
     },
     estrofe: {
         marginTop: 10,
-        marginLeft: 5,
-        fontSize: 16 * escala
+        marginLeft: "1%",
+        marginRight: "1%",
+        width: '100%',
     },
     coro: {
         width: '100%',
         margin: 12
     },
     letra: {
-
+        fontSize: 16 * escala,
+        width: '100%',
     },
     picContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#001',
-        margin: 1
+        margin: 1,
+        // borderBottomWidth:2,
+        // borderBottomColor:"#000"
     },
     picker: {
         width: '60%',

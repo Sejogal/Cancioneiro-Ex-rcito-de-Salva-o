@@ -8,7 +8,7 @@ import { Feather } from '@expo/vector-icons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { PixelRatio, StyleSheet, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
+import { Alert, PixelRatio, StyleSheet, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 
 // função Adaptar tamanho da fonte do dispositivo
 const escala = PixelRatio.getFontScale();
@@ -155,6 +155,11 @@ const styles = StyleSheet.create({
 
 //Componente interno Preferencias
 const Preferencias = () => {
+  //salvar alterações
+  function save(){
+    Alert.alert("Sucesso", "Alterações salvas!")
+    App
+  }
   //Modo black
   const scheme = useColorScheme(); // "light" ou "dark"
   const isDarkMode = scheme === 'dark';
@@ -184,7 +189,7 @@ const Preferencias = () => {
           thumbColor={ativoAb ? '#069' : '#f4f3f4'}
         />
         <TouchableOpacity style={style.fundoBtn} >
-          <Text style={style.buttonText} >Salvar Alterações</Text>
+          <Text style={style.buttonText} onPress={save} >Salvar Alterações</Text>
         </TouchableOpacity>
       </View>
     )

@@ -48,7 +48,7 @@ const Feedback = () => {
       });
 
       if (response.ok) {
-        Alert.alert("Sucesso", "Feedback enviado com sucesso!");
+        Alert.alert("Sucesso", "Obrigado pelo feedback!");
         setName("");
         setEmail("");
         setMessage("");
