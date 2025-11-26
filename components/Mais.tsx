@@ -6,7 +6,7 @@ import {
     Text,
     TouchableOpacity,
     View,
-    useColorScheme,
+    useColorScheme, Alert
 } from "react-native";
 
 const Mais = () => {
@@ -18,35 +18,41 @@ const Mais = () => {
     const abrirLink = () => {
         Linking.openURL("https://www.google.com");
     }
+    const abrirLinkSobre = () => {
+        Linking.openURL("https://sejogal.github.io/ces-site/");
+    }
+    function wait() {
+        Alert.alert("Aviso", "Em desenvolvimento")
+    }
     // const abrirLinkApi = () => {
     //     Linking.openURL("");
     // }
 
     if (estado == 'inicio') {
         return (
-            <View>
+            <View style={{ margin: 2 }} >
                 {/* LINKS */}
-                <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#001' }]} >Links</Text>
+                {/* <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#001' }]} >Links</Text> */}
                 <TouchableOpacity style={style.kLink} onPress={() => setEstado('doutrinas')} >
                     <Text style={style.link} >Doutrinas</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={abrirLink} >
-                    <Text style={style.link} >Ajuda</Text>
+                <TouchableOpacity style={style.kLink} onPress={wait} >
+                    <Text style={style.link} >Passatempo</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={abrirLink} >
+                <TouchableOpacity style={style.kLink} onPress={wait} >
+                    <Text style={style.link} >API</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={style.kLink} onPress={(abrirLinkSobre)} >
                     <Text style={style.link} >Sobre</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={abrirLink} >
+                <TouchableOpacity style={style.kLink} onPress={wait} >
                     <Text style={style.link} >Termos de uso</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={() => Linking.openURL('https://www.google.com')} >
-                    <Text style={style.link} >API</Text>
                 </TouchableOpacity>
             </View>
         );
     }
-    if(estado == 'doutrinas'){
-        return(
+    if (estado == 'doutrinas') {
+        return (
             <Doutrinas></Doutrinas>
         );
     }

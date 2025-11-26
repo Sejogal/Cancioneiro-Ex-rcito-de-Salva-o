@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Cancioneiro Exército de Salvação",
+    "name": "Cancioneiro Exército de Salvação - Beta",
     "slug": "CES1_0",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/CANCIONEIRO EXÉRCITO DE SALVAÇÃO.png",//icon.png
+    "icon": "./assets/images/icon-ces.png",
     "scheme": "ces10",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.sethlussueki.CES1_0"
     },
     "web": {
       "output": "static",
@@ -30,20 +31,26 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon-ces",//splash-icon.png
+          "image": "./assets/images/splash-icon-ces.png",
           "imageWidth": "100%",
-          "imageBorder":4,
+          "imageBorder": 4,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
           "dark": {
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0fd19992-6bc8-4131-828b-3c8c2e88b765"
+      }
     }
   }
 }

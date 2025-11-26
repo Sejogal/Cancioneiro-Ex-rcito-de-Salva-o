@@ -170,7 +170,7 @@ const Preferencias = () => {
   const [state, setState] = useState('inicio')
   if (state == 'inicio') {
     return (
-      <View>
+      <View style={{margin:2}} >
         {/* Sobre ? feedback */}
         {/* Ativar e Desativar Notificações */}
         <Text style={[style.subTitle, { color: (isDarkMode) ? '#fff' : '#001' }]} >Notificações</Text>
