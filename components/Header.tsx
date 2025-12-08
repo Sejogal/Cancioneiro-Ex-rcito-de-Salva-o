@@ -10,7 +10,7 @@ const Header = () => {
             <StatusBar hidden />
             <Image
                 style={styles.imgHeader}
-                source={require('../assets/images/CANCIONEIRO EXÉRCITO DE SALVAÇÃO.png')}
+                source={require('../assets/images/headercopia.png')}
             />
         </View>
     );
