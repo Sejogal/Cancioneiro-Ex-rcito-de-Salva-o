@@ -52,5 +52,28 @@ kLink:{
   link:{
     color:'#069',
     fontWeight:500,
-  }
+    fontSize:16 * escala
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#eee',
+  },
+  caixa: {
+    borderRadius: 10,
+    padding: 20,
+    margin: 10,
+    backgroundColor: '#fff',
+  },
+  copyRight: {
+  color: '#666',
+  fontSize: 12 * escala,
+  textAlign: 'center',
+  position: 'absolute',
+  bottom: 10,      // distância da borda inferior
+  left: 0,
+  right: 0,
+  marginTop: 20,
+  marginBottom: 10
+}
+
 })

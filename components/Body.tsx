@@ -3,7 +3,7 @@
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { Picker } from "@react-native-picker/picker";
 import React, { useState } from "react";
-import { PixelRatio, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
+import { Alert, PixelRatio, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 // import letra from '@/assets/letra.json'; letra no json
 
 const escala = PixelRatio.getFontScale();
@@ -6123,11 +6123,11 @@ const body = () => {
     }
 
     function playSound() {
-        alert("Em desenvolvimento ...")
+        Alert.alert("Aviso", "Áudio indisponível no momento.");
     }
 
     return (
-        <ScrollView style={[styles.scrollContainer, {backgroundColor: isDarkMode ? '#111' : '#eee'}]} >
+        <ScrollView style={[styles.scrollContainer, {backgroundColor: isDarkMode ? '#000' : '#fff'}]} >
             <StatusBar hidden />
             <View style={[styles.picContainer, { backgroundColor: isDarkMode ? '#111' : '#eee' }]}>
                 <Picker itemStyle={{color:"red"}}
@@ -6236,9 +6236,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 1,
-        // borderBottomWidth:2,
-        // borderBottomColor:"#000"
+        marginLeft: 10,
+        marginRight: 10,
+        borderRadius: 15,
     },
     picker: {
         width: '60%',

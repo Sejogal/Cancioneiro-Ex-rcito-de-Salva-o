@@ -2,11 +2,12 @@ import style from '@/assets/style/style';
 import Doutrinas from '@/components/Doutrinas';
 import React, { useState } from "react";
 import {
+    Alert,
     Linking,
     Text,
     TouchableOpacity,
     View,
-    useColorScheme, Alert
+    useColorScheme
 } from "react-native";
 
 const Mais = () => {
@@ -30,24 +31,38 @@ const Mais = () => {
 
     if (estado == 'inicio') {
         return (
-            <View style={{ margin: 2 }} >
-                {/* LINKS */}
-                {/* <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#001' }]} >Links</Text> */}
-                <TouchableOpacity style={style.kLink} onPress={() => setEstado('doutrinas')} >
-                    <Text style={style.link} >Doutrinas</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={wait} >
-                    <Text style={style.link} >Passatempo</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={wait} >
-                    <Text style={style.link} >API</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={(abrirLinkSobre)} >
-                    <Text style={style.link} >Sobre</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={style.kLink} onPress={wait} >
-                    <Text style={style.link} >Termos de uso</Text>
-                </TouchableOpacity>
+            <View style={[style.container,{backgroundColor: (isDarkMode) ? '#000' : '#eee'}]} >
+                <View style={[style.caixa,{backgroundColor: (isDarkMode) ? '#111' : '#fff'}]} >
+                    <Text style={[style.subTitle, {
+                        color: isDarkMode ? '#fff' : '#001',
+                        marginBottom: 5
+                    }]}>
+                        Mais
+                    </Text>
+                    <TouchableOpacity style={style.kLink} onPress={() => setEstado('doutrinas')} >
+                        <Text style={style.link} >Doutrinas</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={style.kLink} onPress={wait} >
+                        <Text style={style.link} >Passatempo</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={[style.caixa,{backgroundColor: (isDarkMode) ? '#111' : '#fff'}]}>
+                    <Text style={[style.subTitle, {
+                        color: isDarkMode ? '#fff' : '#001',
+                        marginBottom: 5
+                    }]}>
+                        Links
+                    </Text>
+                    <TouchableOpacity style={style.kLink} onPress={wait} >
+                        <Text style={style.link} >API</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={style.kLink} onPress={(abrirLinkSobre)} >
+                        <Text style={style.link} >Sobre</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={style.kLink} onPress={wait} >
+                        <Text style={style.link} >Termos de uso</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         );
     }

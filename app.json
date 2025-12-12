@@ -4,7 +4,7 @@
     "slug": "CES1_0",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/splash-icon-ces.png", //splash icon está ser renderizado aqui na versão expo go
+    "icon": "./assets/images/icon-ces.png", //atualmente o icon principal - splash icon está ser renderizado aqui ao testar no expo go, mas ao exportar o app ele não renderiza.
     "scheme": "ces10",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,7 +14,7 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/icon-ces.png",
+        "foregroundImage": "./assets/images/icon-ces.png", // Icone do app está ser renderizado aqui corretamente ao exportar o app.
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
@@ -31,8 +31,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon-ces.png",
-          "imageWidth": "100%",
+          "image": "./assets/images/splash-icon-ces.png", // colocando a imagem do splash icon aqui após exportar o app, a imagem não aparece. 
           "imageBorder": 4,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",

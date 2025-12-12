@@ -7,8 +7,9 @@ const Doutrinas = () => {
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
     return (
-        <ScrollView style={{margin:"5%"}} >
-            <Text style={[style.title, { color: isDarkMode ? '#fff' : '#001' }]} >
+        <ScrollView style={[style.container,{backgroundColor: (isDarkMode) ? '#000' : '#eee'}]} >
+            <View style={[style.caixa,{backgroundColor: (isDarkMode) ? '#111' : '#fff'}]} >
+                <Text style={[style.title, { color: isDarkMode ? '#fff' : '#001' }]} >
                 {
                     doutrinas.map((val) => {
                         return (
@@ -30,6 +31,7 @@ const Doutrinas = () => {
             {/* VIEW BUG */}
             <View style={{margin:"10%"}} >
                                                                
+            </View>
             </View>
            
         </ScrollView>

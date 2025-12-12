@@ -4,6 +4,7 @@ import Feedback from '@/components/Feedback';
 import Header from '@/components/Header';
 import Mais from '@/components/Mais';
 import Nav from '@/components/Nav';
+import Preferencias from '@/components/Preferencias';
 import { Feather } from '@expo/vector-icons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
@@ -22,10 +23,6 @@ export default function App() {
 
   const switchCancoes = (() => {
     setEstado('cancoes')
-  })
-  const switchEntretenimento = (() => {
-    // setEstado('entretenimento')
-    alert("Em desenvolvimento ...")
   })
 
   if (estado == 'inicio') {
@@ -51,6 +48,9 @@ export default function App() {
             <MaterialCommunityIcons name="tune" size={48} color="#069" />
             <Text style={[style.buttonText, { color: isDarkMode ? '#fff' : '#001' }]}>Preferências</Text>
           </TouchableOpacity>
+
+        <Text style={style.copyRight} >© 2025 Seth Lussueki. Todos os direitos reservados.</Text>
+
         </View>
       </View>
     )
@@ -65,7 +65,7 @@ export default function App() {
   }
   else if (estado == 'preferencias') {
     return (
-      <View>
+      <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }} >
         <StatusBar hidden />
         <Nav estado={setEstado} title={'Preferências'} ></Nav>
         <Preferencias></Preferencias>
@@ -74,7 +74,7 @@ export default function App() {
   }
   else if (estado == 'feedback') {
     return (
-      <View>
+      <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }} >
         <StatusBar hidden />
         <Nav estado={setEstado} title={'Feedback & Sugestões'} ></Nav>
         <Feedback></Feedback>
@@ -83,7 +83,7 @@ export default function App() {
   }
   else if (estado == 'mais') {
     return (
-      <View>
+      <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }}   >
         <StatusBar hidden />
         <Nav estado={setEstado} title={'Mais'} ></Nav>
         <Mais></Mais>
@@ -152,47 +152,3 @@ const styles = StyleSheet.create({
     alignItems: 'center'      // centraliza texto dentro
   },
 });
-
-//Componente interno Preferencias
-const Preferencias = () => {
-  //salvar alterações
-  function save(){
-    Alert.alert("Sucesso", "Alterações salvas!")
-    App
-  }
-  //Modo black
-  const scheme = useColorScheme(); // "light" ou "dark"
-  const isDarkMode = scheme === 'dark';
-  //SWITCH
-  const [ativoNot, setAtivoNot] = useState(false);
-  const [ativoAb, setAtivoAb] = useState(false);
-  //
-  const [state, setState] = useState('inicio')
-  if (state == 'inicio') {
-    return (
-      <View style={{margin:2}} >
-        {/* Sobre ? feedback */}
-        {/* Ativar e Desativar Notificações */}
-        <Text style={[style.subTitle, { color: (isDarkMode) ? '#fff' : '#001' }]} >Notificações</Text>
-        <Switch
-          value={ativoNot}
-          onValueChange={setAtivoNot}
-          trackColor={{ false: '#767577', true: '#81b0ff' }}
-          thumbColor={ativoNot ? '#069' : '#f4f3f4'}
-        />
-        {/* Ativar ou desativar texto de abertura(inicio ou coro de uma música e o id)  */}
-        <Text style={[style.subTitle, { color: (isDarkMode) ? '#fff' : '#001' }]} >Textos de Abertura</Text>
-        <Switch
-          value={ativoAb}
-          onValueChange={setAtivoAb}
-          trackColor={{ false: '#767577', true: '#81b0ff' }}
-          thumbColor={ativoAb ? '#069' : '#f4f3f4'}
-        />
-        <TouchableOpacity style={style.fundoBtn} >
-          <Text style={style.buttonText} onPress={save} >Salvar Alterações</Text>
-        </TouchableOpacity>
-      </View>
-    )
-  }
-}
-// componente do body principal

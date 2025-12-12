@@ -1,19 +1,20 @@
 import style from '@/assets/style/style';
 import React, { useState } from "react";
 import {
-    ActivityIndicator,
-    Alert,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
-    useColorScheme
+  ActivityIndicator,
+  Alert,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+  useColorScheme,
+  StyleSheet
 } from "react-native";
 
 const Feedback = () => {
   const scheme = useColorScheme();
   const isDarkMode = scheme === 'dark';
-  
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -64,88 +65,103 @@ const Feedback = () => {
   };
 
   return (
-    <View style={ { padding: 20 }}>
-      <Text style={[style.subTitle, { 
-        color: isDarkMode ? '#fff' : '#001',
-        marginBottom: 20 
-      }]}>
-        Feedback
-      </Text>
-      
-      <TextInput 
-        placeholder="Digite seu nome"
-        placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
-        value={name}
-        onChangeText={setName}
-        autoCapitalize="words"
-        editable={!isLoading}
-        style={[
-          style.input, 
-          { 
-            color: isDarkMode ? '#fff' : '#001',
-            backgroundColor: isDarkMode ? '#333' : '#fff',
-            borderColor: isDarkMode ? '#555' : '#ddd',
-            marginBottom: 15
-          }
-        ]} 
-      />
-      
-      <TextInput 
-        placeholder="Digite seu email"
-        placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
-        value={email}
-        onChangeText={setEmail}
-        keyboardType="email-address"
-        autoCapitalize="none"
-        editable={!isLoading}
-        style={[
-          style.input, 
-          { 
-            color: isDarkMode ? '#fff' : '#001',
-            backgroundColor: isDarkMode ? '#333' : '#fff',
-            borderColor: isDarkMode ? '#555' : '#ddd',
-            marginBottom: 15
-          }
-        ]} 
-      />
-      
-      <TextInput 
-        placeholder="Digite seu feedback"
-        placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
-        value={message}
-        onChangeText={setMessage}
-        multiline
-        numberOfLines={6}
-        textAlignVertical="top"
-        editable={!isLoading}
-        style={[
-          style.input, 
-          { 
-            color: isDarkMode ? '#fff' : '#001',
-            backgroundColor: isDarkMode ? '#333' : '#fff',
-            borderColor: isDarkMode ? '#555' : '#ddd',
-            height: 120,
-            marginBottom: 20
-          }
-        ]} 
-      />
-      
-      <TouchableOpacity 
-        style={[
-          style.fundoBtn, 
-          isLoading && { opacity: 0.7 }
-        ]} 
-        onPress={enviarEmail}
-        disabled={isLoading}
-      >
-        {isLoading ? (
-          <ActivityIndicator color="#fff" />
-        ) : (
-          <Text style={style.buttonText}>Enviar</Text>
-        )}
-      </TouchableOpacity>
+    <View style={[style.container,{backgroundColor: (isDarkMode) ? '#000' : '#eee'}]} >
+      <View style={[style.caixa,{backgroundColor: (isDarkMode) ? '#111' : '#fff'}]} >
+        <Text style={[style.subTitle, {
+          color: isDarkMode ? '#fff' : '#001',
+          marginBottom: 20
+        }]}>
+          Preencha todos os campos para enviar seu feedback.
+        </Text>
+
+        <TextInput
+          placeholder="Digite seu nome"
+          placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
+          value={name}
+          onChangeText={setName}
+          autoCapitalize="words"
+          editable={!isLoading}
+          style={[
+            style.input,
+            {
+              color: isDarkMode ? '#fff' : '#001',
+              backgroundColor: isDarkMode ? '#333' : '#fff',
+              borderColor: isDarkMode ? '#555' : '#ddd',
+              marginBottom: 15
+            }
+          ]}
+        />
+
+        <TextInput
+          placeholder="Digite seu email"
+          placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
+          value={email}
+          onChangeText={setEmail}
+          keyboardType="email-address"
+          autoCapitalize="none"
+          editable={!isLoading}
+          style={[
+            style.input,
+            {
+              color: isDarkMode ? '#fff' : '#001',
+              backgroundColor: isDarkMode ? '#333' : '#fff',
+              borderColor: isDarkMode ? '#555' : '#ddd',
+              marginBottom: 15
+            }
+          ]}
+        />
+
+        <TextInput
+          placeholder="Digite seu feedback"
+          placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
+          value={message}
+          onChangeText={setMessage}
+          multiline
+          numberOfLines={6}
+          textAlignVertical="top"
+          editable={!isLoading}
+          style={[
+            style.input,
+            {
+              color: isDarkMode ? '#fff' : '#001',
+              backgroundColor: isDarkMode ? '#333' : '#fff',
+              borderColor: isDarkMode ? '#555' : '#ddd',
+              height: 120,
+              marginBottom: 20
+            }
+          ]}
+        />
+
+        <TouchableOpacity
+          style={[
+            style.fundoBtn,
+            isLoading && { opacity: 0.7 }
+          ]}
+          onPress={enviarEmail}
+          disabled={isLoading}
+        >
+          {isLoading ? (
+            <ActivityIndicator color="#fff" />
+          ) : (
+            <Text style={style.buttonText}>Enviar</Text>
+          )}
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#eee',
+//   },
+//   form: {
+//     borderRadius: 10,
+//     padding: 20,
+//     margin: 10,
+//     backgroundColor: '#fff',
+//   }
+// });
 
 export default Feedback;
