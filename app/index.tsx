@@ -10,11 +10,15 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { Alert, PixelRatio, StyleSheet, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
+import useDoubleBackExit from '@/hooks/useDoubleBackExit';
+import useWelcomeMessage from '@/hooks/useWelcomeMessage';
 
 // função Adaptar tamanho da fonte do dispositivo
 const escala = PixelRatio.getFontScale();
 
 export default function App() {
+  useDoubleBackExit(); // Habilita a funcionalidade de sair com duplo back
+  useWelcomeMessage(); // Chama o hook para exibir a mensagem de boas-vindas
   const scheme = useColorScheme(); // "light" ou "dark"
   const isDarkMode = scheme === 'dark';
 

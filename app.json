@@ -31,12 +31,15 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon-ces.png", // colocando a imagem do splash icon aqui após exportar o app, a imagem não aparece. 
+          "image": "./assets/images/splash-icon-ces.png", 
+          "imageWidth": 200,
+          "imageHeight": 200,
           "imageBorder": 4,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#000000",
+            "color": "#ffffff"
           }
         }
       ],

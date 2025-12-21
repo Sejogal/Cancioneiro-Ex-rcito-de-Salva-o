@@ -16,11 +16,11 @@ const Mais = () => {
 
     const [estado, setEstado] = useState('inicio')
 
-    const abrirLink = () => {
-        Linking.openURL("https://www.google.com");
-    }
     const abrirLinkSobre = () => {
-        Linking.openURL("https://sejogal.github.io/ces-site/");
+        Linking.openURL("https://ces-site.onrender.com/");
+    }
+    const abrirLinkTermos = () => {
+        Linking.openURL("https://ces-site.onrender.com/templates/termos.html");
     }
     function wait() {
         Alert.alert("Aviso", "Em desenvolvimento")
@@ -59,7 +59,7 @@ const Mais = () => {
                     <TouchableOpacity style={style.kLink} onPress={(abrirLinkSobre)} >
                         <Text style={style.link} >Sobre</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={style.kLink} onPress={wait} >
+                    <TouchableOpacity style={style.kLink} onPress={(abrirLinkTermos)} >
                         <Text style={style.link} >Termos de uso</Text>
                     </TouchableOpacity>
                 </View>
