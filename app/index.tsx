@@ -5,13 +5,13 @@ import Header from '@/components/Header';
 import Mais from '@/components/Mais';
 import Nav from '@/components/Nav';
 import Preferencias from '@/components/Preferencias';
+import useDoubleBackExit from '@/hooks/useDoubleBackExit';
+import useWelcomeMessage from '@/hooks/useWelcomeMessage';
 import { Feather } from '@expo/vector-icons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { Alert, PixelRatio, StyleSheet, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
-import useDoubleBackExit from '@/hooks/useDoubleBackExit';
-import useWelcomeMessage from '@/hooks/useWelcomeMessage';
+import { PixelRatio, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 
 // função Adaptar tamanho da fonte do dispositivo
 const escala = PixelRatio.getFontScale();
@@ -53,6 +53,7 @@ export default function App() {
             <Text style={[style.buttonText, { color: isDarkMode ? '#fff' : '#001' }]}>Preferências</Text>
           </TouchableOpacity>
 
+          
         <Text style={style.copyRight} >© 2025 Seth Lussueki. Todos os direitos reservados.</Text>
 
         </View>
