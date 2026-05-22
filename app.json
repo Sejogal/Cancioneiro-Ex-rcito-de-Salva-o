@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Cancioneiro Exército de Salvação - Beta",
+    "name": "Cancioneiro Exército de Salvação",
     "slug": "CES1_0",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,6 +15,7 @@
     "android": {
       "permissions": ["INTERNET"],
       "package": "com.sethlussueki.CES1_0",
+      "minSdkVersion": 23, // Android 6.0 (Marshmallow)
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "adaptiveIcon": {
@@ -52,9 +53,5 @@
         "projectId": "0fd19992-6bc8-4131-828b-3c8c2e88b765"
       }
     }
-  },
-
-  "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-8330853390940980~9847911330"
   }
 }

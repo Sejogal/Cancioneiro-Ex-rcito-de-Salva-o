@@ -1,6 +1,8 @@
+import letra from '@/assets/letra.json';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Picker } from '@react-native-picker/picker';
-import React, { useState } from 'react';
+import { remove as removeAccents } from 'diacritics'; // Biblioteca para remover acentos
+import React, { useRef, useState } from 'react';
 import {
     Alert,
     Keyboard,
@@ -14,7 +16,6 @@ import {
     View,
     useColorScheme,
 } from 'react-native';
-import letra from '@/assets/letra.json';
 
 const escala = PixelRatio.getFontScale();
 
@@ -40,6 +41,8 @@ const Body = () => {
     const [musicaSelecionada, setMusicaSelecionada] = useState(1);
     const [mostrarBusca, setMostrarBusca] = useState(false);
 
+    const searchInputRef = useRef<TextInput>(null); // Adicionando referência ao TextInput
+
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
 
@@ -47,12 +50,14 @@ const Body = () => {
 
     const handleSearch = () => {
         Keyboard.dismiss();
-        const termo = searchText.trim().toLowerCase();
+        const termo = removeAccents(searchText.trim().toLowerCase()); // Remover acentos do termo de busca
 
         if (!termo) {
             setResultadoBusca(null);
             return;
         }
+
+        const palavras = termo.split(' '); // Dividir o termo em palavras-chave
 
         const encontrada = musicas.find((item) =>
             [
@@ -63,14 +68,17 @@ const Body = () => {
                 item.estrofe5,
                 item.estrofe6,
                 item.coro,
-            ].some((trecho) => (trecho ?? '').toLowerCase().includes(termo))
+            ].some((trecho) => {
+                const texto = removeAccents(trecho ?? '').toLowerCase(); // Remover acentos do texto
+                return palavras.every((palavra) => texto.includes(palavra)); // Verificar se todas as palavras estão presentes
+            })
         );
 
         if (encontrada) {
             setMusicaSelecionada(encontrada.id);
             setResultadoBusca(encontrada);
         } else {
-            Alert.alert('Aviso', 'Nenhuma musica encontrada.');
+            Alert.alert('Aviso', 'Nenhuma música encontrada.');
             setResultadoBusca(null);
         }
     };
@@ -78,6 +86,7 @@ const Body = () => {
     const handleSearchPress = () => {
         if (!mostrarBusca) {
             setMostrarBusca(true);
+            setTimeout(() => searchInputRef.current?.focus(), 100); // Focar no TextInput
             return;
         }
         handleSearch();
@@ -133,7 +142,7 @@ const Body = () => {
                         <Picker.Item key={val.id} label={`Cançao ${val.id}`} value={val.id} />
                     ))}
                 </Picker>
-
+                {/* // botão de busca */}
                 <TouchableOpacity style={{ width: '20%' }} onPress={handleSearchPress}>
                     <FontAwesome name='search' size={24} color={isDarkMode ? '#fff' : '#001'} />
                 </TouchableOpacity>
@@ -143,6 +152,7 @@ const Body = () => {
 
             {mostrarBusca && (
                 <TextInput
+                    ref={searchInputRef} // Adicionando a referência ao TextInput
                     placeholder='Ex.: Eu quero trabalhar...'
                     value={searchText}
                     onChangeText={setSearchText}
@@ -153,6 +163,8 @@ const Body = () => {
             )}
 
             {resultadoBusca ? renderMusica(resultadoBusca) : renderMusica(musica)}
+
+            {/* <BannerAds></BannerAds> */}
         </ScrollView>
     );
 };

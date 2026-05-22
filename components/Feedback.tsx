@@ -44,7 +44,7 @@ const Feedback = () => {
           name: name,
           email: email,
           message: message,
-          _subject: "Novo Feedback do App",
+          _subject: "Novo Feedback do App - CES",
         }),
       });
 
@@ -151,17 +151,6 @@ const Feedback = () => {
   );
 };
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#eee',
-//   },
-//   form: {
-//     borderRadius: 10,
-//     padding: 20,
-//     margin: 10,
-//     backgroundColor: '#fff',
-//   }
-// });
+
 
 export default Feedback;
