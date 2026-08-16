@@ -1,10 +1,10 @@
 import letra from '@/assets/letra.json';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Picker } from '@react-native-picker/picker';
 import { remove as removeAccents } from 'diacritics'; // Biblioteca para remover acentos
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
-    Alert,
     Keyboard,
     PixelRatio,
     ScrollView,
@@ -14,7 +14,7 @@ import {
     TextInput,
     TouchableOpacity,
     View,
-    useColorScheme,
+    useColorScheme
 } from 'react-native';
 
 const escala = PixelRatio.getFontScale();
@@ -35,78 +35,137 @@ type Musica = {
 
 const musicas = letra as Musica[];
 
-const Body = () => {
-    const [searchText, setSearchText] = useState('');
-    const [resultadoBusca, setResultadoBusca] = useState<Musica | null>(null);
-    const [musicaSelecionada, setMusicaSelecionada] = useState(1);
-    const [mostrarBusca, setMostrarBusca] = useState(false);
+const normalizarTexto = (texto?: string) =>
+    removeAccents((texto ?? '').toLowerCase())
+        .replace(/[\n\r\t,.;:!?"'()\[\]{}]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
 
-    const searchInputRef = useRef<TextInput>(null); // Adicionando referência ao TextInput
+type BodyProps = {
+    musicaInicial?: number;
+};
+
+const Body = ({ musicaInicial = 1 }: BodyProps) => {
+    const [searchText, setSearchText] = useState('');
+    const [resultadoBusca, setResultadoBusca] = useState<Musica[]>([]);
+    const [musicaSelecionada, setMusicaSelecionada] = useState(musicaInicial);
+    const [mostrarBusca, setMostrarBusca] = useState(false);
+    const [favoritos, setFavoritos] = useState<number[]>([]);
+
+    const searchInputRef = useRef<TextInput>(null);
 
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
 
-    const musica = musicas.find((item) => item.id === musicaSelecionada);
+    useEffect(() => {
+        setMusicaSelecionada(musicaInicial);
+    }, [musicaInicial]);
 
-    const handleSearch = () => {
+    useEffect(() => {
+        const carregarFavoritos = async () => {
+            try {
+                const favoritosSalvos = await AsyncStorage.getItem('ces_favoritos');
+                if (favoritosSalvos) {
+                    setFavoritos(JSON.parse(favoritosSalvos));
+                }
+            } catch (error) {
+                console.log('Erro ao carregar favoritos', error);
+            }
+        };
+
+        carregarFavoritos();
+    }, []);
+
+    const musica = musicas.find((item) => item.id === musicaSelecionada);
+    const isFavorita = musica ? favoritos.includes(musica.id) : false;
+
+    const handleSelectMusica = (id: number) => {
+        setMusicaSelecionada(id);
+        setResultadoBusca([]);
+        setSearchText('');
         Keyboard.dismiss();
-        const termo = removeAccents(searchText.trim().toLowerCase()); // Remover acentos do termo de busca
+    };
+
+    const toggleFavorito = async () => {
+        if (!musica) return;
+
+        const novosFavoritos = favoritos.includes(musica.id)
+            ? favoritos.filter((id) => id !== musica.id)
+            : [musica.id, ...favoritos];
+
+        setFavoritos(novosFavoritos);
+        await AsyncStorage.setItem('ces_favoritos', JSON.stringify(novosFavoritos));
+    };
+
+    const limparBusca = () => {
+        setSearchText('');
+        setResultadoBusca([]);
+        Keyboard.dismiss();
+    };
+
+    const handleSearch = (valor?: string) => {
+        const termo = normalizarTexto(valor ?? searchText);
 
         if (!termo) {
-            setResultadoBusca(null);
+            setResultadoBusca([]);
             return;
         }
 
-        const palavras = termo.split(' '); // Dividir o termo em palavras-chave
+        const resultados = musicas
+            .map((item) => {
+                const trechos = [
+                    item.estrofe1,
+                    item.estrofe2,
+                    item.estrofe3,
+                    item.estrofe4,
+                    item.estrofe5,
+                    item.estrofe6,
+                    item.coro,
+                ];
 
-        const encontrada = musicas.find((item) =>
-            [
-                item.estrofe1,
-                item.estrofe2,
-                item.estrofe3,
-                item.estrofe4,
-                item.estrofe5,
-                item.estrofe6,
-                item.coro,
-            ].some((trecho) => {
-                const texto = removeAccents(trecho ?? '').toLowerCase(); // Remover acentos do texto
-                return palavras.every((palavra) => texto.includes(palavra)); // Verificar se todas as palavras estão presentes
+                const melhorTrecho = trechos.find((trecho) => normalizarTexto(trecho).includes(termo));
+                const score = melhorTrecho ? normalizarTexto(melhorTrecho).indexOf(termo) : -1;
+
+                return {
+                    item,
+                    score,
+                };
             })
-        );
+            .filter((entry) => entry.score >= 0)
+            .sort((a, b) => a.score - b.score)
+            .map((entry) => entry.item);
 
-        if (encontrada) {
-            setMusicaSelecionada(encontrada.id);
-            setResultadoBusca(encontrada);
-        } else {
-            Alert.alert('Aviso', 'Nenhuma música encontrada.');
-            setResultadoBusca(null);
+        setResultadoBusca(resultados);
+        if (resultados.length > 0) {
+            setMusicaSelecionada(resultados[0].id);
         }
     };
 
     const handleSearchPress = () => {
         if (!mostrarBusca) {
             setMostrarBusca(true);
-            setTimeout(() => searchInputRef.current?.focus(), 100); // Focar no TextInput
+            setTimeout(() => searchInputRef.current?.focus(), 100);
             return;
         }
+        Keyboard.dismiss();
         handleSearch();
     };
 
-    const renderCoro = (musicaRender: Musica | null | undefined) => {
-        if (!musicaRender?.coro) return null;
+const renderCoro = (texto?: string, isUltima = false) => {
+        if (!texto) return null;
         return (
-            <View style={styles.coro}>
+            <View style={[styles.coro, isUltima && styles.ultimaEstrofe]}>
                 <Text style={[styles.estrofe, { color: isDarkMode ? '#fff' : '#001', fontWeight: 'bold' }]}>
-                    {musicaRender.coro}
+                    {texto}
                 </Text>
             </View>
         );
     };
 
-    const renderEstrofe = (texto?: string) => {
+    const renderEstrofe = (texto?: string, isUltima = false) => {
         if (!texto) return null;
         return (
-            <View style={styles.estrofe}>
+            <View style={[styles.estrofe, isUltima && styles.ultimaEstrofe]}>
                 <Text style={[styles.letra, { color: isDarkMode ? '#fff' : '#001' }]}>{texto}</Text>
             </View>
         );
@@ -114,15 +173,105 @@ const Body = () => {
 
     const renderMusica = (musicaRender: Musica | null | undefined) => {
         if (!musicaRender) return null;
+
+        const blocos: Array<{ tipo: 'estrofe' | 'coro'; texto: string }> = [];
+
+        if (musicaRender.estrofe1) blocos.push({ tipo: 'estrofe', texto: musicaRender.estrofe1 });
+        if (musicaRender.coro) blocos.push({ tipo: 'coro', texto: musicaRender.coro });
+
+        [
+            musicaRender.estrofe2,
+            musicaRender.estrofe3,
+            musicaRender.estrofe4,
+            musicaRender.estrofe5,
+            musicaRender.estrofe6,
+        ].forEach((texto) => {
+            if (texto) blocos.push({ tipo: 'estrofe', texto });
+        });
+
         return (
             <View style={styles.container}>
-                {renderEstrofe(musicaRender.estrofe1)}
-                {renderCoro(musicaRender)}
-                {renderEstrofe(musicaRender.estrofe2)}
-                {renderEstrofe(musicaRender.estrofe3)}
-                {renderEstrofe(musicaRender.estrofe4)}
-                {renderEstrofe(musicaRender.estrofe5)}
-                {renderEstrofe(musicaRender.estrofe6)}
+                {blocos.map((bloco, index) => {
+                    const isUltima = index === blocos.length - 1;
+                    if (bloco.tipo === 'coro') {
+                        return renderCoro(bloco.texto, isUltima);
+                    }
+                    return renderEstrofe(bloco.texto, isUltima);
+                })}
+            </View>
+        );
+    };
+
+    const renderPreviewMusica = (item: Musica) => {
+        const campos = [item.estrofe1, item.estrofe2, item.estrofe3, item.estrofe4, item.estrofe5, item.estrofe6, item.coro];
+        const termo = normalizarTexto(searchText);
+
+        for (const campo of campos) {
+            const textoOriginal = (campo ?? '').replace(/\s+/g, ' ').trim();
+            const textoNormalizado = normalizarTexto(textoOriginal);
+
+            if (!textoNormalizado) continue;
+
+            if (termo) {
+                const indice = textoNormalizado.indexOf(termo);
+                if (indice !== -1) {
+                    const inicio = Math.max(0, indice - 28);
+                    const fim = Math.min(textoNormalizado.length, indice + termo.length + 42);
+                    const preview = textoOriginal.slice(Math.max(0, inicio), Math.min(textoOriginal.length, fim));
+                    const previewNormalizado = normalizarTexto(preview);
+                    const inicioNoPreview = previewNormalizado.indexOf(termo);
+
+                    const antes = previewNormalizado ? preview.slice(0, Math.max(0, inicioNoPreview)) : preview;
+                    const destaque = preview.slice(Math.max(0, inicioNoPreview), Math.max(0, inicioNoPreview) + termo.length);
+                    const depois = preview.slice(Math.max(0, inicioNoPreview) + termo.length);
+
+                    return (
+                        <Text style={[styles.resultadoItemPreview, { color: isDarkMode ? '#d8d8d8' : '#444' }]}>
+                            <Text>...</Text>
+                            <Text>{antes}</Text>
+                            <Text style={styles.resultadoItemDestaque}>{destaque}</Text>
+                            <Text>{depois}...</Text>
+                        </Text>
+                    );
+                }
+            }
+
+            return (
+                <Text style={[styles.resultadoItemPreview, { color: isDarkMode ? '#d8d8d8' : '#444' }]}>
+                    {textoOriginal.slice(0, 90)}
+                </Text>
+            );
+        }
+
+        return (
+            <Text style={[styles.resultadoItemPreview, { color: isDarkMode ? '#d8d8d8' : '#444' }]}>
+                Sem prévia disponível
+            </Text>
+        );
+    };
+
+    const renderResultadoBusca = () => {
+        if (resultadoBusca.length === 0) return null;
+
+        return (
+            <View style={styles.resultadoBuscaContainer}>
+                <Text style={[styles.resultadoBuscaTitulo, { color: isDarkMode ? '#fff' : '#001' }]}>Músicas encontradas:</Text>
+                {resultadoBusca.slice(0, 8).map((item) => (
+                    <TouchableOpacity
+                        key={item.id}
+                        style={[
+                            styles.resultadoItem,
+                            {
+                                backgroundColor: item.id === musicaSelecionada ? (isDarkMode ? '#2a2a2a' : '#f0f0f0') : (isDarkMode ? '#111' : '#fff'),
+                                borderColor: item.id === musicaSelecionada ? '#ff4d4d' : (isDarkMode ? '#2a2a2a' : '#e5e5e5'),
+                            },
+                        ]}
+                        onPress={() => handleSelectMusica(item.id)}
+                    >
+                        <Text style={[styles.resultadoItemText, { color: isDarkMode ? '#fff' : '#001' }]}>Canção {item.id}</Text>
+                        {renderPreviewMusica(item)}
+                    </TouchableOpacity>
+                ))}
             </View>
         );
     };
@@ -131,38 +280,64 @@ const Body = () => {
         <ScrollView style={[styles.scrollContainer, { backgroundColor: isDarkMode ? '#000' : '#fff' }]}>
             <StatusBar hidden />
 
-            <View style={[styles.picContainer, { backgroundColor: isDarkMode ? '#111' : '#eee' }]}>
-                <Picker
-                    itemStyle={{ color: 'red' }}
-                    selectedValue={musicaSelecionada}
-                    onValueChange={(itemValue) => setMusicaSelecionada(Number(itemValue))}
-                    style={[styles.picker, { color: isDarkMode ? '#fff' : '#222' }]}
-                >
-                    {musicas.map((val) => (
-                        <Picker.Item key={val.id} label={`Cançao ${val.id}`} value={val.id} />
-                    ))}
-                </Picker>
-                {/* // botão de busca */}
-                <TouchableOpacity style={{ width: '20%' }} onPress={handleSearchPress}>
-                    <FontAwesome name='search' size={24} color={isDarkMode ? '#fff' : '#001'} />
-                </TouchableOpacity>
+<View style={[styles.picContainer, { backgroundColor: isDarkMode ? '#111' : '#f3f6fb', borderColor: isDarkMode ? '#2b2b2b' : '#dfe8f3' }]}>
+                <View style={styles.pickerWrapper}>
+                    <Picker
+                        itemStyle={{ color: isDarkMode ? '#fff' : '#222' }}
+                        selectedValue={musicaSelecionada}
+                        onValueChange={(itemValue) => setMusicaSelecionada(Number(itemValue))}
+                        style={[styles.picker, { color: isDarkMode ? '#fff' : '#222' }]}
+                    >
+                        {musicas.map((val) => (
+                            <Picker.Item key={val.id} label={`Canção ${val.id}`} value={val.id} />
+                        ))}
+                    </Picker>
+                </View>
 
-                {musica && <Text style={[styles.tb, { color: isDarkMode ? '#fff' : '#001' }]}>TB: {musica.tb}</Text>}
+                <View style={styles.toolbar}>
+                    <TouchableOpacity style={[styles.searchButton, { backgroundColor: isDarkMode ? '#1b1b1b' : '#fff', borderColor: isDarkMode ? '#3d3d3d' : '#dfe8f3' }]} onPress={handleSearchPress}>
+                        <FontAwesome name='search' size={18} color={isDarkMode ? '#fff' : '#0a5db3'} />
+                    </TouchableOpacity>
+
+                    {musica && (
+                        <View style={styles.metaGroup}>
+                            <Text style={[styles.tb, { color: isDarkMode ? '#fff' : '#0f172a' }]}>TB: {musica.tb}</Text>
+                            <TouchableOpacity onPress={toggleFavorito} style={[styles.favoriteButton, { backgroundColor: isDarkMode ? '#1b1b1b' : '#fff', borderColor: isDarkMode ? '#3d3d3d' : '#dfe8f3' }]}>
+                                <FontAwesome name={isFavorita ? 'heart' : 'heart-o'} size={18} color={isFavorita ? '#ff4d4d' : (isDarkMode ? '#fff' : '#0a5db3')} />
+                            </TouchableOpacity>
+                        </View>
+                    )}
+                </View>
             </View>
 
             {mostrarBusca && (
-                <TextInput
-                    ref={searchInputRef} // Adicionando a referência ao TextInput
-                    placeholder='Ex.: Eu quero trabalhar...'
-                    value={searchText}
-                    onChangeText={setSearchText}
-                    style={[styles.searchInput, { color: isDarkMode ? '#fff' : '#001', borderColor: isDarkMode ? '#555' : '#ccc' }]}
-                    returnKeyType='search'
-                    onSubmitEditing={handleSearch}
-                />
+                <View style={[styles.searchContainer, { backgroundColor: isDarkMode ? '#111' : '#f7f7f7' }]}> 
+                    <View style={[styles.searchBox, { backgroundColor: isDarkMode ? '#1b1b1b' : '#fff', borderColor: isDarkMode ? '#3a3a3a' : '#ddd' }]}> 
+                        <FontAwesome name='search' size={16} color={isDarkMode ? '#fff' : '#666'} style={styles.searchIcon} />
+                        <TextInput
+                            ref={searchInputRef}
+                            placeholder='Digite uma frase da música...'
+                            placeholderTextColor={isDarkMode ? '#999' : '#888'}
+                            value={searchText}
+                            onChangeText={(texto) => {
+                                setSearchText(texto);
+                                handleSearch(texto);
+                            }}
+                            style={[styles.searchInput, { color: isDarkMode ? '#fff' : '#001' }]}
+                            returnKeyType='search'
+                            onSubmitEditing={() => handleSearch()}
+                        />
+                        {searchText.length > 0 && (
+                            <TouchableOpacity onPress={limparBusca} style={styles.clearButton}>
+                                <FontAwesome name='times' size={14} color={isDarkMode ? '#fff' : '#555'} />
+                            </TouchableOpacity>
+                        )}
+                    </View>
+                    {renderResultadoBusca()}
+                </View>
             )}
 
-            {resultadoBusca ? renderMusica(resultadoBusca) : renderMusica(musica)}
+            {!resultadoBusca.length && renderMusica(musica)}
 
             {/* <BannerAds></BannerAds> */}
         </ScrollView>
@@ -177,18 +352,80 @@ const styles = StyleSheet.create({
     letra: { fontSize: 16 * escala, width: '100%' },
     picContainer: {
         flexDirection: 'row',
-        justifyContent: 'center',
         alignItems: 'center',
-        marginLeft: 10,
-        marginRight: 10,
-        borderRadius: 15,
+        justifyContent: 'space-between',
+        marginHorizontal: 10,
+        marginTop: 10,
+        marginBottom: 6,
+        paddingHorizontal: 12,
+        paddingVertical: 8,
+        borderRadius: 18,
+        borderWidth: 1,
     },
-    picker: { width: '60%' },
+    pickerWrapper: {
+        flex: 1,
+        minWidth: 0,
+        marginRight: 8,
+    },
+    picker: {
+    },
+    toolbar: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 8,
+    },
+    searchButton: {
+        width: 38,
+        height: 38,
+        borderRadius: 12,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+    },
+    metaGroup: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 8,
+    },
     tb: {
-        fontWeight: 'bold',
-        width: '20%'
+        fontWeight: '700',
+        fontSize: 11,
+        minWidth: 42,
+        textAlign: 'center',
     },
-    searchInput: { height: 40, margin: 10, paddingHorizontal: 15, borderLeftWidth: 1, borderLeftColor: 'red' },
+    searchContainer: { marginHorizontal: 10, marginTop: 8, marginBottom: 10, borderRadius: 14, padding: 10 },
+    searchBox: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderRadius: 12,
+        borderWidth: 1,
+        paddingHorizontal: 12,
+        height: 46,
+    },
+    searchIcon: { marginRight: 8 },
+    searchInput: { flex: 1, height: 40, fontSize: 15 },
+    clearButton: { marginLeft: 6, padding: 6 },
+    resultadoBuscaContainer: { marginTop: 12 },
+    resultadoBuscaTitulo: { fontSize: 16, fontWeight: 'bold', marginBottom: 8 },
+    resultadoItem: {
+        borderRadius: 12,
+        paddingVertical: 10,
+        paddingHorizontal: 12,
+        marginBottom: 8,
+        borderWidth: 1,
+    },
+    resultadoItemText: { fontSize: 15, fontWeight: '600' },
+    resultadoItemPreview: { marginTop: 6, fontSize: 12, lineHeight: 18 },
+    resultadoItemDestaque: { fontWeight: 'bold', color: '#ff4d4d' },
+    favoriteButton: {
+        width: 34,
+        height: 34,
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+    },
+    ultimaEstrofe: { marginBottom: 24 },
 });
 
 export default Body;

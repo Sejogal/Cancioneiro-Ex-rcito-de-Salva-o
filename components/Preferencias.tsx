@@ -1,9 +1,7 @@
 import style from '@/assets/style/style';
-import { StatusBar } from "expo-status-bar";
-import React, { useEffect, useState } from "react";
-import { Alert, PixelRatio, StyleSheet, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import BannerAds from './BannerAds';
+import React, { useEffect, useState } from "react";
+import { Alert, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 
 const Preferencias = () => {
 

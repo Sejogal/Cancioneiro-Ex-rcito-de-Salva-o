@@ -1,4 +1,3 @@
-import style from '@/assets/style/style';
 import Body from '@/components/Body';
 import Feedback from '@/components/Feedback';
 import Header from '@/components/Header';
@@ -22,49 +21,62 @@ export default function App() {
   const scheme = useColorScheme(); // "light" ou "dark"
   const isDarkMode = scheme === 'dark';
 
-
   const [estado, setEstado] = useState("inicio");
+  const [musicaSelecionada, setMusicaSelecionada] = useState(1);
 
   const switchCancoes = (() => {
-    setEstado('cancoes')
-  })
+    setEstado('cancoes');
+  });
+
+  const abrirMusica = (id: number) => {
+    setMusicaSelecionada(id);
+    setEstado('cancoes');
+  };
 
   if (estado == 'inicio') {
+    const cardPrimary = isDarkMode ? '#112235' : '#edf6ff';
+    const cardSecondary = isDarkMode ? '#1d1832' : '#f4f0ff';
+    const cardTertiary = isDarkMode ? '#2a1d10' : '#fff5eb';
+    const cardQuaternary = isDarkMode ? '#102b22' : '#ecfbf5';
+
     return (
-      <View style={styles.view} >
+      <View style={[styles.view, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
         <StatusBar hidden />
-        <Header></Header>
+        <Header />
 
-        <View style={[styles.container, { backgroundColor: isDarkMode ? '#001' : '#fff' }]}>
-          <TouchableOpacity onPress={switchCancoes} style={styles.buttonC}>
-            <MaterialCommunityIcons name="book-music" size={48} color="#069" />
-            <Text style={[style.buttonText, { color: isDarkMode ? '#fff' : '#001' }]}>Canções</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => setEstado('mais')} style={styles.buttonD}>
-            <Feather name="plus" size={48} color="#069" />
-            <Text style={[style.buttonText, { color: isDarkMode ? '#fff' : '#001' }]}>Mais</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => setEstado('feedback')} style={styles.buttonF}>
-            <MaterialCommunityIcons name="chat-question" size={48} color="#069" />
-            <Text style={[style.buttonText, { color: isDarkMode ? '#fff' : '#001' }]}>Feedback & Sugestões</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => setEstado('preferencias')} style={styles.buttonP}>
-            <MaterialCommunityIcons name="tune" size={48} color="#069" />
-            <Text style={[style.buttonText, { color: isDarkMode ? '#fff' : '#001' }]}>Preferências</Text>
-          </TouchableOpacity>
+        <View style={[styles.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
+          <View style={styles.grid}>
+            <TouchableOpacity onPress={switchCancoes} style={[styles.buttonCard, { backgroundColor: cardPrimary, borderColor: isDarkMode ? '#203754' : '#dfe8f3' }]} activeOpacity={0.9}>
+              <MaterialCommunityIcons name="book-music" size={46} color={isDarkMode ? '#9fc7ff' : '#0a5db3'} />
+              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Canções</Text>
+            </TouchableOpacity>
 
-          
-        <Text style={style.copyRight} >© 2025 Seth Lussueki. Todos os direitos reservados.</Text>
+            <TouchableOpacity onPress={() => setEstado('mais')} style={[styles.buttonCard, { backgroundColor: cardSecondary, borderColor: isDarkMode ? '#322d50' : '#dfe8f3' }]} activeOpacity={0.9}>
+              <Feather name="plus" size={46} color={isDarkMode ? '#c7b6ff' : '#0a5db3'} />
+              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Mais</Text>
+            </TouchableOpacity>
 
+            <TouchableOpacity onPress={() => setEstado('feedback')} style={[styles.buttonCard, { backgroundColor: cardTertiary, borderColor: isDarkMode ? '#47331d' : '#dfe8f3' }]} activeOpacity={0.9}>
+              <MaterialCommunityIcons name="chat-question" size={46} color={isDarkMode ? '#ffc889' : '#0a5db3'} />
+              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Feedback</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => setEstado('preferencias')} style={[styles.buttonCard, { backgroundColor: cardQuaternary, borderColor: isDarkMode ? '#193a30' : '#dfe8f3' }]} activeOpacity={0.9}>
+              <MaterialCommunityIcons name="tune" size={46} color={isDarkMode ? '#9df3c2' : '#0a5db3'} />
+              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Preferências</Text>
+            </TouchableOpacity>
+          </View>
+
+          <Text style={[styles.copyRight, { color: isDarkMode ? '#a6b4c7' : '#64748b' }]}>© 2025 Seth Lussueki. Todos os direitos reservados.</Text>
         </View>
       </View>
-    )
+    );
   }
   if (estado == 'cancoes') {
     return (
       <View>
         <Nav estado={setEstado} title={'Canções'} ></Nav>
-        <Body></Body>
+        <Body musicaInicial={musicaSelecionada} />
       </View >
     )
   }
@@ -91,7 +103,7 @@ export default function App() {
       <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }}   >
         <StatusBar hidden />
         <Nav estado={setEstado} title={'Mais'} ></Nav>
-        <Mais></Mais>
+        <Mais abrirMusica={abrirMusica} />
       </View >
     )
 
@@ -104,56 +116,58 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 0,
     padding: 0,
+    backgroundColor: '#f3f6fb',
   },
   container: {
     flex: 1,
+    paddingTop: 18,
+    paddingHorizontal: 12,
+    paddingBottom: 20,
+  },
+  grid: {
     flexDirection: 'row',
-    flexWrap: 'wrap',        // permite múltiplas linhas
-    justifyContent: 'center',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
+  buttonCard: {
+    width: '48%',
+    minHeight: 150,
+    borderRadius: 18,
+    paddingVertical: 24,
+    paddingHorizontal: 14,
     alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: '#dfe8f3',
+    shadowColor: '#0f172a',
+    shadowOpacity: 0.06,
+    shadowOffset: { width: 0, height: 8 },
+    shadowRadius: 12,
+    elevation: 2,
   },
-  buttonC: {
-    flexBasis: '50%',        // botão ocupa 100% da largura
-    paddingVertical: 50,
-    borderWidth: 2,
-    borderBottomRightRadius: 8,
-    borderBottomColor: '#069',
-    borderRightColor: '#069',
-    borderTopColor: 'transparent',
-    borderLeftColor: 'transparent',
-    alignItems: 'center'      // centraliza texto dentro
+  cardPrimary: {
+    backgroundColor: '#edf6ff',
   },
-  buttonD: {
-    flexBasis: '50%',        // botão ocupa 50% da largura
-    paddingVertical: 50,
-    borderWidth: 2,
-    borderBottomLeftRadius: 8,
-    borderBottomColor: '#069',
-    borderLeftColor: '#069',
-    borderTopColor: 'transparent',
-    borderRightColor: 'transparent',
-    alignItems: 'center'      // centraliza texto dentro
+  cardSecondary: {
+    backgroundColor: '#f4f0ff',
   },
-  buttonF: {
-    flexBasis: '50%',        // botão ocupa 100% da largura
-    paddingVertical: 50,
-    borderWidth: 2,
-    borderTopRightRadius: 8,
-    borderTopColor: '#069',
-    borderRightColor: '#069',
-    borderLeftColor: 'transparent',
-    borderBottomColor: 'transparent',
-    alignItems: 'center'      // centraliza texto dentro
+  cardTertiary: {
+    backgroundColor: '#fff5eb',
   },
-  buttonP: {
-    flexBasis: '50%',        // botão ocupa 100% da largura
-    paddingVertical: 50,
-    borderWidth: 2,
-    borderTopLeftRadius: 8,
-    borderTopColor: '#069',
-    borderLeftColor: '#069',
-    borderBottomColor: 'transparent',
-    borderRightColor: 'transparent',
-    alignItems: 'center'      // centraliza texto dentro
+  cardQuaternary: {
+    backgroundColor: '#ecfbf5',
+  },
+  cardText: {
+    marginTop: 12,
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  copyRight: {
+    color: '#64748b',
+    fontSize: 12,
+    textAlign: 'center',
+    marginTop: 28,
+    marginBottom: 6,
   },
 });

@@ -1,5 +1,6 @@
 import style from '@/assets/style/style';
-import { default as Copyright, default as Doutrinas } from '@/components/Copyright';
+import Copyright from '@/components/Copyright';
+import Doutrinas from '@/components/Doutrinas';
 import Favoritos from '@/components/Favoritos';
 import React, { useState } from "react";
 import {
@@ -12,7 +13,11 @@ import {
 } from "react-native";
 
 
-const Mais = () => {
+type MaisProps = {
+    abrirMusica: (id: number) => void;
+};
+
+const Mais = ({ abrirMusica }: MaisProps) => {
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
 
@@ -33,53 +38,40 @@ const Mais = () => {
 
     if (estado == 'inicio') {
         return (
-            <View style={[style.container,{backgroundColor: (isDarkMode) ? '#000' : '#eee'}]} >
-                <View style={[style.caixa,{backgroundColor: (isDarkMode) ? '#111' : '#fff'}]} >
-                    <Text style={[style.subTitle, {
-                        color: isDarkMode ? '#fff' : '#001',
-                        marginBottom: 5
-                    }]}>
-                        Mais
-                    </Text>
-                    <TouchableOpacity style={style.kLink} onPress={() => setEstado('doutrinas')} >
-                        <Text style={style.link} >Doutrinas</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={style.kLink} onPress={() => setEstado('favoritos')} >
-                        <Text style={style.link} >Favoritos</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={style.kLink} onPress={() => setEstado('Copyright')} >
-                        <Text style={style.link} >Copyright</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={style.kLink} onPress={wait} >
-                        <Text style={style.link} >Passatempo</Text>
-                    </TouchableOpacity>
+            <View style={[style.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
+                <View style={[style.caixa, { backgroundColor: isDarkMode ? '#111' : '#fff' }]}>
+                    <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#0f172a', marginBottom: 12 }]}>Mais</Text>
+
+                    {[
+                        { label: 'Doutrinas', action: () => setEstado('doutrinas') },
+                        { label: 'Favoritos', action: () => setEstado('favoritos') },
+                        { label: 'Definições', action: () => setEstado('preferencias') },
+                        { label: 'Copyright', action: () => setEstado('Copyright') },
+                        { label: 'Passatempo', action: wait },
+                    ].map((item) => (
+                        <TouchableOpacity key={item.label} style={style.kLink} onPress={item.action} activeOpacity={0.8}>
+                            <Text style={style.link}>{item.label}</Text>
+                        </TouchableOpacity>
+                    ))}
                 </View>
-                <View style={[style.caixa,{backgroundColor: (isDarkMode) ? '#111' : '#fff'}]}>
-                    <Text style={[style.subTitle, {
-                        color: isDarkMode ? '#fff' : '#001',
-                        marginBottom: 5
-                    }]}>
-                        Links
-                    </Text>
-                    <TouchableOpacity style={style.kLink} onPress={wait} >
-                        <Text style={style.link} >API</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={style.kLink} onPress={(abrirLinkSobre)} >
-                        <Text style={style.link} >Sobre</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={style.kLink} onPress={(abrirLinkTermos)} >
-                        <Text style={style.link} >Termos de uso</Text>
-                    </TouchableOpacity>
+
+                <View style={[style.caixa, { backgroundColor: isDarkMode ? '#111' : '#fff' }]}>
+                    <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#0f172a', marginBottom: 12 }]}>Links</Text>
+
+                    {[
+                        { label: 'API', action: wait },
+                        { label: 'Sobre', action: abrirLinkSobre },
+                        { label: 'Termos de uso', action: abrirLinkTermos },
+                    ].map((item) => (
+                        <TouchableOpacity key={item.label} style={style.kLink} onPress={item.action} activeOpacity={0.8}>
+                            <Text style={style.link}>{item.label}</Text>
+                        </TouchableOpacity>
+                    ))}
                 </View>
             </View>
         );
     }
-    if (estado == 'doutrinas') {
-        return (
-            <Doutrinas></Doutrinas>
-        );
-    }
-    if (estado == 'doutrinas') {
+    else if (estado == 'doutrinas') {
         return (
             <Doutrinas></Doutrinas>
         );
@@ -89,10 +81,21 @@ const Mais = () => {
             <Copyright></Copyright>
         );
     }
-    else if (estado == 'favoritos'){
-        return(
-            <Favoritos></Favoritos>
+    else if (estado == 'favoritos') {
+        return (
+            <Favoritos voltar={() => setEstado('inicio')} abrirMusica={abrirMusica} />
         )
+    }
+    else if (estado == 'preferencias') {
+        return (
+            <View style={{ flex: 1, backgroundColor: isDarkMode ? '#000' : '#fff' }}>
+                <View style={{ padding: 16 }}>
+                    <TouchableOpacity onPress={() => setEstado('inicio')}>
+                        <Text style={{ color: '#069', fontWeight: 'bold', fontSize: 16 }}>Voltar</Text>
+                    </TouchableOpacity>
+                </View>
+            </View>
+        );
     }
 };
 

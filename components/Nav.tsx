@@ -5,16 +5,21 @@ import style from '../assets/style/style';
 
 const escala = PixelRatio.getFontScale();
 
-const Nav = (props) => {
+type NavProps = {
+    estado: (status: string) => void;
+    title: string;
+};
+
+const Nav = ({ estado, title }: NavProps) => {
     const scheme = useColorScheme(); // "light" ou "dark"
     const isDarkMode = scheme === 'dark';
     return (
         <View style={[styles.nav, { backgroundColor: isDarkMode ? '#000' : '#fff' }]} >
             <StatusBar hidden />
-            <TouchableOpacity onPress={() => props.estado('inicio')} >
+            <TouchableOpacity onPress={() => estado('inicio')} >
                 <Ionicons name="arrow-back" size={30 * escala} color={isDarkMode ? '#fff' : '#001'} />
             </TouchableOpacity>
-            <View style={{ marginLeft: '3%' }} ><Text style={[style.title, { color: isDarkMode ? '#fff' : '#001' }]} >{props.title}</Text></View>
+            <View style={{ marginLeft: '3%' }} ><Text style={[style.title, { color: isDarkMode ? '#fff' : '#001' }]} >{title}</Text></View>
         </View>
     )
 }

@@ -198,9 +198,11 @@
             "tb": 333,
             "selecionado": true,
             "estrofe1": "Juntos cantemos em louvor: Deus é bom!\nCom alegria e fervor — Deus é bom!\nAlmas despertem do pecar,\nMudem o pranto por cantar,\nCristo Jesus nos quer salvar — Deus é bom!",
-            "estrofe2": "Deus é bom! Deus é bom!\nJuntos cantemos sem cessar: Deus é bom!\nGozo inefável dá Jesus — Deus é bom!\nEle concede santa luz — Deus é bom!\nÉ nosso escudo e protetor,\nSempre ajuda com amor,\nFiel companheiro e bom Pastor — Deus é bom!",
+            "estrofe2": "Gozo inefável dá Jesus — Deus é bom!\nEle concede santa luz — Deus é bom!\nÉ nosso escudo e protetor,\nSempre ajuda com amor,\nFiel companheiro e bom Pastor — Deus é bom!",
             "estrofe3": "Ide ao mundo proclamar: Deus é bom!\nEle liberta do pecar — Deus é bom!\nVitorioso sobre o mal,\nDá-nos poder pentecostal,\nVida eterna celestial — Deus é bom!",
-            "som": ""
+            "coro": "Deus é bom! Deus é bom!\nJuntos cantemos sem cessar: Deus é bom!",
+            "som": "",
+            "bugResolvido": true
         },
         {
             "id": 20,
