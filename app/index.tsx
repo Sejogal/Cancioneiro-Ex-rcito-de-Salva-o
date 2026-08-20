@@ -9,7 +9,8 @@ import useWelcomeMessage from '@/hooks/useWelcomeMessage';
 import { Feather } from '@expo/vector-icons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import mobileAds from 'react-native-google-mobile-ads';
 import { PixelRatio, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 
 // função Adaptar tamanho da fonte do dispositivo
@@ -23,6 +24,14 @@ export default function App() {
 
   const [estado, setEstado] = useState("inicio");
   const [musicaSelecionada, setMusicaSelecionada] = useState(1);
+
+  useEffect(() => {
+    mobileAds()
+      .initialize()
+      .then(adapterStatuses => {
+        console.log('AdMob inicializado', adapterStatuses);
+      });
+  }, []);
 
   const switchCancoes = (() => {
     setEstado('cancoes');

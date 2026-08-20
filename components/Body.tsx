@@ -16,7 +16,7 @@ import {
     View,
     useColorScheme
 } from 'react-native';
-
+import { AdBanner } from './BannerAds';
 const escala = PixelRatio.getFontScale();
 
 type Musica = {
@@ -339,7 +339,7 @@ const renderCoro = (texto?: string, isUltima = false) => {
 
             {!resultadoBusca.length && renderMusica(musica)}
 
-            {/* <BannerAds></BannerAds> */}
+            <AdBanner/>
         </ScrollView>
     );
 };

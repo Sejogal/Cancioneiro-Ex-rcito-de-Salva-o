@@ -11,6 +11,7 @@ import {
     View,
     useColorScheme
 } from "react-native";
+import { AdBanner } from './BannerAds';
 
 
 type MaisProps = {
@@ -46,6 +47,7 @@ const Mais = ({ abrirMusica }: MaisProps) => {
                         { label: 'Doutrinas', action: () => setEstado('doutrinas') },
                         { label: 'Favoritos', action: () => setEstado('favoritos') },
                         { label: 'Definições', action: () => setEstado('preferencias') },
+                        { label: 'Comunidade Salvacionista', action: wait },
                         { label: 'Copyright', action: () => setEstado('Copyright') },
                         { label: 'Passatempo', action: wait },
                     ].map((item) => (
@@ -68,6 +70,8 @@ const Mais = ({ abrirMusica }: MaisProps) => {
                         </TouchableOpacity>
                     ))}
                 </View>
+
+                 <AdBanner />
             </View>
         );
     }

@@ -3,6 +3,7 @@ import style from '@/assets/style/style';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useState } from 'react';
 import { ScrollView, Text, TouchableOpacity, useColorScheme, View } from 'react-native';
+import { AdBanner } from './BannerAds';
 
 type Musica = {
     id: number;
@@ -109,6 +110,7 @@ const Favoritos = ({ voltar, abrirMusica }: FavoritosProps) => {
                     ))
                 )}
             </View>
+             <AdBanner />
         </ScrollView>
     );
 };

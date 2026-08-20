@@ -2,6 +2,7 @@ import style from '@/assets/style/style';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useState } from "react";
 import { Alert, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
+import { AdBanner } from './BannerAds';
 
 const Preferencias = () => {
 
@@ -79,7 +80,7 @@ const Preferencias = () => {
                     </TouchableOpacity>
 
                 </View>
-                
+                 <AdBanner />
             </View>
         );
     }
