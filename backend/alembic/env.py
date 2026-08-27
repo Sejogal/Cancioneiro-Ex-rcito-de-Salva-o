@@ -1,11 +1,13 @@
 from logging.config import fileConfig
-
-from sqlalchemy import engine_from_config
-from sqlalchemy import pool
-
-from alembic import context
 import os
 import sys
+
+from alembic import context
+from sqlalchemy import engine_from_config, pool
+
+# Adiciona o diretório raiz ao sys.path para importação do model
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from model import base
 
 # Configuração do Alembic
@@ -16,21 +18,17 @@ if config.config_file_name is not None:
 
 target_metadata = base.metadata
 
-# Adiciona o diretório raiz ao sys.path (deve vir ANTES de carregar dependências locais)
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-# --- INÍCIO DA ALTERAÇÃO ---
-# 1. Lê a DATABASE_URL do Render. Se não existir, pega do alembic.ini (localhost)
+# --- AJUSTE DINÂMICO DA URL DO BANCO ---
 db_url = os.getenv("DATABASE_URL", config.get_main_option("sqlalchemy.url"))
 
-# 2. Corrige o prefixo "postgres://" para "postgresql://" se necessário
-if db_url and db_url.startswith("postgres://"):
-    db_url = db_url.replace("postgres://", "postgresql://", 1)
-
-# 3. Sobrescreve a opção sqlalchemy.url dinamicamente
 if db_url:
+    # Garante a substituição para a sintaxe do driver psycopg v3
+    if db_url.startswith("postgres://"):
+        db_url = db_url.replace("postgres://", "postgresql+psycopg://", 1)
+    elif db_url.startswith("postgresql://") and not db_url.startswith("postgresql+psycopg://"):
+        db_url = db_url.replace("postgresql://", "postgresql+psycopg://", 1)
+
     config.set_main_option("sqlalchemy.url", db_url)
-# --- FIM DA ALTERAÇÃO ---
 
 
 def run_migrations_offline() -> None:
