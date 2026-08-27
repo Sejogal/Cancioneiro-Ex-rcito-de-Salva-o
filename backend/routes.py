@@ -6149,6 +6149,11 @@ async def registo(schema: usuarioSchema, sessao=Depends(criarSessao)):
 # Router de feedback (se precisar)
 feedbackRouter = APIRouter(prefix="/feedback", tags=["Feedback"])
 
+@usuario_router.get("/listar")
+async def listar(sessao=Depends(criarSessao)):
+    user = sessao.query(usuario).all()
+    return user
+
 @feedbackRouter.get("/receber")
 async def receber():
     return {"message": "Feedback recebido"}
