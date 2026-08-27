@@ -8,41 +8,32 @@ import os
 import sys
 from model import base
 
-# this is the Alembic Config object, which provides
-# access to the values within the .ini file in use.
+# Configuração do Alembic
 config = context.config
 
-# Interpret the config file for Python logging.
-# This line sets up loggers basically.
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# add your model's MetaData object here
-# for 'autogenerate' support
-# from myapp import mymodel
-# target_metadata = mymodel.Base.metadata
 target_metadata = base.metadata
 
+# Adiciona o diretório raiz ao sys.path (deve vir ANTES de carregar dependências locais)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# other values from the config, defined by the needs of env.py,
-# can be acquired:
-# my_important_option = config.get_main_option("my_important_option")
-# ... etc.
+# --- INÍCIO DA ALTERAÇÃO ---
+# 1. Lê a DATABASE_URL do Render. Se não existir, pega do alembic.ini (localhost)
+db_url = os.getenv("DATABASE_URL", config.get_main_option("sqlalchemy.url"))
+
+# 2. Corrige o prefixo "postgres://" para "postgresql://" se necessário
+if db_url and db_url.startswith("postgres://"):
+    db_url = db_url.replace("postgres://", "postgresql://", 1)
+
+# 3. Sobrescreve a opção sqlalchemy.url dinamicamente
+if db_url:
+    config.set_main_option("sqlalchemy.url", db_url)
+# --- FIM DA ALTERAÇÃO ---
 
 
 def run_migrations_offline() -> None:
-    """Run migrations in 'offline' mode.
-
-    This configures the context with just a URL
-    and not an Engine, though an Engine is acceptable
-    here as well.  By skipping the Engine creation
-    we don't even need a DBAPI to be available.
-
-    Calls to context.execute() here emit the given string to the
-    script output.
-
-    """
     url = config.get_main_option("sqlalchemy.url")
     context.configure(
         url=url,
@@ -56,12 +47,6 @@ def run_migrations_offline() -> None:
 
 
 def run_migrations_online() -> None:
-    """Run migrations in 'online' mode.
-
-    In this scenario we need to create an Engine
-    and associate a connection with the context.
-
-    """
     connectable = engine_from_config(
         config.get_section(config.config_ini_section, {}),
         prefix="sqlalchemy.",
