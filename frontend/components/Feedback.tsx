@@ -1,5 +1,6 @@
 import style from '@/assets/style/style';
-import React, { useState } from "react";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
   Alert,
@@ -11,6 +12,11 @@ import {
   StyleSheet
 } from "react-native";
 import { AdBanner } from './BannerAds';
+import Constants, { ExecutionEnvironment } from 'expo-constants';
+
+
+// Mesma chave usada em useRegistroUsuario.ts — mantenha os dois sincronizados
+const REGISTRO_STORAGE_KEY = "ces_usuario_registrado";
 
 const Feedback = () => {
   const scheme = useColorScheme();
@@ -20,6 +26,24 @@ const Feedback = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  // Pré-preenche nome e email com os dados já registrados, se existirem
+  useEffect(() => {
+    const preencherDadosRegistrados = async () => {
+      try {
+        const salvo = await AsyncStorage.getItem(REGISTRO_STORAGE_KEY);
+        if (!salvo) return;
+
+        const dados = JSON.parse(salvo);
+        if (dados?.nome) setName(dados.nome);
+        if (dados?.email) setEmail(dados.email);
+      } catch (error) {
+        console.log("Erro ao ler dados de registro:", error);
+      }
+    };
+
+    preencherDadosRegistrados();
+  }, []);
 
   const enviarEmail = async () => {
     if (!name.trim() || !email.trim() || !message.trim()) {

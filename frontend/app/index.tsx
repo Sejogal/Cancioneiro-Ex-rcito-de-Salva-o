@@ -11,8 +11,9 @@ import { Feather } from '@expo/vector-icons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
-import mobileAds from 'react-native-google-mobile-ads';
+// import mobileAds from 'react-native-google-mobile-ads';
 import { PixelRatio, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
+import Constants, { ExecutionEnvironment } from 'expo-constants';
 
 // função Adaptar tamanho da fonte do dispositivo
 const escala = PixelRatio.getFontScale();
@@ -22,7 +23,7 @@ const escala = PixelRatio.getFontScale();
 // celular/emulador isso aponta para o próprio dispositivo, não para o PC.
 const API_URL = process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.1.10:8000/usuarios';
 
-export default function App() {
+export default function HomeScreen() {
   useDoubleBackExit(); // Habilita a funcionalidade de sair com duplo back
   useWelcomeMessage(); // Chama o hook para exibir a mensagem de boas-vindas
   const scheme = useColorScheme(); // "light" ou "dark"
@@ -31,13 +32,27 @@ export default function App() {
   const [estado, setEstado] = useState("inicio");
   const [musicaSelecionada, setMusicaSelecionada] = useState(1);
 
-  useEffect(() => {
-    mobileAds()
-      .initialize()
-      .then(adapterStatuses => {
-        console.log('AdMob inicializado', adapterStatuses);
-      });
-  }, []);
+
+  // useEffect(() => {
+  //   // Só inicializa o AdMob se NÃO estiver no Expo Go
+  //   if (!isExpoGo) {
+  //     mobileAds()
+  //       .initialize()
+  //       .then(adapterStatuses => {
+  //         console.log('AdMob inicializado', adapterStatuses);
+  //       });
+  //   } else {
+  //     console.log('Rodando no Expo Go: AdMob desativado temporariamente.');
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+  //   mobileAds()
+  //     .initialize()
+  //     .then(adapterStatuses => {
+  //       console.log('AdMob inicializado', adapterStatuses);
+  //     });
+  // }, []);
 
   const switchCancoes = (() => {
     setEstado('cancoes');
@@ -49,81 +64,81 @@ export default function App() {
   };
 
   const renderConteudo = () => {
-  if (estado == 'inicio') {
-    const cardPrimary = isDarkMode ? '#112235' : '#edf6ff';
-    const cardSecondary = isDarkMode ? '#1d1832' : '#f4f0ff';
-    const cardTertiary = isDarkMode ? '#2a1d10' : '#fff5eb';
-    const cardQuaternary = isDarkMode ? '#102b22' : '#ecfbf5';
+    if (estado == 'inicio') {
+      const cardPrimary = isDarkMode ? '#112235' : '#edf6ff';
+      const cardSecondary = isDarkMode ? '#1d1832' : '#f4f0ff';
+      const cardTertiary = isDarkMode ? '#2a1d10' : '#fff5eb';
+      const cardQuaternary = isDarkMode ? '#102b22' : '#ecfbf5';
 
-    return (
-      <View style={[styles.view, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
-        <StatusBar hidden />
-        <Header />
+      return (
+        <View style={[styles.view, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
+          <StatusBar hidden />
+          <Header />
 
-        <View style={[styles.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
-          <View style={styles.grid}>
-            <TouchableOpacity onPress={switchCancoes} style={[styles.buttonCard, { backgroundColor: cardPrimary, borderColor: isDarkMode ? '#203754' : '#dfe8f3' }]} activeOpacity={0.9}>
-              <MaterialCommunityIcons name="book-music" size={46} color={isDarkMode ? '#9fc7ff' : '#0a5db3'} />
-              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Canções</Text>
-            </TouchableOpacity>
+          <View style={[styles.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
+            <View style={styles.grid}>
+              <TouchableOpacity onPress={switchCancoes} style={[styles.buttonCard, { backgroundColor: cardPrimary, borderColor: isDarkMode ? '#203754' : '#dfe8f3' }]} activeOpacity={0.9}>
+                <MaterialCommunityIcons name="book-music" size={46} color={isDarkMode ? '#9fc7ff' : '#0a5db3'} />
+                <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Canções</Text>
+              </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => setEstado('mais')} style={[styles.buttonCard, { backgroundColor: cardSecondary, borderColor: isDarkMode ? '#322d50' : '#dfe8f3' }]} activeOpacity={0.9}>
-              <Feather name="plus" size={46} color={isDarkMode ? '#c7b6ff' : '#0a5db3'} />
-              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Mais</Text>
-            </TouchableOpacity>
+              <TouchableOpacity onPress={() => setEstado('feedback')} style={[styles.buttonCard, { backgroundColor: cardTertiary, borderColor: isDarkMode ? '#47331d' : '#dfe8f3' }]} activeOpacity={0.9}>
+                <MaterialCommunityIcons name="chat-question" size={46} color={isDarkMode ? '#ffc889' : '#0a5db3'} />
+                <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Feedback</Text>
+              </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => setEstado('feedback')} style={[styles.buttonCard, { backgroundColor: cardTertiary, borderColor: isDarkMode ? '#47331d' : '#dfe8f3' }]} activeOpacity={0.9}>
-              <MaterialCommunityIcons name="chat-question" size={46} color={isDarkMode ? '#ffc889' : '#0a5db3'} />
-              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Feedback</Text>
-            </TouchableOpacity>
+              <TouchableOpacity onPress={() => setEstado('mais')} style={[styles.buttonCard, { backgroundColor: cardSecondary, borderColor: isDarkMode ? '#322d50' : '#dfe8f3' }]} activeOpacity={0.9}>
+                <Feather name="plus" size={46} color={isDarkMode ? '#c7b6ff' : '#0a5db3'} />
+                <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Mais</Text>
+              </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => setEstado('preferencias')} style={[styles.buttonCard, { backgroundColor: cardQuaternary, borderColor: isDarkMode ? '#193a30' : '#dfe8f3' }]} activeOpacity={0.9}>
-              <MaterialCommunityIcons name="tune" size={46} color={isDarkMode ? '#9df3c2' : '#0a5db3'} />
-              <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Preferências</Text>
-            </TouchableOpacity>
+              <TouchableOpacity onPress={() => setEstado('preferencias')} style={[styles.buttonCard, { backgroundColor: cardQuaternary, borderColor: isDarkMode ? '#193a30' : '#dfe8f3' }]} activeOpacity={0.9}>
+                <MaterialCommunityIcons name="tune" size={46} color={isDarkMode ? '#9df3c2' : '#0a5db3'} />
+                <Text style={[styles.cardText, { color: isDarkMode ? '#fff' : '#0f172a' }]}>Preferências</Text>
+              </TouchableOpacity>
+            </View>
+
+            {/* <Text style={[styles.copyRight, { color: isDarkMode ? '#a6b4c7' : '#64748b' }]}>© 2026 Seth Lussueki. Todos os direitos reservados.</Text> */}
           </View>
-
-          <Text style={[styles.copyRight, { color: isDarkMode ? '#a6b4c7' : '#64748b' }]}>© 2026 Seth Lussueki. Todos os direitos reservados.</Text>
         </View>
-      </View>
-    );
-  }
-  if (estado == 'cancoes') {
-    return (
-      <View>
-        <Nav estado={setEstado} title={'Canções'} ></Nav>
-        <Body musicaInicial={musicaSelecionada} />
-      </View >
-    )
-  }
-  else if (estado == 'preferencias') {
-    return (
-      <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }} >
-        <StatusBar hidden />
-        <Nav estado={setEstado} title={'Preferências'} ></Nav>
-        <Preferencias></Preferencias>
-      </View >
-    )
-  }
-  else if (estado == 'feedback') {
-    return (
-      <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }} >
-        <StatusBar hidden />
-        <Nav estado={setEstado} title={'Feedback & Sugestões'} ></Nav>
-        <Feedback></Feedback>
-      </View >
-    )
-  }
-  else if (estado == 'mais') {
-    return (
-      <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }}   >
-        <StatusBar hidden />
-        <Nav estado={setEstado} title={'Mais'} ></Nav>
-        <Mais abrirMusica={abrirMusica} />
-      </View >
-    )
+      );
+    }
+    if (estado == 'cancoes') {
+      return (
+        <View>
+          <Nav estado={setEstado} title={'Canções'} ></Nav>
+          <Body musicaInicial={musicaSelecionada} />
+        </View >
+      )
+    }
+    else if (estado == 'preferencias') {
+      return (
+        <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }} >
+          <StatusBar hidden />
+          <Nav estado={setEstado} title={'Preferências'} ></Nav>
+          <Preferencias></Preferencias>
+        </View >
+      )
+    }
+    else if (estado == 'feedback') {
+      return (
+        <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }} >
+          <StatusBar hidden />
+          <Nav estado={setEstado} title={'Feedback & Sugestões'} ></Nav>
+          <Feedback></Feedback>
+        </View >
+      )
+    }
+    else if (estado == 'mais') {
+      return (
+        <View style={{ flex: 1, backgroundColor: isDarkMode ? '#001' : '#fff' }}   >
+          <StatusBar hidden />
+          <Nav estado={setEstado} title={'Mais'} ></Nav>
+          <Mais abrirMusica={abrirMusica} />
+        </View >
+      )
 
-  }
+    }
   };
 
   return (

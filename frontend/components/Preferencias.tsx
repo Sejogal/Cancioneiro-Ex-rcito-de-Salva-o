@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useState } from "react";
 import { Alert, Switch, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 import { AdBanner } from './BannerAds';
+import Definicoes from './Definicoes';
 
 const Preferencias = () => {
 
@@ -49,9 +50,14 @@ const Preferencias = () => {
     if (state === 'inicio') {
         return (
             <View style={[style.container, { backgroundColor: isDarkMode ? '#000' : '#eee' }]} >
+
+                <View>
+                    <Definicoes />
+                </View>
+
+                {/* Notificações */}
                 <View style={[style.caixa, { backgroundColor: isDarkMode ? '#111' : '#fff' }]} >
 
-                    {/* Notificações */}
                     <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#001' }]}>Notificações</Text>
                     <Switch
                         value={ativoNot}
@@ -73,14 +79,13 @@ const Preferencias = () => {
                         }}
                     />
 
-
-                    {/* Botão salvar */}
-                    <TouchableOpacity style={style.fundoBtn} onPress={save}>
-                        <Text style={style.buttonText}>Salvar Alterações</Text>
-                    </TouchableOpacity>
-
                 </View>
-                 <AdBanner />
+
+                {/* Botão salvar */}
+                <TouchableOpacity style={style.fundoBtn} onPress={save}>
+                    <Text style={style.buttonText}>Salvar Alterações</Text>
+                </TouchableOpacity>
+
             </View>
         );
     }

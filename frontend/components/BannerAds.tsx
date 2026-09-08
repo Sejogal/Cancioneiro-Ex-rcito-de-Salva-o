@@ -1,3 +1,5 @@
+// import {View, Text} from 'react-native'
+
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 
 const adUnitId = __DEV__ 
@@ -15,3 +17,11 @@ export function AdBanner() {
     />
   );
 }
+
+// export function AdBanner(){
+//   return(
+//     <View>
+//       <Text>Fora do ar</Text>
+//     </View>
+//   )
+// } 

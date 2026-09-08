@@ -2,6 +2,8 @@ import style from '@/assets/style/style';
 import Copyright from '@/components/Copyright';
 import Doutrinas from '@/components/Doutrinas';
 import Favoritos from '@/components/Favoritos';
+import Definicoes from '@/components/Definicoes';
+import Nav from '@/components/Nav';
 import React, { useState } from "react";
 import {
     Alert,
@@ -34,7 +36,7 @@ const Mais = ({ abrirMusica }: MaisProps) => {
     function wait() {
         Alert.alert("Aviso", "Em desenvolvimento")
     }
-    
+
 
     if (estado == 'inicio') {
         return (
@@ -45,7 +47,6 @@ const Mais = ({ abrirMusica }: MaisProps) => {
                     {[
                         { label: 'Doutrinas', action: () => setEstado('doutrinas') },
                         { label: 'Favoritos', action: () => setEstado('favoritos') },
-                        { label: 'Definições', action: wait },
                         { label: 'Comunidade Salvacionista', action: wait },
                         { label: 'Copyright', action: () => setEstado('Copyright') },
                         { label: 'Passatempo', action: wait },
@@ -70,7 +71,7 @@ const Mais = ({ abrirMusica }: MaisProps) => {
                     ))}
                 </View>
 
-                 <AdBanner />
+                <AdBanner />
             </ScrollView>
         );
     }

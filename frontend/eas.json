@@ -6,19 +6,28 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://cancioneiro-ex-rcito-de-salva-o.onrender.com/usuario/registo"
+      }
     },
     "preview": {
       "distribution": "internal",
        "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://cancioneiro-ex-rcito-de-salva-o.onrender.com/usuario/registo"
       }
     },
     "production": {
       "android": {
-        "buildType": "apk"
+        "buildType": "app-bundle"
       },
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://cancioneiro-ex-rcito-de-salva-o.onrender.com/usuario/registo"
+      }
     }
   },
   "submit": {

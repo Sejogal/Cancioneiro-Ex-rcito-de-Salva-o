@@ -59,6 +59,11 @@ export function useRegistroUsuario({ apiUrl }: UseRegistroUsuarioOptions) {
 
             setEnviando(true);
             try {
+                console.log('[useRegistroUsuario] enviando POST para:', apiUrl, {
+                    nome: nomeLimpo,
+                    email: emailLimpo,
+                });
+
                 const resposta = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -66,6 +71,11 @@ export function useRegistroUsuario({ apiUrl }: UseRegistroUsuarioOptions) {
                 });
 
                 if (!resposta.ok) {
+                    const corpoErro = await resposta.text().catch(() => '');
+                    console.log(
+                        `[useRegistroUsuario] API respondeu ${resposta.status} ${resposta.statusText}:`,
+                        corpoErro
+                    );
                     setErro('Não foi possível registrar agora. Tente novamente.');
                     return false;
                 }
