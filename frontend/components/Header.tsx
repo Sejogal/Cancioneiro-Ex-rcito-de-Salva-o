@@ -1,9 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { Dimensions, Image, StyleSheet, View, TextInput, FlatList, Alert } from 'react-native';
-import letras from '../assets/letra.json'
-
-const { height } = Dimensions.get('window'); // pega altura da tela
+import { Image, StyleSheet, View } from 'react-native';
 
 const Header = () => {
 
@@ -20,13 +17,15 @@ const Header = () => {
 
 const styles = StyleSheet.create({
     headerContainer: {
-        height: height * 0.4, // 50% da tela
+        aspectRatio: 1.5,
+        maxHeight: 300,
+        minHeight: 180,
         width: '100%',
     },
     imgHeader: {
         width: '100%',
         height: '100%',
-        resizeMode: 'cover', // faz a imagem preencher toda a View
+        resizeMode: 'cover',
     },
     searchBar: {
         height: 40,

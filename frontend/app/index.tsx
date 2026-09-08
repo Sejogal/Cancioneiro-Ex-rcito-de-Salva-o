@@ -32,28 +32,6 @@ export default function HomeScreen() {
   const [estado, setEstado] = useState("inicio");
   const [musicaSelecionada, setMusicaSelecionada] = useState(1);
 
-
-  // useEffect(() => {
-  //   // Só inicializa o AdMob se NÃO estiver no Expo Go
-  //   if (!isExpoGo) {
-  //     mobileAds()
-  //       .initialize()
-  //       .then(adapterStatuses => {
-  //         console.log('AdMob inicializado', adapterStatuses);
-  //       });
-  //   } else {
-  //     console.log('Rodando no Expo Go: AdMob desativado temporariamente.');
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   mobileAds()
-  //     .initialize()
-  //     .then(adapterStatuses => {
-  //       console.log('AdMob inicializado', adapterStatuses);
-  //     });
-  // }, []);
-
   const switchCancoes = (() => {
     setEstado('cancoes');
   });
@@ -167,10 +145,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    gap: 12,
+    gap: 8,
   },
   buttonCard: {
-    width: '48%',
+    width: '47%',
     minHeight: 150,
     borderRadius: 18,
     paddingVertical: 24,

@@ -35,6 +35,7 @@
         {
           "image": "./assets/images/splash-icon-ces (3).png",
           "resizeMode": "contain",
+          "imageWidth": 220,
           "backgroundColor": "#ffffff"
         }
       ],

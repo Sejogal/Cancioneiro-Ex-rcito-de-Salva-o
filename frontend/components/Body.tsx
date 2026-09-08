@@ -361,11 +361,10 @@ const styles = StyleSheet.create({
         // bottom:0
     },
     container: { margin: 10 },
-    estrofe: { marginTop: 10, marginLeft: '1%', marginRight: '1%', width: '100%' },
-    coro: { width: '100%', margin: 12 },
+    estrofe: { marginTop: 10, marginHorizontal: 10 },
+    coro: { margin: 12 },
     letra: {
         fontSize: 16 * escala,
-        width: '100%'
     },
     picContainer: {
         flexDirection: 'row',

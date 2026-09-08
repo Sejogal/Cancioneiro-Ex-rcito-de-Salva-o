@@ -1,7 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import React from "react";
 import { PixelRatio, StatusBar, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
-import style from '../assets/style/style';
 
 const escala = PixelRatio.getFontScale();
 
@@ -11,27 +10,56 @@ type NavProps = {
 };
 
 const Nav = ({ estado, title }: NavProps) => {
-    const scheme = useColorScheme(); // "light" ou "dark"
+    const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
     return (
-        <View style={[styles.nav, { backgroundColor: isDarkMode ? '#000' : '#fff' }]} >
+        <View style={[styles.nav, { backgroundColor: isDarkMode ? '#000' : '#fff' }]}>
             <StatusBar hidden />
-            <TouchableOpacity onPress={() => estado('inicio')} >
-                <Ionicons name="arrow-back" size={30 * escala} color={isDarkMode ? '#fff' : '#001'} />
+            <TouchableOpacity
+                accessibilityRole="button"
+                accessibilityLabel="Voltar ao início"
+                onPress={() => estado('inicio')}
+                style={styles.backButton}
+            >
+                <Ionicons name="arrow-back" size={24 * escala} color={isDarkMode ? '#fff' : '#0f172a'} />
             </TouchableOpacity>
-            <View style={{ marginLeft: '3%' }} ><Text style={[style.title, { color: isDarkMode ? '#fff' : '#001' }]} >{title}</Text></View>
+            <Text
+                numberOfLines={1}
+                ellipsizeMode="tail"
+                style={[styles.title, { color: isDarkMode ? '#fff' : '#0f172a' }]}
+            >
+                {title}
+            </Text>
+            <View style={styles.sideSpacer} />
         </View>
-    )
-}
+    );
+};
 
 const styles = StyleSheet.create({
     nav: {
-        padding: 20,
-        margin: 0,
+        minHeight: 64,
+        paddingHorizontal: 12,
+        paddingVertical: 8,
         flexDirection: 'row',
+        alignItems: 'center',
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        borderBottomColor: '#dbe3ec',
     },
-    btnVoltarText: {
-        color: '#CCCCCC',
+    backButton: {
+        width: 48,
+        height: 48,
+        borderRadius: 14,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    title: {
+        flex: 1,
+        textAlign: 'center',
+        fontSize: 20 * escala,
+        fontWeight: '700',
+    },
+    sideSpacer: {
+        width: 48,
     }
 });
 
