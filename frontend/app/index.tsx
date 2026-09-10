@@ -12,7 +12,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
 // import mobileAds from 'react-native-google-mobile-ads';
-import { PixelRatio, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
+import { PixelRatio, ScrollView, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 import Constants, { ExecutionEnvironment } from 'expo-constants';
 
 // função Adaptar tamanho da fonte do dispositivo
@@ -21,7 +21,7 @@ const escala = PixelRatio.getFontScale();
 // Enquanto a API estiver local, troque pelo IP da sua máquina na rede
 // (ex.: 'http://192.168.1.10:8000/usuarios'), NUNCA 'localhost' — no
 // celular/emulador isso aponta para o próprio dispositivo, não para o PC.
-const API_URL = process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.1.10:8000/usuarios';
+const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.18.11:8000') + '/usuarios/registo';
 
 export default function HomeScreen() {
   useDoubleBackExit(); // Habilita a funcionalidade de sair com duplo back
@@ -53,7 +53,10 @@ export default function HomeScreen() {
           <StatusBar hidden />
           <Header />
 
-          <View style={[styles.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
+          <ScrollView
+            style={{ flex: 1 }}
+            contentContainerStyle={[styles.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}
+          >
             <View style={styles.grid}>
               <TouchableOpacity onPress={switchCancoes} style={[styles.buttonCard, { backgroundColor: cardPrimary, borderColor: isDarkMode ? '#203754' : '#dfe8f3' }]} activeOpacity={0.9}>
                 <MaterialCommunityIcons name="book-music" size={46} color={isDarkMode ? '#9fc7ff' : '#0a5db3'} />
@@ -77,7 +80,7 @@ export default function HomeScreen() {
             </View>
 
             {/* <Text style={[styles.copyRight, { color: isDarkMode ? '#a6b4c7' : '#64748b' }]}>© 2026 Seth Lussueki. Todos os direitos reservados.</Text> */}
-          </View>
+          </ScrollView>
         </View>
       );
     }
@@ -136,7 +139,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f3f6fb',
   },
   container: {
-    flex: 1,
+    flexGrow: 1,
     paddingTop: 18,
     paddingHorizontal: 12,
     paddingBottom: 20,
@@ -144,11 +147,12 @@ const styles = StyleSheet.create({
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
     gap: 8,
   },
   buttonCard: {
-    width: '47%',
+    flexBasis: '47%',
+    flexGrow: 0,
+    flexShrink: 0,
     minHeight: 150,
     borderRadius: 18,
     paddingVertical: 24,

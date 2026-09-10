@@ -55,8 +55,21 @@ class usuario(base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String)
     email = Column(String)
+    corpo = Column(String)
     created_at = Column(DateTime, default=func.now())
 
-    def __init__(self, nome, email):
+    def __init__(self, nome, email, corpo   ):
         self.nome = nome
         self.email = email
+        self.corpo = corpo
+
+class feedback(base):
+    __tablename__ = "feedback"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    nome = Column(String)
+    email = Column(String)
+    mensagem = Column(String)
+    created_at = Column(DateTime, default=func.now())
+
+

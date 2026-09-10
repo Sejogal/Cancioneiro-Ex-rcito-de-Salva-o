@@ -29,6 +29,7 @@ export function RegistroModal({ apiUrl }: RegistroModalProps) {
 
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
+    const [corpo, setCorpo] = useState('');
 
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
@@ -37,7 +38,7 @@ export function RegistroModal({ apiUrl }: RegistroModalProps) {
     if (carregando || registrado) return null;
 
     const handleConfirmar = async () => {
-        await registrar(nome, email);
+        await registrar(nome, email, corpo);
     };
 
     return (
@@ -65,6 +66,22 @@ export function RegistroModal({ apiUrl }: RegistroModalProps) {
                             placeholderTextColor={isDarkMode ? '#888' : '#999'}
                             value={nome}
                             onChangeText={setNome}
+                            style={[
+                                styles.input,
+                                {
+                                    color: isDarkMode ? '#fff' : '#001',
+                                    borderColor: isDarkMode ? '#333' : '#ddd',
+                                    backgroundColor: isDarkMode ? '#1b1b1b' : '#f7f7f7',
+                                },
+                            ]}
+                            autoCapitalize="words"
+                            returnKeyType="next"
+                        />
+                        <TextInput
+                            placeholder="Seu corpo | Ex.: Cazenga"
+                            placeholderTextColor={isDarkMode ? '#888' : '#999'}
+                            value={corpo}
+                            onChangeText={setCorpo}
                             style={[
                                 styles.input,
                                 {

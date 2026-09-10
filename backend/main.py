@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import router, usuario_router, feedbackRouter  # ✅ Adicione feedbackRouter
+from routes import router, usuario_router, feedbackRouter
 
 app = FastAPI()
 

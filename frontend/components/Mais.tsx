@@ -12,7 +12,8 @@ import {
     TouchableOpacity,
     View,
     useColorScheme,
-    ScrollView
+    ScrollView,
+    StatusBar,
 } from "react-native";
 import { AdBanner } from './BannerAds';
 
@@ -41,6 +42,7 @@ const Mais = ({ abrirMusica }: MaisProps) => {
     if (estado == 'inicio') {
         return (
             <ScrollView style={[style.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
+                <StatusBar hidden />
                 <View style={[style.caixa, { backgroundColor: isDarkMode ? '#111' : '#fff' }]}>
                     <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#0f172a', marginBottom: 12 }]}>Mais</Text>
 

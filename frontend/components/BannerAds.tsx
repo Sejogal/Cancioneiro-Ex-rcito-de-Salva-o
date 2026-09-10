@@ -1,5 +1,5 @@
-import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 import { StyleSheet, View } from 'react-native';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 
 const adUnitId = __DEV__
   ? TestIds.BANNER 

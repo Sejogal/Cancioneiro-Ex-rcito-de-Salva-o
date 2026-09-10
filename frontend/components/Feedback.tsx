@@ -12,19 +12,21 @@ import {
   StyleSheet
 } from "react-native";
 import { AdBanner } from './BannerAds';
-import Constants, { ExecutionEnvironment } from 'expo-constants';
 
 
 // Mesma chave usada em useRegistroUsuario.ts — mantenha os dois sincronizados
 const REGISTRO_STORAGE_KEY = "ces_usuario_registrado";
 
+const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.18.11:8000') + '/feedback/enviar';
+
+
 const Feedback = () => {
   const scheme = useColorScheme();
   const isDarkMode = scheme === 'dark';
 
-  const [name, setName] = useState("");
+  const [nome, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [mensagem, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   // Pré-preenche nome e email com os dados já registrados, se existirem
@@ -46,7 +48,7 @@ const Feedback = () => {
   }, []);
 
   const enviarEmail = async () => {
-    if (!name.trim() || !email.trim() || !message.trim()) {
+    if (!nome.trim() || !email.trim() || !mensagem.trim()) {
       Alert.alert("Erro", "Por favor, preencha todos os campos");
       return;
     }
@@ -58,18 +60,18 @@ const Feedback = () => {
 
     setIsLoading(true);
 
+
+
     try {
-      // Substitua YOUR_FORM_ID pelo ID do seu formulário do Formspree
-      const response = await fetch('https://formspree.io/f/mrbaogzg', {
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          name: name,
+          nome: nome,
           email: email,
-          message: message,
-          _subject: "Novo Feedback do App - CES",
+          mensagem: mensagem,
         }),
       });
 
@@ -102,7 +104,7 @@ const Feedback = () => {
         <TextInput
           placeholder="Digite seu nome"
           placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
-          value={name}
+          value={nome}
           onChangeText={setName}
           autoCapitalize="words"
           editable={!isLoading}
@@ -139,7 +141,7 @@ const Feedback = () => {
         <TextInput
           placeholder="Digite seu feedback"
           placeholderTextColor={isDarkMode ? '#aaa' : '#888'}
-          value={message}
+          value={mensagem}
           onChangeText={setMessage}
           multiline
           numberOfLines={6}

@@ -6,6 +6,7 @@ from typing import Optional
 class usuarioSchema(BaseModel):
     id: Optional[int] = None
     nome: str
+    corpo: str
     email: str
     
     model_config = ConfigDict(from_attributes=True)
@@ -17,5 +18,12 @@ class notificacaoSchema(BaseModel):
     mensagem: str
     lida: Optional[bool] = False
     created_at: Optional[datetime] = None
+    
+    model_config = ConfigDict(from_attributes=True)
+
+class feedbackSchema(BaseModel):
+    nome: Optional[str] = None  
+    email: Optional[str] = None
+    mensagem: str
     
     model_config = ConfigDict(from_attributes=True)

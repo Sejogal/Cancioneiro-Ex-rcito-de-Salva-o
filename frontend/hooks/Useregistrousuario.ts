@@ -6,6 +6,7 @@ const STORAGE_KEY = 'ces_usuario_registrado';
 type DadosUsuario = {
     nome: string;
     email: string;
+    corpo: string;
     registradoEm: string;
 };
 
@@ -40,14 +41,20 @@ export function useRegistroUsuario({ apiUrl }: UseRegistroUsuarioOptions) {
     }, []);
 
     const registrar = useCallback(
-        async (nome: string, email: string) => {
+        async (nome: string, email: string, corpo: string) => {
             setErro(null);
 
             const nomeLimpo = nome.trim();
             const emailLimpo = email.trim().toLowerCase();
+            const corpoLimpo = corpo.trim().toLowerCase();
 
             if (!nomeLimpo) {
                 setErro('Informe o nome.');
+                return false;
+            }
+
+            if (!corpoLimpo) {
+                setErro('Informe o seu corpo/paróquia');
                 return false;
             }
 
@@ -61,13 +68,14 @@ export function useRegistroUsuario({ apiUrl }: UseRegistroUsuarioOptions) {
             try {
                 console.log('[useRegistroUsuario] enviando POST para:', apiUrl, {
                     nome: nomeLimpo,
-                    email: emailLimpo,
+                    corpo: corpoLimpo,
+                    email: emailLimpo
                 });
 
                 const resposta = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ nome: nomeLimpo, email: emailLimpo }),
+                    body: JSON.stringify({ nome: nomeLimpo, email: emailLimpo, corpo: corpoLimpo }),
                 });
 
                 if (!resposta.ok) {
@@ -82,6 +90,7 @@ export function useRegistroUsuario({ apiUrl }: UseRegistroUsuarioOptions) {
 
                 const novoRegistro: DadosUsuario = {
                     nome: nomeLimpo,
+                    corpo: corpoLimpo,
                     email: emailLimpo,
                     registradoEm: new Date().toISOString(),
                 };

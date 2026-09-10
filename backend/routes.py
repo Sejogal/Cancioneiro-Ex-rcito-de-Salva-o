@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
-from schema import usuarioSchema
+from schema import usuarioSchema, feedbackSchema
 from sessao import criarSessao
-from model import usuario
+from model import usuario, feedback
 
 router = APIRouter(prefix="/conteudo", tags=["Letras"])
 
@@ -6122,15 +6122,15 @@ usuario_router = APIRouter(prefix="/usuario", tags=["Usuários"])
 @usuario_router.post("/registo")
 async def registo(schema: usuarioSchema, sessao=Depends(criarSessao)):
     # Verificar se o usuário existe
-    user = sessao.query(usuario).filter(usuario.email == schema.email).first()
+    # user = sessao.query(usuario).filter(usuario.email == schema.email).first()
 
-    if user:
-        raise HTTPException(status_code=400, detail="Usuário já existe")
+    # if user:
+    #     raise HTTPException(status_code=400, detail="Esse email já está cadastrado.")
     
-    # ✅ Corrigido - use schema.nome e schema.email
     novo_usuario = usuario(
         nome=schema.nome, 
-        email=schema.email
+        email=schema.email,
+        corpo=schema.corpo
     )
 
     sessao.add(novo_usuario)
@@ -6142,11 +6142,12 @@ async def registo(schema: usuarioSchema, sessao=Depends(criarSessao)):
         'usuario': {
             'id': novo_usuario.id,
             'nome': novo_usuario.nome,
-            'email': novo_usuario.email
+            'email': novo_usuario.email,
+            'corpo':novo_usuario.corpo
         }
     }
 
-# Router de feedback (se precisar)
+
 feedbackRouter = APIRouter(prefix="/feedback", tags=["Feedback"])
 
 @usuario_router.get("/listar")
@@ -6154,10 +6155,30 @@ async def listar(sessao=Depends(criarSessao)):
     user = sessao.query(usuario).all()
     return user
 
-@feedbackRouter.get("/receber")
-async def receber():
-    return {"message": "Feedback recebido"}
-
 @feedbackRouter.post("/enviar")
-async def enviar():
-    return {"message": "Feedback enviado"}
+async def enviar(schema:feedbackSchema,sessao=Depends(criarSessao)):
+    novo_feedback = feedback(
+        nome=schema.nome,
+        email=schema.email,
+        mensagem=schema.mensagem
+    )
+
+    sessao.add(novo_feedback)
+    sessao.commit()
+    sessao.refresh(novo_feedback)
+
+    return {
+        'message': 'Feedback enviado com sucesso!',
+        'feedback': {
+            'id': novo_feedback.id,
+            'nome': novo_feedback.nome,
+            'email': novo_feedback.email,
+            'mensagem': novo_feedback.mensagem
+        }
+    }
+
+
+@feedbackRouter.get("/receber")
+async def receber(sessao=Depends(criarSessao)):
+    feedbacks = sessao.query(feedback).all()
+    return feedbacks

@@ -1,26 +1,40 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import React from 'react';
+import { Image, StyleSheet, View, useWindowDimensions } from 'react-native';
 
 const Header = () => {
+    const { width } = useWindowDimensions();
+
+    // Em ecrãs largos (tablets), limita a largura efetiva do header para
+    // evitar que a imagem fique esticada ou cortada de forma estranha.
+    // Acima de 600px de largura, centra o header com uma largura máxima.
+    const isTablet = width >= 600;
+    const headerMaxWidth = isTablet ? 600 : '100%';
 
     return (
-        <View style={styles.headerContainer}>
+        <View style={styles.headerWrapper}>
             <StatusBar hidden />
-            <Image
-                style={styles.imgHeader}
-                source={require('../assets/images/headercopia.png')}
-            />
+            <View style={[styles.headerContainer, { maxWidth: headerMaxWidth }]}>
+                <Image
+                    style={styles.imgHeader}
+                    source={require('../assets/images/headercopia.png')}
+                />
+            </View>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
+    headerWrapper: {
+        width: '100%',
+        alignItems: 'center',
+    },
     headerContainer: {
         aspectRatio: 1.5,
         maxHeight: 300,
         minHeight: 180,
         width: '100%',
+        overflow: 'hidden',
     },
     imgHeader: {
         width: '100%',
