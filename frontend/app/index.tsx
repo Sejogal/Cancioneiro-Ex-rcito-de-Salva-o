@@ -11,17 +11,18 @@ import { Feather } from '@expo/vector-icons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect } from "react";
-// import mobileAds from 'react-native-google-mobile-ads';
 import { PixelRatio, ScrollView, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 import Constants, { ExecutionEnvironment } from 'expo-constants';
 
 // função Adaptar tamanho da fonte do dispositivo
 const escala = PixelRatio.getFontScale();
 
-// Enquanto a API estiver local, troque pelo IP da sua máquina na rede
-// (ex.: 'http://192.168.1.10:8000/usuarios'), NUNCA 'localhost' — no
-// celular/emulador isso aponta para o próprio dispositivo, não para o PC.
-const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.18.11:8000') + '/usuarios/registo';
+// EXPO_PUBLIC_API_URL deve conter só a base do domínio (ex.: https://cancioneiro-ex-rcito-de-salva-o.onrender.com),
+// definida em eas.json para os perfis development/preview/production.
+// O caminho do endpoint (/usuario/registo) é adicionado aqui, uma única vez.
+// Enquanto a API estiver local, o fallback abaixo usa o IP da sua máquina na rede
+// (NUNCA 'localhost' — no celular/emulador isso aponta para o próprio dispositivo, não para o PC).
+const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.18.11:8000') + '/usuario/registo';
 
 export default function HomeScreen() {
   useDoubleBackExit(); // Habilita a funcionalidade de sair com duplo back
