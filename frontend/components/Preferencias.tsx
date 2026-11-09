@@ -15,7 +15,6 @@ const Preferencias = () => {
     const [ativoNot, setAtivoNot] = useState(false);
     const [ativoAb, setAtivoAb] = useState(false);
 
-    const [state, setState] = useState('inicio')
 
     // 🔵 Carregar valores salvos ao iniciar
     useEffect(() => {
@@ -47,8 +46,7 @@ const Preferencias = () => {
         }
     }
 
-    if (state === 'inicio') {
-        return (
+    return (
             <View style={[style.container, { backgroundColor: isDarkMode ? '#000' : '#eee' }]} >
 
                 <View>
@@ -88,7 +86,6 @@ const Preferencias = () => {
 
             </View>
         );
-    }
 };
 
 export default Preferencias;

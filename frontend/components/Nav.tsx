@@ -1,15 +1,14 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import React from "react";
+import { useRouter } from 'expo-router';
 import { PixelRatio, StatusBar, StyleSheet, Text, TouchableOpacity, View, useColorScheme } from "react-native";
 
 const escala = PixelRatio.getFontScale();
 
-type NavProps = {
-    estado: (status: string) => void;
-    title: string;
-};
+type NavProps = { title: string };
 
-const Nav = ({ estado, title }: NavProps) => {
+const Nav = ({ title }: NavProps) => {
+    const router = useRouter();
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
     return (
@@ -18,7 +17,7 @@ const Nav = ({ estado, title }: NavProps) => {
             <TouchableOpacity
                 accessibilityRole="button"
                 accessibilityLabel="Voltar ao início"
-                onPress={() => estado('inicio')}
+                onPress={() => router.canGoBack() ? router.back() : router.replace('/')}
                 style={styles.backButton}
             >
                 <Ionicons name="arrow-back" size={24 * escala} color={isDarkMode ? '#fff' : '#0f172a'} />

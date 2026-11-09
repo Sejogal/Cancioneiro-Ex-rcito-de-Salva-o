@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useCallback, useRef } from "react";
 import { BackHandler, ToastAndroid } from "react-native";
+import { useFocusEffect } from 'expo-router';
 
 export default function useDoubleBackExit() {
   const backPressedOnce = useRef(false);
 
-  useEffect(() => {
+  useFocusEffect(useCallback(() => {
     const backAction = () => {
       if (backPressedOnce.current) {
         BackHandler.exitApp();
@@ -30,5 +31,5 @@ export default function useDoubleBackExit() {
     );
 
     return () => backHandler.remove();
-  }, []);
+  }, []));
 }

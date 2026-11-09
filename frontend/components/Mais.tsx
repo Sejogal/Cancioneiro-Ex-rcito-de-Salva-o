@@ -1,10 +1,6 @@
 import style from '@/assets/style/style';
-import Copyright from '@/components/Copyright';
-import Doutrinas from '@/components/Doutrinas';
-import Favoritos from '@/components/Favoritos';
-import Definicoes from '@/components/Definicoes';
-import Nav from '@/components/Nav';
-import React, { useState } from "react";
+import React from "react";
+import { useRouter } from 'expo-router';
 import {
     Alert,
     Linking,
@@ -18,15 +14,11 @@ import {
 import { AdBanner } from './BannerAds';
 
 
-type MaisProps = {
-    abrirMusica: (id: number) => void;
-};
-
-const Mais = ({ abrirMusica }: MaisProps) => {
+const Mais = () => {
+    const router = useRouter();
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
 
-    const [estado, setEstado] = useState('inicio')
 
     const abrirLinkSobre = () => {
         Linking.openURL("https://ces-site.onrender.com/");
@@ -39,18 +31,16 @@ const Mais = ({ abrirMusica }: MaisProps) => {
     }
 
 
-    if (estado == 'inicio') {
-        return (
+    return (
             <ScrollView style={[style.container, { backgroundColor: isDarkMode ? '#000' : '#f3f6fb' }]}>
                 <StatusBar hidden />
                 <View style={[style.caixa, { backgroundColor: isDarkMode ? '#111' : '#fff' }]}>
                     <Text style={[style.subTitle, { color: isDarkMode ? '#fff' : '#0f172a', marginBottom: 12 }]}>Mais</Text>
 
                     {[
-                        { label: 'Doutrinas', action: () => setEstado('doutrinas') },
-                        { label: 'Favoritos', action: () => setEstado('favoritos') },
-                        { label: 'Comunidade Salvacionista', action: wait },
-                        { label: 'Copyright', action: () => setEstado('Copyright') },
+                        { label: 'Doutrinas', action: () => router.push('/mais/doutrinas') },
+                        { label: 'Favoritos', action: () => router.push('/mais/favoritos') },
+                        { label: 'Copyright', action: () => router.push('/mais/copyright') },
                         { label: 'Passatempo', action: wait },
                     ].map((item) => (
                         <TouchableOpacity key={item.label} style={style.kLink} onPress={item.action} activeOpacity={0.8}>
@@ -75,34 +65,7 @@ const Mais = ({ abrirMusica }: MaisProps) => {
 
                 <AdBanner />
             </ScrollView>
-        );
-    }
-    else if (estado == 'doutrinas') {
-        return (
-            <Doutrinas></Doutrinas>
-        );
-    }
-    else if (estado == 'Copyright') {
-        return (
-            <Copyright></Copyright>
-        );
-    }
-    else if (estado == 'favoritos') {
-        return (
-            <Favoritos abrirMusica={abrirMusica} />
-        )
-    }
-    else if (estado == 'preferencias') {
-        return (
-            <View style={{ flex: 1, backgroundColor: isDarkMode ? '#000' : '#fff' }}>
-                <View style={{ padding: 16 }}>
-                    <TouchableOpacity onPress={() => setEstado('inicio')}>
-                        <Text style={{ color: '#069', fontWeight: 'bold', fontSize: 16 }}>Voltar</Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
-        );
-    }
+    );
 };
 
 export default Mais;

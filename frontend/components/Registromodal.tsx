@@ -30,19 +30,22 @@ export function RegistroModal({ apiUrl }: RegistroModalProps) {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [corpo, setCorpo] = useState('');
+    const [dispensado, setDispensado] = useState(false);
 
     const scheme = useColorScheme();
     const isDarkMode = scheme === 'dark';
 
     // Ainda lendo o AsyncStorage, ou já registrado: não mostra nada
-    if (carregando || registrado) return null;
+    if (carregando || registrado || dispensado) return null;
 
     const handleConfirmar = async () => {
         await registrar(nome, email, corpo);
     };
 
     return (
-        <Modal visible transparent animationType="fade" statusBarTranslucent>
+        <Modal visible transparent animationType="fade" statusBarTranslucent onRequestClose={() => {
+            if (!enviando) setDispensado(true);
+        }}>
             <View style={styles.overlay}>
                 <KeyboardAvoidingView
                     behavior={Platform.OS === 'ios' ? 'padding' : undefined}
@@ -127,6 +130,14 @@ export function RegistroModal({ apiUrl }: RegistroModalProps) {
                                 <Text style={styles.botaoTexto}>Continuar</Text>
                             )}
                         </TouchableOpacity>
+                        <TouchableOpacity
+                            accessibilityRole="button"
+                            onPress={() => setDispensado(true)}
+                            disabled={enviando}
+                            style={styles.botaoPular}
+                        >
+                            <Text style={[styles.textoPular, { color: isDarkMode ? '#b8c7d9' : '#526173' }]}>Pular esta etapa</Text>
+                        </TouchableOpacity>
                     </View>
                 </KeyboardAvoidingView>
             </View>
@@ -189,5 +200,16 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontWeight: '700',
         fontSize: 15,
+    },
+    botaoPular: {
+        minHeight: 44,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 4,
+    },
+    textoPular: {
+        fontSize: 14,
+        fontWeight: '600',
+        textDecorationLine: 'underline',
     },
 });
